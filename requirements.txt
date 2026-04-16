@@ -1,0 +1,4 @@
+mcp>=1.6
+openai>=1.30
+pillow>=10.0
+python-dotenv>=1.0
