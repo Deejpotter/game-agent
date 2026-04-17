@@ -173,7 +173,8 @@ end
 
 local function resolve_output_path(path, fallback_name)
   if type(path) == "string" and #path > 0 then
-    if string.sub(path, 1, 1) == "/" then
+    -- Accept both POSIX absolute paths (/foo) and Windows drive-letter paths (C:/foo)
+    if string.sub(path, 1, 1) == "/" or string.sub(path, 2, 2) == ":" then
       return path
     end
     return session_dir .. "/" .. path
@@ -293,7 +294,8 @@ local function run_lua_file(path)
     return nil, "missing script path"
   end
   local resolved = path
-  if string.sub(path, 1, 1) ~= "/" then
+  -- Accept both POSIX absolute paths (/foo) and Windows drive-letter paths (C:/foo)
+  if string.sub(path, 1, 1) ~= "/" and string.sub(path, 2, 2) ~= ":" then
     resolved = session_dir .. "/" .. path
   end
   local loader, err = loadfile(resolved)

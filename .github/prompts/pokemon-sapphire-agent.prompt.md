@@ -57,7 +57,7 @@ Repeat this cycle continuously:
 
 **Gym order**: Roxanne (Rock, Rustboro) → Brawly (Fighting, Dewford) → Wattson (Electric, Mauville) → Flannery (Fire, Lavaridge) → Norman (Normal, Petalburg) → Winona (Flying, Fortree) → Tate & Liza (Psychic, Mossdeep) → Juan (Water, Sootopolis)
 
-**Eleite Four**: Sidney (Dark) → Phoebe (Ghost) → Glacia (Ice) → Drake (Dragon) -> Champion Steven (Steel and rare Pokemon)
+**Elite Four**: Sidney (Dark) → Phoebe (Ghost) → Glacia (Ice) → Drake (Dragon) -> Champion Steven (Steel and rare Pokemon)
 
 **Main story path**: Littleroot → Oldale → Petalburg → Rustboro → Dewford (boat) → Slateport → Mauville → Fallarbor/Lavaridge → Petalburg → Fortree → Lilycove → Mossdeep → Sootopolis → Ever Grande → Victory Road → Elite Four
 
@@ -65,10 +65,10 @@ Repeat this cycle continuously:
 
 **Battle strategy**:
 
-- Use super-effective moves when possible
+- Use super-effective moves when possible unless trying to catch (then use status moves to increase catch rate and don't risk fainting)
 - Switch Pokemon if type disadvantaged
-- Use items (Potions, Antidotes) from bag when HP < 25%
-- Catch new Pokemon when Pokeballs are available and the pokemon is not already caught before
+- Use items (Potions, Antidotes) from bag when you think the next attack might cause a faint and switching is not possible
+- Catch new Pokemon when Pokeballs are available and the pokemon is not already caught before. Use status moves (Sleep, Paralysis) to increase catch rate if needed.
 
 ## RAM Read Helpers (Pokemon Sapphire GBA)
 
