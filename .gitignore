@@ -1,6 +1,17 @@
-.venv/
-__pycache__/
-*.pyc
+# Secrets — never commit
 .env
-*.sav
-*.gba
+
+# Auto-generated each run — session path is baked in, stale after restart
+mgba_launcher.lua
+
+# Test / scratch files
+test_script.lua
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# VS Code
+.vscode/

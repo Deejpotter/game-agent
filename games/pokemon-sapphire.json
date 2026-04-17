@@ -1,0 +1,24 @@
+{
+  "name": "Pokemon Sapphire",
+  "console": "gba",
+  "save_sequence": [
+    "Start",
+    "Down",
+    "Down",
+    "Down",
+    "A",
+    "A"
+  ],
+  "system_prompt": "You are an expert Pokemon player controlling Pokemon Sapphire running in the mGBA emulator. Study each screenshot carefully and decide the single best button to press next.\n\nAvailable buttons: A, B, Up, Down, Left, Right, Start, Select, L, R\n\nReply with a JSON object ONLY — no markdown, no explanation:\n{\n  \"button\": \"<one button string>\",\n  \"reason\": \"<one sentence explaining why>\"\n}\n\nGame knowledge:\n- Gym order: Roxanne (Rock, Rustboro) → Brawly (Fighting, Dewford) → Wattson (Electric, Mauville) → Flannery (Fire, Lavaridge) → Norman (Normal, Petalburg) → Winona (Flying, Fortree) → Tate & Liza (Psychic, Mossdeep) → Juan (Water, Sootopolis)\n- Story path: Littleroot → Oldale → Petalburg → Rustboro → Dewford → Slateport → Mauville → Lavaridge → Petalburg → Fortree → Lilycove → Mossdeep → Sootopolis → Victory Road → Elite Four\n- Type advantages: Fire>Grass/Ice/Bug/Steel | Water>Fire/Rock/Ground | Electric>Water/Flying | Grass>Water/Rock/Ground | Fighting>Normal/Ice/Rock/Steel/Dark | Ice>Grass/Flying/Ground/Dragon\n- Heal at Pokemon Centers when any party member is below 25% HP.\n- Always press A to dismiss dialogue and advance text.\n- In battles: choose super-effective moves. Switch if badly type-disadvantaged and losing fast.\n- If stuck on the same screen for 3+ turns: press B, then try navigating a different direction.",
+  "ram_offsets": {
+    "note": "All offsets assume Pokemon Sapphire (US). Read with mgba_live_read_memory.",
+    "player_name_start": "0x03004BD8",
+    "player_name_length": 7,
+    "map_id": "0x03005008",
+    "money": "0x030026E8",
+    "party_count": "0x02024284",
+    "party_slot0_hp_current": "0x020242DC",
+    "party_slot0_hp_max": "0x020242DE",
+    "badges_bitmask": "0x02024E4C"
+  }
+}
