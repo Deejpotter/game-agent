@@ -2,90 +2,112 @@
 
 ## Project Overview
 
-Autonomous AI agent that plays GBA games 24/7 by driving **mGBA** via `mgba-live-mcp` (a stdio MCP server). The loop is: screenshot → VLM decision → button press, running entirely in Python without VS Code.
+There are **two independent agents** in this repo. Both play games 24/7 via a local VLM. Prefer `pyboy_agent.py` for new GBC work — it is simpler, actively maintained, and has richer observability.
+
+| Agent            | Emulator                | Transport                 | Console  |
+| ---------------- | ----------------------- | ------------------------- | -------- |
+| `pyboy_agent.py` | PyBoy (in-process)      | None — direct Python API  | GBC / GB |
+| `agent.py`       | mGBA (external process) | stdio MCP → Lua IPC files | GBA      |
+
+## Architecture
+
+### `pyboy_agent.py` (primary — use this one)
+
+```
+pyboy_agent.py
+  ├── PyBoy(rom)              ← in-process GBC emulator, synchronous
+  ├── OpenAI client ×2        ← vision model (perceive) + reasoning model (decide)
+  ├── WorldMap                ← persistent cross-session location/NPC/wall tracker
+  ├── notes.json              ← story_log, goal_log, memory (saved next to ROM)
+  └── <rom>.pyboy_agent.state ← binary emulator snapshot for crash recovery
+```
+
+**Two-stage turn loop:** `perceive()` (vision-only → JSON scene description) → `decide()` (reasoning → button + memory update). Each stage uses a separate model call so the reasoning model never sees the raw image.
+
+**Wall detection:** Uses RAM position delta (`x_pos`/`y_pos`) as the primary check — screenshot hash comparison is unreliable in small indoor rooms where the camera doesn't scroll. Falls back to hash only when `has_ram` is False.
+
+**Wall keys:** Stored under `map_{bank}_{number}` (from RAM), not VLM location names, so they persist correctly across sessions and don't bleed between similarly-named rooms.
+
+**Windowed mode:** VLM calls run in a `ThreadPoolExecutor` thread while `pump_fn = pyboy.tick(1, render=True)` runs on the main thread at ~60 fps so the SDL2 window stays responsive.
+
+### `agent.py` (mGBA / GBA)
+
+```
+agent.py ──[stdio]--> uvx mgba-live-mcp ──[file IPC]--> mgba_live_bridge.lua ──> mGBA
+```
+
+mGBA's `--script` CLI flag doesn't work on Windows Qt builds. Instead the agent generates `mgba_launcher.lua` (bakes in session dir + patches `os.getenv`) which the user loads via `Tools → Scripting`. The agent polls for `heartbeat.json` before entering the loop.
 
 ## Tech Stack
 
-- **Python 3.11+** with `uv` for package management
-- **MCP Python SDK** (`mcp>=1.6`) for `mgba-live-mcp` stdio transport
-- **OpenAI-compatible API** (`openai>=1.30`) for VLM decisions — works with LM Studio, Ollama, or OpenAI
-- **Pillow** for screenshot scaling (GBA native 240×160 → 2× upscale before sending to VLM)
-- **mGBA 0.10.x** (Windows Qt build) + `mgba_live_bridge.lua` for file-based IPC
-- **Lua bridge IPC**: file-based via `~/.mgba-live-mcp/runtime/<session_id>/` — `command.lua`, `response.json`, `heartbeat.json`
-
-## Architecture & Data Flow
-
-```
-agent.py ──[stdio]--> mgba-live-mcp (uvx) ──[file IPC]--> mgba_live_bridge.lua ──[mGBA Scripting API]--> mGBA
-```
-
-1. `agent.py` spawns `uvx mgba-live-mcp` as a stdio MCP server
-2. On new session, generates `mgba_launcher.lua` (hardcodes session dir, patches `os.getenv`, calls `dofile()` on `mgba_live_bridge.lua`)
-3. User loads the ROM in mGBA (`File → Load ROM`), then loads `mgba_launcher.lua` via `Tools → Scripting → File → Load script → Run`
-4. Bridge registers a frame callback; writes `heartbeat.json` every 30 frames once the ROM is running
-5. Agent detects `heartbeat.json` and enters the game loop
-6. Each turn: `mgba_live_export_screenshot` → VLM → `mgba_live_input_tap` (returns inline screenshot, no extra round-trip)
-
-**Why `mgba_launcher.lua` instead of `--script`?** mGBA's `--script` CLI flag does not execute Lua on the Windows Qt build. The launcher is a generated wrapper that bakes in the session directory path and patches `os.getenv` so `mgba_live_bridge.lua` knows where to write IPC files — without needing shell environment variables set in the mGBA process.
-
-**Why poll for `heartbeat.json`?** Frame callbacks only fire when a ROM is actively running. `heartbeat.json` appearing means both conditions are satisfied: the script ran _and_ the ROM is loaded.
-
-## Game Profiles (`games/<name>.json`)
-
-Each profile contains:
-
-- `system_prompt` — full game-specific instructions for the VLM
-- `save_sequence` — button list for in-game save (triggered every 60 turns)
-- `ram_offsets` — named memory addresses for reading game state
-
-Add new games by creating `games/<name>.json`. See `games/pokemon-sapphire.json` as the reference. Pass `--game <name>` to use it.
+- **Python 3.11+** · `uv` for packages · `uv pip install -r requirements.txt`
+- **PyBoy** — GBC emulator, in-process synchronous API
+- **OpenAI SDK** (`openai>=1.30`) — backend-agnostic, works with LM Studio / Ollama / OpenAI
+- **Pillow** — screenshot RGBA→RGB + 2× nearest-neighbour upscale before VLM
+- **python-dotenv** — `.env` for secrets / paths
 
 ## Key Workflows
 
-**Install:**
+**Run Pokemon Silver (windowed, LM Studio):**
 
 ```bash
-uv pip install -r requirements.txt
+python pyboy_agent.py
+# ROM_PATH must be set in .env, or pass --rom "path/to/rom.gbc"
 ```
 
-**Run (Pokemon Sapphire example):**
+**Run headless (no window, max speed) for quick testing:**
 
 ```bash
-python agent.py --rom "H:/Games/GBA/ROMs/8/Pokemon Sapphire.gba" --game pokemon-sapphire
+python pyboy_agent.py --headless --max-turns 5
 ```
 
-The agent prints step-by-step mGBA instructions. Follow them: load ROM → open Scripting window → load `mgba_launcher.lua` → click Run. The agent waits for `heartbeat.json` then starts automatically.
-
-**Resume after a crash** (mGBA still running with the same session):
+**Resume after crash** (state snapshot auto-loads from `<rom>.pyboy_agent.state`):
 
 ```bash
-python agent.py --rom "..." --game pokemon-sapphire --session 20260417-102408
+python pyboy_agent.py  # state auto-resumes if snapshot exists next to ROM
 ```
 
-The session ID is printed when the agent first starts. `--session` skips the entire manual mGBA setup and re-attaches to the live bridge.
+**Switch backend:**
 
-**Backends:** `--backend lmstudio` (default, port 1234) | `--backend ollama` (port 11434) | `--backend openai`
+```bash
+python pyboy_agent.py --backend ollama   # port 11434
+python pyboy_agent.py --backend openai   # needs OPENAI_API_KEY in .env
+```
 
 ## Environment (`.env`)
 
 ```
-MGBA_PATH=C:\Program Files\mGBA\mGBA.exe
+ROM_PATH=H:/Games/GBC/ROMs/0/Pokemon Silver.gbc
 LMS_MODEL=google/gemma-4-e4b
+LMS_REASON_MODEL=google/gemma-4-e4b
+MGBA_PATH=C:\Program Files\mGBA\mGBA.exe   # only needed for agent.py
 ```
+
+## Game Profiles (`games/<name>.json`)
+
+- `system_prompt` — game-specific VLM instructions; must end with the JSON-only reply format
+- `save_sequence` — button list sent every 60 turns for in-game save
+- `ram_offsets` — hex address strings keyed by semantic name (see `games/pokemon-silver.json`)
+
+GBC profiles: no `L`/`R` buttons. Values read via `pyboy.memory[addr]`. HP is big-endian 16-bit. Money is 3-byte BCD.
 
 ## Conventions
 
-- VLM must return `{"button": "<name>", "reason": "<sentence>"}` — parse errors default to `"A"` with a logged message
-- History is capped at last 6 messages to limit token usage
-- `mgba_launcher.lua` is auto-generated each run — **do not edit by hand**
-- `mgba_live_bridge.lua` is sourced from the `mgba-live-mcp` uv cache — do not modify; if re-copying, use: `uvx --with mgba-live-mcp python -c "import mgba_live_mcp; print(mgba_live_mcp.__file__)"`
+- **perceive()** returns a JSON string. Parse failures are logged with raw output; the loop continues.
+- **decide()** returns `(button, repeat, reason, event, new_goal, map_update, new_memory)`. JSON parse errors default to `"A"`.
+- **Thinking**: `{"enable_thinking": True}` is passed as `extra_body` to localhost backends automatically.
+- **History** is capped at 10 messages. `story_log` injects the last 15 entries per turn.
+- **`has_ram`**: `bool({k for k in ram_offsets if k != "note"})` — always check before reading memory.
+- Open files under `games/` with `encoding="utf-8"` (contains `¥` character).
 
 ## Key Files
 
-| File                          | Purpose                                         |
-| ----------------------------- | ----------------------------------------------- |
-| `agent.py`                    | Entire agent: CLI, VLM, MCP wrappers, game loop |
-| `games/pokemon-sapphire.json` | Reference game profile                          |
-| `mgba_live_bridge.lua`        | Lua IPC bridge (do not modify)                  |
-| `mgba_launcher.lua`           | Auto-generated session launcher (do not commit) |
-| `.env`                        | Local secrets and paths (not committed)         |
+| File                                                 | Purpose                                                    |
+| ---------------------------------------------------- | ---------------------------------------------------------- |
+| `pyboy_agent.py`                                     | Primary agent — entire loop, VLM, WorldMap, RAM reader     |
+| `agent.py`                                           | Legacy mGBA agent — do not break; shares `games/` profiles |
+| `games/pokemon-silver.json`                          | Reference GBC profile with RAM offsets                     |
+| `games/pokemon-sapphire.json`                        | Reference GBA profile                                      |
+| `.github/instructions/agent-loop.instructions.md`    | `pyboy_agent.py` editing guide                             |
+| `.github/instructions/game-profiles.instructions.md` | `games/*.json` authoring guide                             |
+| `.github/todos.md`                                   | Backlog and completed items                                |

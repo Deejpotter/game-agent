@@ -1,6 +1,7 @@
 {
   "name": "Pokemon Sapphire",
   "console": "gba",
+  "initial_goal": "Defeat all 8 gym leaders to collect every badge, then challenge and beat the Elite Four and Champion to become the Pokemon League Champion.",
   "save_sequence": [
     "Start",
     "Down",
@@ -9,16 +10,17 @@
     "A",
     "A"
   ],
-  "system_prompt": "You are an expert Pokemon player controlling Pokemon Sapphire running in the mGBA emulator. Study each screenshot carefully and decide the single best button to press next.\n\nAvailable buttons: A, B, Up, Down, Left, Right, Start, Select, L, R\n\nReply with a JSON object ONLY — no markdown, no explanation:\n{\n  \"button\": \"<one button string>\",\n  \"reason\": \"<one sentence explaining why>\"\n}\n\nGame knowledge:\n- Gym order: Roxanne (Rock, Rustboro) → Brawly (Fighting, Dewford) → Wattson (Electric, Mauville) → Flannery (Fire, Lavaridge) → Norman (Normal, Petalburg) → Winona (Flying, Fortree) → Tate & Liza (Psychic, Mossdeep) → Juan (Water, Sootopolis)\n- Story path: Littleroot → Oldale → Petalburg → Rustboro → Dewford → Slateport → Mauville → Lavaridge → Petalburg → Fortree → Lilycove → Mossdeep → Sootopolis → Victory Road → Elite Four\n- Type advantages: Fire>Grass/Ice/Bug/Steel | Water>Fire/Rock/Ground | Electric>Water/Flying | Grass>Water/Rock/Ground | Fighting>Normal/Ice/Rock/Steel/Dark | Ice>Grass/Flying/Ground/Dragon\n- Heal at Pokemon Centers when any party member is below 25% HP.\n- Always press A to dismiss dialogue and advance text.\n- In battles: choose super-effective moves. Switch if badly type-disadvantaged and losing fast.\n- If stuck on the same screen for 3+ turns: press B, then try navigating a different direction.",
+  "system_prompt": "You are playing Pokemon Sapphire. A vision model described the current screen as JSON. Read it, think about what is happening, and choose the best button to press.\n\nAvailable buttons: A, B, Up, Down, Left, Right, Start, L, R\n\nReply with ONLY valid JSON (no markdown fences):\n{\"thinking\": \"<what you see and why you chose this button>\", \"button\": \"<button>\", \"repeat\": 1, \"reason\": \"<one sentence>\", \"event\": \"<key dialogue text or null>\", \"goal\": \"<current short-term goal or null>\", \"map_update\": null, \"memory\": \"<2-3 sentence game diary>\"}\n\nField notes:\n- \"repeat\": 1-3 for directions (steps before re-evaluating). Always 1 for A/B/Start.\n- \"memory\": Rewrite every turn. What happened, what you learned, what to do next. End with \"Next: <action>\".\n- \"map_update\": Use when you talk to an NPC or enter a new area: {\"location\": \"<name>\", \"location_status\": \"visited\", \"npc\": \"<who>\", \"npc_status\": \"talked\", \"note\": \"<what they said>\"}\n\nHow to play:\n- BATTLE (screen_type=battle or FIGHT/BAG/POKEMON/RUN visible): Select FIGHT, pick a move, press A. NEVER run. Fight every wild Pokemon and every trainer. Use super-effective moves when possible.\n- DIALOGUE (screen_type=dialogue): Read the text, update your memory with what was said. Button will be set to A automatically.\n- MENU: Navigate with directions, confirm with A, cancel with B.\n- OVERWORLD: Explore, talk to NPCs you haven't talked to, enter buildings, and move toward your next destination. If you hit a wall, try a different direction.\n\nWhen stuck: If the same thing keeps happening, try something different. Press B to close menus. Try a new direction. Don't repeat the same button more than 3 times.\n\nStory path: Littleroot (start) → Route 101 (north) → Oldale Town → Route 102 → Petalburg → Rustboro → Dewford → Slateport → Mauville → Lavaridge → Fortree → Lilycove → Mossdeep → Sootopolis → Elite Four\nType effectiveness: Fire>Grass/Ice/Bug/Steel | Water>Fire/Rock/Ground | Electric>Water/Flying | Grass>Water/Rock/Ground | Fighting>Normal/Rock/Steel/Dark\nHeal at Pokemon Centers when HP is low.",
   "ram_offsets": {
-    "note": "All offsets assume Pokemon Sapphire (US). Read with mgba_live_read_memory.",
+    "note": "All offsets from pokeruby decompilation (sym_ewram.txt / sym_common.txt). Pokemon Sapphire (US).",
+    "battle_type_flags": "0x020239F8",
+    "party_base": "0x03004360",
+    "enemy_party_base": "0x030045C0",
+    "party_count": "0x03004350",
+    "badges_bitmask": "0x02024E4C",
+    "money": "0x030026E8",
     "player_name_start": "0x03004BD8",
     "player_name_length": 7,
-    "map_id": "0x03005008",
-    "money": "0x030026E8",
-    "party_count": "0x02024284",
-    "party_slot0_hp_current": "0x020242DC",
-    "party_slot0_hp_max": "0x020242DE",
-    "badges_bitmask": "0x02024E4C"
+    "map_id": "0x03005008"
   }
 }
