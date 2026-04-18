@@ -13,14 +13,14 @@ All fields must be present. Use `"console": "gbc"` for Game Boy Color, `"console
 
 ```json
 {
-  "name": "Human-readable game name",
-  "console": "gbc",
-  "initial_goal": "One sentence — the overarching win condition.",
-  "system_prompt": "...",
-  "save_sequence": ["Start", "Down", "A"],
-  "ram_offsets": {
-    "note": "All offsets assume <Game> (<Region>). Read via pyboy.memory[addr]."
-  }
+	"name": "Human-readable game name",
+	"console": "gbc",
+	"initial_goal": "One sentence — the overarching win condition.",
+	"system_prompt": "...",
+	"save_sequence": ["Start", "Down", "A"],
+	"ram_offsets": {
+		"note": "All offsets assume <Game> (<Region>). Read via pyboy.memory[addr]."
+	}
 }
 ```
 
@@ -29,6 +29,7 @@ All fields must be present. Use `"console": "gbc"` for Game Boy Color, `"console
 The system prompt is given to the **reasoning model** (`decide()`), not the vision model. It never sees the raw screenshot — only the JSON scene description from `perceive()`.
 
 **Required sections (in order):**
+
 1. Role statement + available buttons
 2. Reply format — ALWAYS include all eight fields: `thinking`, `button`, `repeat`, `reason`, `event`, `goal`, `memory`, `map_update`
 3. Decision priority ladder (dialogue → menu → battle → NPC → overworld)
@@ -57,20 +58,20 @@ Values are hex address strings. Addresses are read via `pyboy.memory[addr]` (sin
 
 **Standard GBC keys** (from `games/pokemon-silver.json`):
 
-| Key | Type | Notes |
-|---|---|---|
-| `player_name_start` | hex addr | First byte of player name; `player_name_length` gives count |
-| `map_bank` | hex addr | Current map bank (1 byte) |
-| `map_number` | hex addr | Current map number (1 byte) |
-| `x_pos` | hex addr | Player X tile position |
-| `y_pos` | hex addr | Player Y tile position |
-| `money` | hex addr | BCD-encoded, `money_length` bytes (default 3) |
-| `johto_badges_bitmask` | hex addr | 8-bit bitmask; bit 0 = Falkner … bit 7 = Clair |
-| `kanto_badges_bitmask` | hex addr | 8-bit bitmask for Kanto badges |
-| `party_count` | hex addr | Number of Pokémon in party |
-| `party_slot0_hp_current` | hex addr | Big-endian 16-bit — read 2 bytes |
-| `party_slot0_hp_max` | hex addr | Big-endian 16-bit — read 2 bytes |
-| `party_slot0_level` | hex addr | 1 byte |
+| Key                      | Type     | Notes                                                       |
+| ------------------------ | -------- | ----------------------------------------------------------- |
+| `player_name_start`      | hex addr | First byte of player name; `player_name_length` gives count |
+| `map_bank`               | hex addr | Current map bank (1 byte)                                   |
+| `map_number`             | hex addr | Current map number (1 byte)                                 |
+| `x_pos`                  | hex addr | Player X tile position                                      |
+| `y_pos`                  | hex addr | Player Y tile position                                      |
+| `money`                  | hex addr | BCD-encoded, `money_length` bytes (default 3)               |
+| `johto_badges_bitmask`   | hex addr | 8-bit bitmask; bit 0 = Falkner … bit 7 = Clair              |
+| `kanto_badges_bitmask`   | hex addr | 8-bit bitmask for Kanto badges                              |
+| `party_count`            | hex addr | Number of Pokémon in party                                  |
+| `party_slot0_hp_current` | hex addr | Big-endian 16-bit — read 2 bytes                            |
+| `party_slot0_hp_max`     | hex addr | Big-endian 16-bit — read 2 bytes                            |
+| `party_slot0_level`      | hex addr | 1 byte                                                      |
 
 **HP is big-endian 16-bit:** `hp = (pyboy.memory[addr] << 8) | pyboy.memory[addr + 1]`
 

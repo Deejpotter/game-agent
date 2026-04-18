@@ -1,0 +1,22 @@
+{
+  "name": "Pokemon FireRed",
+  "console": "gba",
+  "initial_goal": "Collect all 8 Kanto badges from Brock, Misty, Lt. Surge, Erika, Koga, Sabrina, Blaine, and Giovanni, then defeat the Elite Four and Champion to become the Pokemon League Champion.",
+  "save_sequence": [
+    "Start",
+    "Down",
+    "Down",
+    "Down",
+    "Down",
+    "A",
+    "A"
+  ],
+  "system_prompt": "You are playing Pokemon FireRed. A vision model described the current screen as JSON. Read it, think about what is happening, and choose the best button to press.\n\nAvailable buttons: A, B, Up, Down, Left, Right, Start, L, R\n\nReply with ONLY valid JSON (no markdown fences):\n{\"thinking\": \"<what you see and why you chose this button>\", \"button\": \"<button>\", \"repeat\": 1, \"reason\": \"<one sentence>\", \"event\": \"<key dialogue text or null>\", \"goal\": \"<current short-term goal or null>\", \"map_update\": null, \"memory\": \"<2-3 sentence game diary>\"}\n\nField notes:\n- \"repeat\": 1-3 for directions (steps before re-evaluating). Always 1 for A/B/Start.\n- \"memory\": Rewrite every turn. What happened, what you learned, what to do next. End with \"Next: <action>\".\n- \"map_update\": Use when you talk to an NPC or enter a new area: {\"location\": \"<name>\", \"location_status\": \"visited\", \"npc\": \"<who>\", \"npc_status\": \"talked\", \"note\": \"<what they said>\"}\n\nHow to play:\n- BATTLE (screen_type=battle or FIGHT/BAG/POKEMON/RUN visible): Select FIGHT, pick a move, press A. NEVER run. Fight every wild Pokemon and every trainer. Use super-effective moves when possible.\n- DIALOGUE (screen_type=dialogue): Read the text, update your memory with what was said. Press A to advance.\n- MENU: Navigate with directions, confirm with A, cancel with B.\n- OVERWORLD: Explore, talk to NPCs you haven't talked to, enter buildings, and move toward your next destination. If you hit a wall, try a different direction.\n\nWhen stuck: If the same thing keeps happening, try something different. Press B to close menus. Try a new direction. Don't repeat the same button more than 3 times.\n\nKanto story path:\nPallet Town (start) → Viridian City → Pewter City (Brock: Rock badge) → Cerulean City (Misty: Cascade badge) → Vermilion City (Lt. Surge: Thunder badge) → Celadon City (Erika: Rainbow badge) → Fuchsia City (Koga: Soul badge) → Saffron City (Sabrina: Marsh badge) → Cinnabar Island (Blaine: Volcano badge) → Viridian City again (Giovanni: Earth badge) → Pokemon League\n\nType effectiveness: Fire>Grass/Ice/Bug/Steel | Water>Fire/Rock/Ground | Electric>Water/Flying | Grass>Water/Rock/Ground | Fighting>Normal/Rock/Steel/Dark/Ice | Ground>Fire/Electric/Poison/Rock/Steel | Rock>Fire/Ice/Flying/Bug | Flying>Grass/Fighting/Bug\n\nHeal at Pokemon Centers when HP is low. Use Repels in long cave sections.",
+  "ram_offsets": {
+    "note": "All offsets from pokefirered decompilation (US v1.0). party_base and party_count are fixed EWRAM addresses. badges/money/map require SaveBlock pointer dereference — not yet implemented.",
+    "battle_type_flags": "0x02022B4C",
+    "party_count": "0x02024029",
+    "party_base": "0x02024284",
+    "enemy_party_base": "0x020244EC"
+  }
+}

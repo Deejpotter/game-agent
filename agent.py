@@ -1171,23 +1171,64 @@ async def run_agent(
     runtime_dir = Path.home() / ".mgba-live-mcp" / "runtime"
 
     # ── Session management ──────────────────────────────────────────────────
-    if session_id:
-        # Resume path: the bridge is already running in mGBA with an existing
-        # session directory.  Just point BridgeClient at its IPC files.
-        ipc_dir = runtime_dir / session_id
-        if not (ipc_dir / "heartbeat.json").exists():
+    # Three paths:
+    #   A) --session <id> supplied → resume that specific session
+    #   B) no --session but a recent heartbeat (<5 min) found → offer auto-resume
+    #   C) neither → new session (generate launcher, wait for mGBA)
+
+    def _validate_session(sid: str) -> Path:
+        """Return ipc_dir if heartbeat exists, else raise."""
+        d = runtime_dir / sid
+        if not (d / "heartbeat.json").exists():
             raise RuntimeError(
-                f"No heartbeat.json found for session {session_id}. "
+                f"No heartbeat.json found for session {sid}. "
                 "Is mGBA still running with the bridge script loaded?"
             )
+        return d
+
+    _new_session = False
+    if session_id:
+        # Path A: explicit --session
+        ipc_dir = _validate_session(session_id)
         print(f"[agent] Resuming session {session_id}")
     else:
-        # New session path: generate mgba_launcher.lua then wait for the user
-        # to load it in mGBA's Scripting window.
-        session_id = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
-        ipc_dir = runtime_dir / session_id
-        ipc_dir.mkdir(parents=True, exist_ok=True)
+        # Path B: auto-resume scan
+        _resume_candidate: str | None = None
+        if runtime_dir.exists():
+            _cutoff = time.time() - 300  # 5 minutes
+            _candidates: list[tuple[float, str]] = [
+                ((_d / "heartbeat.json").stat().st_mtime, _d.name)
+                for _d in runtime_dir.iterdir()
+                if _d.is_dir() and (_d / "heartbeat.json").exists()
+                and (_d / "heartbeat.json").stat().st_mtime >= _cutoff
+            ]
+            if _candidates:
+                _candidates.sort(reverse=True)
+                _resume_candidate = _candidates[0][1]
 
+        if _resume_candidate:
+            print(f"[agent] Found recent session: {_resume_candidate}")
+            print("[agent] Press Enter to resume, 'n' for new session, or type a session ID: ", end="", flush=True)
+            _ans = sys.stdin.readline().strip()
+            if _ans.lower() in ("", "y", "yes"):
+                session_id = _resume_candidate
+            elif _ans.lower() in ("n", "no", "new"):
+                session_id = None  # fall through to new session
+            else:
+                session_id = _ans  # user typed a custom session ID
+
+        if session_id:
+            # Resume (either auto-candidate or user-supplied custom ID)
+            ipc_dir = _validate_session(session_id)
+            print(f"[agent] Resuming session {session_id}")
+        else:
+            # Path C: brand-new session
+            _new_session = True
+            session_id = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+            ipc_dir = runtime_dir / session_id
+            ipc_dir.mkdir(parents=True, exist_ok=True)
+
+    if _new_session:
         bridge_path = Path(__file__).parent / "mgba_live_bridge.lua"
         launcher_path = Path(__file__).parent / "mgba_launcher.lua"
 
@@ -1251,7 +1292,6 @@ dofile("{bridge_lua}")
             await asyncio.sleep(2.0)
         print("[agent] Bridge ready! Starting game loop…")
 
-    # ── Bridge client ───────────────────────────────────────────────────────
     bridge = BridgeClient(ipc_dir)
 
     # ── RAM state reader ────────────────────────────────────────────────────

@@ -5,11 +5,11 @@
 | Status | Item |
 |--------|------|
 | Todo | **Test `--script` flag on mGBA 0.11.0** — when 0.11.0 releases, verify `mGBA.exe --script mgba_launcher.lua` works end-to-end on Windows Qt. If confirmed, the manual scripting window step can be removed from the startup flow entirely. |
-| Todo | **Session auto-resume for agent.py** — on startup, scan `~/.mgba-live-mcp/runtime/` for the newest session dir and offer to re-attach if `heartbeat.json` is recent (e.g. < 5 min old). Currently requires manually passing `--session <id>`. |
-| Todo | **Add `games/pokemon-firered.json`** — gym order, story path, and RAM offsets differ from Sapphire. |
-| Todo | **HP turns valid after state load** — RAM HP addresses return 0/0 for a few frames after `pyboy.load_state()`. Detect when HP becomes valid (e.g. `hp_max > 0` for 2+ consecutive turns) before trusting it in the prompt. |
-| Todo | **operator override UI** — instead of writing to `agent_message.txt` manually, add a simple `--message "..."` CLI subcommand or a small stdin reader thread so interventions can be typed directly into the agent terminal. |
-| In Progress | **Verify pyboy_agent.py wall detection fix** — RAM position delta now used as primary check; needs a full run in a real indoor room to confirm no false walls. |
+| Completed | **Session auto-resume for agent.py** — on startup, scans `~/.mgba-live-mcp/runtime/` for the newest session dir with a heartbeat newer than 5 min; prompts to resume, start new, or enter a custom session ID. |
+| Completed | **Add `games/pokemon-firered.json`** — gym order, story path, and EWRAM RAM offsets added. Badges/money/map require SaveBlock pointer dereference (not yet implemented in GameState). |
+| Completed | **HP turns valid after state load** — RAM HP addresses return 0/0 for a few frames after `pyboy.load_state()`. Now requires `hp_max > 0` for 2+ consecutive turns (`_hp_valid_turns >= 2`) before trusting HP in the prompt or showing LOW HP warnings. |
+| Completed | **operator override UI** — stdin reader daemon thread added; messages typed directly into the terminal are queued and injected as operator overrides each turn. Legacy `agent_message.txt` drop-file also still supported. |
+| Completed | **Verify pyboy_agent.py wall detection fix** — RAM position delta used as primary check; hash fallback only when no RAM. Confirmed in testing. |
 | Completed | Refactor agent.py from Pokemon-specific to generic `--game` flag |
 | Completed | Create `games/pokemon-sapphire.json` reference profile |
 | Completed | Confirm LM Studio + `google/gemma-4-e4b` working at port 1234 |
