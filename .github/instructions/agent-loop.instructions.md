@@ -1,36 +1,42 @@
 ---
 description: "Use when editing pyboy_agent.py — the main game loop, VLM integration, WorldMap, RAM reader, or CLI args. Covers two-stage perception, wall detection, windowed threading, and extension patterns."
-applyTo: "pyboy_agent.py"
+applyTo: "pyboy_agent.py,pyboy_agent/loop.py"
 ---
 
-# pyboy_agent.py — Editing Guide
+# pyboy_agent — Agent Loop Editing Guide
+
+Applies to both **`pyboy_agent.py`** (legacy monolith) and **`pyboy_agent/loop.py`** (package `run_agent()`). The package is the canonical version — prefer editing it. Do not break the monolith; it shares `games/` profiles and `.pyboy_agent.state` snapshot files.
 
 ## Turn Loop Structure
 
 Each turn runs in this order:
 
 1. **RAM read** — `read_ram_state()` at the TOP of the turn. Result (`_ram_state`) is used for the nav-hint wall key, the pre-move position snapshot, and the decide prompt. Do not read RAM twice per turn.
-2. **Nav hints** — wall warnings, stuck-loop warnings, retalk guards, all assembled into `nav_hint`.
-3. **`perceive()`** — vision model call: screenshot → JSON scene description.
-4. **Scene parse** — `json.loads(scene)`, normalise directions to title case, extract nameplate/location/dialogue.
-5. **`decide()`** — reasoning model call: scene + RAM + nav hint + history → `(button, repeat, reason, event, new_goal, map_update, new_memory)`.
-6. **Button press** — `press_button()` or `walk_steps()`, then read post-move RAM for wall detection.
-7. **Wall detection** — compare pre/post RAM `x_pos`/`y_pos`. Record wall under `map_{bank}_{number}` key.
-8. **History + notes** — append to `history` (capped at 10), flush `notes.json` + state snapshot.
+2. **Nav hints** — `build_nav_hints()` (package) / inline code (monolith) — wall warnings, stuck-loop warnings, retalk guards, badge-phase guide, all assembled into `nav_hint`.
+3. **RAM fast-paths** — skip VLM entirely for obvious states: `dialogue_open → A`, `menu_open (not battle) → B`, `in_battle (odd turns) → A`.
+4. **`perceive()`** — vision model call: screenshot → JSON scene description. Skipped when RAM fast-paths fire.
+5. **Scene parse** — `json.loads(scene)`, normalise directions to title case, strip `passable_directions` when RAM position is available (VLM values are unreliable).
+6. **`decide()`** — reasoning model call: scene + RAM + nav hint + history → 8-tuple.
+7. **Button press** — `press_button()` or `walk_steps()`, then read post-move RAM for wall detection.
+8. **Wall detection** — `detect_and_record_wall()` — compare pre/post RAM `x_pos`/`y_pos`. Record wall under per-tile key.
+9. **History + notes** — append to `history` (capped at `MAX_HISTORY_MESSAGES`), flush `NotesTracker` + state snapshot.
 
 ## Two-Stage VLM Pipeline
 
 ```
 perceive(vision_client, vision_model, screenshot_b64)
-    └── returns JSON string (screen_type, passable_directions, player_facing, etc.)
+    └── returns JSON string (screen_type, player_facing, location_name, etc.)
+        Note: passable_directions is omitted from the prompt — RAM delta is authoritative.
 
-decide(reason_client, reason_model, scene_json, ram_text, nav_hint, history, ...)
-    └── returns (button, repeat, reason, event, new_goal, map_update, new_memory)
+decide(reason_client, reason_model, scene_json, history, system_prompt, ...)
+    └── returns 8-tuple:
+        (button, repeat, reason, event, new_goal, map_update, new_memory, thinking)
+        thinking = model chain-of-thought — logged only, never acted on
 ```
 
 - `perceive()` must NOT include strategy — describe only. `max_tokens=2048`.
 - `decide()` never receives the raw image. `max_tokens=4096`, `timeout=120s`.
-- Both calls wrapped in `_with_retry()` (6 retries, exponential backoff).
+- Both calls wrapped in `with_retry()` (6 retries, exponential backoff).
 - `enable_thinking: True` injected via `extra_body` for any `http://localhost` backend.
 
 ## Wall Detection (critical — read before touching)
@@ -39,14 +45,23 @@ decide(reason_client, reason_model, scene_json, ram_text, nav_hint, history, ...
 
 **Fallback:** Screenshot hash comparison, used only when `has_ram` is False.
 
-**Wall keys:** Always use `map_{bank}_{number}` (from RAM), never the VLM's fuzzy location name. This prevents walls from bleeding between rooms that the VLM names similarly.
+**Wall keys:** Always use `map_{bank}_{number}_x{cx}_y{cy}` (per-tile, from RAM), never the VLM's fuzzy location name. Per-tile keys mean a wall in one doorway doesn't block the entire room.
 
 ```python
-# Correct pattern:
-_wall_location_key = f"map_{_ram_state['map_bank']}_{_ram_state['map_number']}"
-world_map.record_wall(_wall_location_key, button)
-known_walls = world_map.get_walls(_wall_location_key)
+# Package pattern (detect_and_record_wall in navigation/wall_tracker.py):
+_tile_key = f"map_{_mb}_{_mn}_x{_cx}_y{_cy}"
+wall_detected, wall_button = detect_and_record_wall(
+    pyboy, button=button, old_screenshot_b64=old_b64,
+    new_screenshot_b64=current_b64, pre_ram_state=_ram_state,
+    has_ram=has_ram, ram_offsets=ram_offsets,
+    tile_key=_tile_key, world_map=world_map,
+    pre_map_bank=_pre_mb, pre_map_number=_pre_mn,
+)
 ```
+
+**Wall-reset guard:** If all 4 cardinal directions are blocked at the current tile, it is physically impossible — a frozen dialogue or cutscene is the likely cause. Press B×5 + A, then `world_map.clear_walls(tile_key)`.
+
+**Stuck-tile recovery:** If `turns_at_same_tile >= STUCK_TILE_THRESHOLD` (8), press B×3 every 4 turns to break out of frozen states.
 
 ## Windowed Mode Threading
 
@@ -90,10 +105,12 @@ HP is big-endian 16-bit. Money is 3-byte BCD. Guard against `hp_max == 0` (RAM n
 
 Persistent cross-session tracker stored at `~/.pyboy-agent/world_maps/<game-slug>.json`.
 
-- `world_map.record_wall(key, direction)` — mark direction as impassable
-- `world_map.get_walls(key)` — returns set of blocked directions
+- `world_map.record_wall(key, direction)` — mark direction as impassable at that tile
+- `world_map.get_walls(key)` — returns set of blocked directions for that tile
+- `world_map.clear_walls(key)` — remove all walls for a tile (used by wall-reset guard)
 - `world_map.record_tested(key, direction)` — mark a direction as tried (passable or not)
 - `world_map.update(name, location_status=...)` — update location status
+- `best_location_key(world_map, name)` — fuzzy match a VLM location name to a known key
 
 ## Do Not Touch
 

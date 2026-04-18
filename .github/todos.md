@@ -5,6 +5,16 @@
 | Status | Item |
 |--------|------|
 | Todo | **Test `--script` flag on mGBA 0.11.0** — when 0.11.0 releases, verify `mGBA.exe --script mgba_launcher.lua` works end-to-end on Windows Qt. If confirmed, the manual scripting window step can be removed from the startup flow entirely. |
+| Todo | **Sync monolith `pyboy_agent.py` with package improvements** — the per-tile wall key format (`map_{bank}_{number}_x{cx}_y{cy}`) and RAM fast-paths (dialogue/menu/battle shortcuts) from the package should be back-ported to `pyboy_agent.py`. |
+| Todo | **RAM fast-path: skip perceive() on dialogue frames** — when `dialogue_open` RAM flag is True, the VLM call can be skipped entirely. Monolith doesn't do this yet. |
+| Completed | **Refactor pyboy_agent.py monolith into `pyboy_agent/` package** — 18 modules: config, backends, profiles, emulator, ram/{gen2_tables,reader,formatter}, vision/perceive, llm/{retry,decide}, navigation/{world_map,hints,wall_tracker}, goals/{phase_guide,tracker}, loop, main, __main__. Entry point: `python -m pyboy_agent`. |
+| Completed | **Fix root nav bug: pokemon-silver.json had Crystal WRAM addresses** — `x_pos: 0xD4E6`, `y_pos: 0xD4E5` were Crystal addresses; Silver uses `0xDA02`, `0xDA03`. Position always read (0,0) → tile key stuck at `map_0_0_x0_y0` → all 4 directions recorded as walls → infinite B-press reset loop. |
+| Completed | **Per-tile wall keys** — changed from `map_{bank}_{number}` (per-room) to `map_{bank}_{number}_x{cx}_y{cy}` (per-tile). Prevents a wall in one doorway from blocking the entire room. |
+| Completed | **build_nav_hints() extracted** — all 12 nav hint sources in one pure function in `navigation/hints.py`. Edit there for any new hint logic. |
+| Completed | **detect_and_record_wall() extracted** — RAM delta primary, screenshot hash fallback, warp detection, all in `navigation/wall_tracker.py`. |
+| Completed | **decide() now returns 8-tuple** — added `thinking` as the 8th element (model chain-of-thought; logged, not acted on). |
+| Completed | **passable_directions stripped from decide() when RAM available** — VLM direction values are unreliable; RAM position delta is authoritative. |
+| Completed | **Update copilot-instructions.md + path-specific instructions** — reflects new package structure, module table, 8-tuple decide(), per-tile wall keys, RAM fast-paths. |
 | Completed | **Session auto-resume for agent.py** — on startup, scans `~/.mgba-live-mcp/runtime/` for the newest session dir with a heartbeat newer than 5 min; prompts to resume, start new, or enter a custom session ID. |
 | Completed | **Add `games/pokemon-firered.json`** — gym order, story path, and EWRAM RAM offsets added. Badges/money/map require SaveBlock pointer dereference (not yet implemented in GameState). |
 | Completed | **HP turns valid after state load** — RAM HP addresses return 0/0 for a few frames after `pyboy.load_state()`. Now requires `hp_max > 0` for 2+ consecutive turns (`_hp_valid_turns >= 2`) before trusting HP in the prompt or showing LOW HP warnings. |
