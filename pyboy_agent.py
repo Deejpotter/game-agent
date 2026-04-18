@@ -58,11 +58,13 @@ import hashlib
 import io
 import json
 import os
+import queue
 import re
 import concurrent.futures
 import signal
 import sys
 import textwrap
+import threading
 import time
 from pathlib import Path
 from typing import Any
@@ -274,6 +276,70 @@ _GEN2_CHAR: dict[int, str] = {
     0x7F: " ",  # space
 }
 
+# Gen 2 move IDs 1-251 (Gold/Silver). Used to decode party move slots.
+# HM moves: Cut=15, Fly=19, Surf=57, Strength=70, Flash=148, Whirlpool=250, Waterfall=127
+_GEN2_MOVE: dict[int, str] = {
+    1: "Pound", 2: "Karate Chop", 3: "DoubleSlap", 4: "Comet Punch", 5: "Mega Punch",
+    6: "Pay Day", 7: "Fire Punch", 8: "Ice Punch", 9: "ThunderPunch", 10: "Scratch",
+    11: "ViceGrip", 12: "Guillotine", 13: "Razor Wind", 14: "Swords Dance", 15: "Cut",
+    16: "Gust", 17: "Wing Attack", 18: "Whirlwind", 19: "Fly", 20: "Bind",
+    21: "Slam", 22: "Vine Whip", 23: "Stomp", 24: "Double Kick", 25: "Mega Kick",
+    26: "Jump Kick", 27: "Rolling Kick", 28: "Sand Attack", 29: "Headbutt", 30: "Horn Attack",
+    31: "Fury Attack", 32: "Horn Drill", 33: "Tackle", 34: "Body Slam", 35: "Wrap",
+    36: "Take Down", 37: "Thrash", 38: "Double-Edge", 39: "Tail Whip", 40: "Poison Sting",
+    41: "Twineedle", 42: "Pin Missile", 43: "Leer", 44: "Bite", 45: "Growl",
+    46: "Roar", 47: "Sing", 48: "Supersonic", 49: "SonicBoom", 50: "Disable",
+    51: "Acid", 52: "Ember", 53: "Flamethrower", 54: "Mist", 55: "Water Gun",
+    56: "Hydro Pump", 57: "Surf", 58: "Ice Beam", 59: "Blizzard", 60: "Psybeam",
+    61: "BubbleBeam", 62: "Aurora Beam", 63: "Hyper Beam", 64: "Peck", 65: "Drill Peck",
+    66: "Submission", 67: "Low Kick", 68: "Counter", 69: "Seismic Toss", 70: "Strength",
+    71: "Absorb", 72: "Mega Drain", 73: "Leech Seed", 74: "Growth", 75: "Razor Leaf",
+    76: "SolarBeam", 77: "PoisonPowder", 78: "Stun Spore", 79: "Sleep Powder", 80: "Petal Dance",
+    81: "String Shot", 82: "Dragon Rage", 83: "Fire Spin", 84: "ThunderShock", 85: "Thunderbolt",
+    86: "Thunder Wave", 87: "Thunder", 88: "Rock Throw", 89: "Earthquake", 90: "Fissure",
+    91: "Dig", 92: "Toxic", 93: "Confusion", 94: "Psychic", 95: "Hypnosis",
+    96: "Meditate", 97: "Agility", 98: "Quick Attack", 99: "Rage", 100: "Teleport",
+    101: "Night Shade", 102: "Mimic", 103: "Screech", 104: "Double Team", 105: "Recover",
+    106: "Harden", 107: "Minimize", 108: "Smokescreen", 109: "Confuse Ray", 110: "Withdraw",
+    111: "Defense Curl", 112: "Barrier", 113: "Light Screen", 114: "Haze", 115: "Reflect",
+    116: "Focus Energy", 117: "Bide", 118: "Metronome", 119: "Mirror Move", 120: "Selfdestruct",
+    121: "Egg Bomb", 122: "Lick", 123: "Smog", 124: "Sludge", 125: "Bone Club",
+    126: "Fire Blast", 127: "Waterfall", 128: "Clamp", 129: "Swift", 130: "Skull Bash",
+    131: "Spike Cannon", 132: "Constrict", 133: "Amnesia", 134: "Kinesis", 135: "Softboiled",
+    136: "Hi Jump Kick", 137: "Glare", 138: "Dream Eater", 139: "Poison Gas", 140: "Barrage",
+    141: "Leech Life", 142: "Lovely Kiss", 143: "Sky Attack", 144: "Transform", 145: "Bubble",
+    146: "Dizzy Punch", 147: "Spore", 148: "Flash", 149: "Psywave", 150: "Splash",
+    151: "Acid Armor", 152: "Crabhammer", 153: "Explosion", 154: "Fury Swipes", 155: "Bonemerang",
+    156: "Rest", 157: "Rock Slide", 158: "Hyper Fang", 159: "Sharpen", 160: "Conversion",
+    161: "Tri Attack", 162: "Super Fang", 163: "Slash", 164: "Substitute", 165: "Struggle",
+    166: "Sketch", 167: "Triple Kick", 168: "Thief", 169: "Spider Web", 170: "Mind Reader",
+    171: "Nightmare", 172: "Flame Wheel", 173: "Snore", 174: "Curse", 175: "Flail",
+    176: "Conversion 2", 177: "Aeroblast", 178: "Cotton Spore", 179: "Reversal", 180: "Spite",
+    181: "Powder Snow", 182: "Protect", 183: "Mach Punch", 184: "Scary Face", 185: "Faint Attack",
+    186: "Sweet Kiss", 187: "Belly Drum", 188: "Sludge Bomb", 189: "Mud-Slap", 190: "Octazooka",
+    191: "Spikes", 192: "Zap Cannon", 193: "Foresight", 194: "Destiny Bond", 195: "Perish Song",
+    196: "Icy Wind", 197: "Detect", 198: "Bone Rush", 199: "Lock-On", 200: "Outrage",
+    201: "Sandstorm", 202: "Giga Drain", 203: "Endure", 204: "Charm", 205: "Rollout",
+    206: "False Swipe", 207: "Swagger", 208: "Milk Drink", 209: "Spark", 210: "Fury Cutter",
+    211: "Steel Wing", 212: "Mean Look", 213: "Attract", 214: "Sleep Talk", 215: "Heal Bell",
+    216: "Return", 217: "Present", 218: "Frustration", 219: "Safeguard", 220: "Pain Split",
+    221: "Sacred Fire", 222: "Magnitude", 223: "DynamicPunch", 224: "Megahorn", 225: "DragonBreath",
+    226: "Baton Pass", 227: "Encore", 228: "Pursuit", 229: "Rapid Spin", 230: "Sweet Scent",
+    231: "Iron Tail", 232: "Metal Claw", 233: "Vital Throw", 234: "Morning Sun", 235: "Synthesis",
+    236: "Moonlight", 237: "Hidden Power", 238: "Cross Chop", 239: "Twister", 240: "Rain Dance",
+    241: "Sunny Day", 242: "Crunch", 243: "Mirror Coat", 244: "Psych Up", 245: "ExtremeSpeed",
+    246: "AncientPower", 247: "Shadow Ball", 248: "Future Sight", 249: "Rock Smash",
+    250: "Whirlpool", 251: "Beat Up",
+}
+
+# Gen 2 type IDs. Normal=0..Steel=8, then Fire=20..Dark=27 (gap is intentional in Gen 2).
+_GEN2_TYPE: dict[int, str] = {
+    0: "Normal", 1: "Fighting", 2: "Flying", 3: "Poison",
+    4: "Ground", 5: "Rock", 6: "Bug", 7: "Ghost", 8: "Steel",
+    20: "Fire", 21: "Water", 22: "Grass", 23: "Electric",
+    24: "Psychic", 25: "Ice", 26: "Dragon", 27: "Dark",
+}
+
 _JOHTO_BADGES = [
     (0x01, "Zephyr (Falkner)"),
     (0x02, "Hive (Bugsy)"),
@@ -336,6 +402,24 @@ def read_ram_state(pyboy: PyBoy, ram_offsets: dict) -> dict:
         except Exception:
             state[key] = None
 
+    # UI flags
+    try:
+        df_addr = ram_offsets.get("dialogue_flag") or ram_offsets.get("text_flags") or "0xC4F2"
+        df_addr = int(df_addr, 16)
+        state["dialogue_open"] = bool(pyboy.memory[df_addr] & 0x01)
+    except Exception:
+        state["dialogue_open"] = None
+    try:
+        mf_addr = int(ram_offsets.get("menu_open_flag", "0xD72D"), 16)
+        state["menu_open"] = bool(pyboy.memory[mf_addr])
+    except Exception:
+        state["menu_open"] = None
+    try:
+        wf_addr = int(ram_offsets.get("warp_active_flag", "0xD2F4"), 16)
+        state["warp_active"] = bool(pyboy.memory[wf_addr])
+    except Exception:
+        state["warp_active"] = None
+
     try:
         johto_mask = pyboy.memory[int(ram_offsets.get("johto_badges_bitmask", "0xD57C"), 16)]
         state["johto_badges"] = [name for bit, name in _JOHTO_BADGES if johto_mask & bit]
@@ -362,24 +446,178 @@ def read_ram_state(pyboy: PyBoy, ram_offsets: dict) -> dict:
         state["party_count"] = pyboy.memory[party_count_addr]
     except Exception:
         state["party_count"] = None
-
     try:
-        hp_cur_addr = int(ram_offsets.get("party_slot0_hp_current", "0xDA4C"), 16)
-        hp_max_addr = int(ram_offsets.get("party_slot0_hp_max", "0xDA4E"), 16)
-        level_addr = int(ram_offsets.get("party_slot0_level", "0xDA49"), 16)
-        # HP is big-endian 16-bit
-        hp_cur = (pyboy.memory[hp_cur_addr] << 8) | pyboy.memory[hp_cur_addr + 1]
-        hp_max = (pyboy.memory[hp_max_addr] << 8) | pyboy.memory[hp_max_addr + 1]
-        level = pyboy.memory[level_addr]
-        state["lead_hp_current"] = hp_cur
-        state["lead_hp_max"] = hp_max
-        state["lead_level"] = level
-        state["lead_hp_pct"] = round(100 * hp_cur / hp_max) if hp_max > 0 else 0
+        cur_party_mon_addr = int(ram_offsets.get("current_party_mon", "0xDCCA"), 16)
+        state["current_party_mon"] = pyboy.memory[cur_party_mon_addr]
     except Exception:
-        state["lead_hp_current"] = None
-        state["lead_hp_max"] = None
-        state["lead_level"] = None
-        state["lead_hp_pct"] = None
+        state["current_party_mon"] = 0
+
+    # Support two party encodings: legacy per-slot addresses or compact struct base (pret/pokegold layout)
+    try:
+        if "party_struct_base" in ram_offsets:
+            base_addr = int(ram_offsets.get("party_struct_base"), 16)
+            stride = int(ram_offsets.get("party_struct_stride", "0x2C"), 16)
+            _count = state.get("party_count") or 0
+            # Active party mon (during battle) or slot 0 otherwise
+            if _count > 0:
+                active_idx = state.get("current_party_mon", 0)
+                try:
+                    active_idx = int(active_idx)
+                except Exception:
+                    active_idx = 0
+                active_idx = max(0, min(active_idx, _count - 1))
+                lead_base = base_addr + active_idx * stride
+                level = pyboy.memory[lead_base + 0x1F]
+                hp_cur = (pyboy.memory[lead_base + 0x22] << 8) | pyboy.memory[lead_base + 0x23]
+                hp_max = (pyboy.memory[lead_base + 0x24] << 8) | pyboy.memory[lead_base + 0x25]
+                state["lead_level"] = level
+                state["lead_hp_current"] = hp_cur
+                state["lead_hp_max"] = hp_max
+                state["lead_hp_pct"] = round(100 * hp_cur / hp_max) if hp_max > 0 else 0
+                moves = []
+                for j in range(4):
+                    mv = pyboy.memory[lead_base + 0x02 + j]
+                    if mv:
+                        moves.append(_GEN2_MOVE.get(mv, f"Move#{mv}"))
+                state["lead_moves"] = moves
+            else:
+                state["lead_level"] = None
+                state["lead_hp_current"] = None
+                state["lead_hp_max"] = None
+                state["lead_hp_pct"] = None
+                state["lead_moves"] = []
+
+            # All slots
+            _slots = []
+            for i in range(min(state.get("party_count") or 0, 6)):
+                sbase = base_addr + i * stride
+                _lv = pyboy.memory[sbase + 0x1F]
+                _hc = (pyboy.memory[sbase + 0x22] << 8) | pyboy.memory[sbase + 0x23]
+                _hm = (pyboy.memory[sbase + 0x24] << 8) | pyboy.memory[sbase + 0x25]
+                _st = pyboy.memory[sbase + 0x1E] if (sbase + 0x1E) < 0x10000 else 0
+                _pct = round(100 * _hc / _hm) if _hm > 0 else 0
+                _slots.append({
+                    "level": _lv,
+                    "hp_cur": _hc,
+                    "hp_max": _hm,
+                    "hp_pct": _pct,
+                    "status": _st,
+                    "fainted": _hm > 0 and _hc == 0,
+                })
+            state["party_slots"] = _slots
+            state["all_fainted"] = len(_slots) > 0 and all(s["fainted"] for s in _slots)
+            state["any_low_hp"] = any((not s["fainted"]) and s["hp_pct"] < 30 for s in _slots)
+        else:
+            hp_cur_addr = int(ram_offsets.get("party_slot0_hp_current", "0xDA4C"), 16)
+            hp_max_addr = int(ram_offsets.get("party_slot0_hp_max", "0xDA4E"), 16)
+            level_addr = int(ram_offsets.get("party_slot0_level", "0xDA49"), 16)
+            # HP is big-endian 16-bit
+            hp_cur = (pyboy.memory[hp_cur_addr] << 8) | pyboy.memory[hp_cur_addr + 1]
+            hp_max = (pyboy.memory[hp_max_addr] << 8) | pyboy.memory[hp_max_addr + 1]
+            level = pyboy.memory[level_addr]
+            state["lead_hp_current"] = hp_cur
+            state["lead_hp_max"] = hp_max
+            state["lead_level"] = level
+            state["lead_hp_pct"] = round(100 * hp_cur / hp_max) if hp_max > 0 else 0
+
+            # Lead pokemon move IDs decoded to names (slots 0-3)
+            _m_addrs = [
+                int(ram_offsets.get("party_slot0_move1", "0xDA2C"), 16),
+                int(ram_offsets.get("party_slot0_move2", "0xDA2D"), 16),
+                int(ram_offsets.get("party_slot0_move3", "0xDA2E"), 16),
+                int(ram_offsets.get("party_slot0_move4", "0xDA2F"), 16),
+            ]
+            state["lead_moves"] = [
+                _GEN2_MOVE.get(pyboy.memory[a], f"Move#{pyboy.memory[a]}")
+                for a in _m_addrs if pyboy.memory[a] != 0
+            ]
+
+            # All party slots — HP, level, status for slots 1-5 (slot 0 already read above)
+            _slot_hp_cur = [0xDA4C, 0xDA7C, 0xDAAC, 0xDADC, 0xDB0C, 0xDB3C]
+            _slot_hp_max = [0xDA4E, 0xDA7E, 0xDAAE, 0xDADE, 0xDB0E, 0xDB3E]
+            _slot_level  = [0xDA49, 0xDA79, 0xDAA9, 0xDAD9, 0xDB09, 0xDB39]
+            _slot_status = [0xDA4A, 0xDA7A, 0xDAAA, 0xDADA, 0xDB0A, 0xDB3A]
+            _count = state.get("party_count") or 0
+            _slots = []
+            for _i in range(min(_count, 6)):
+                _hc = (pyboy.memory[_slot_hp_cur[_i]] << 8) | pyboy.memory[_slot_hp_cur[_i] + 1]
+                _hm = (pyboy.memory[_slot_hp_max[_i]] << 8) | pyboy.memory[_slot_hp_max[_i] + 1]
+                _lv = pyboy.memory[_slot_level[_i]]
+                _st = pyboy.memory[_slot_status[_i]]
+                _pct = round(100 * _hc / _hm) if _hm > 0 else 0
+                _slots.append({
+                    "level": _lv,
+                    "hp_cur": _hc,
+                    "hp_max": _hm,
+                    "hp_pct": _pct,
+                    "status": _st,
+                    "fainted": _hm > 0 and _hc == 0,
+                })
+            state["party_slots"] = _slots
+            state["all_fainted"] = _count > 0 and all(s["fainted"] for s in _slots)
+            state["any_low_hp"] = any(
+                (not s["fainted"]) and s["hp_pct"] < 30 for s in _slots
+            )
+    except Exception:
+        state["party_slots"] = []
+        state["all_fainted"] = False
+        state["any_low_hp"] = False
+
+    # HM bag flags: D5B0=HM01(Cut) through D5B6=HM07(Waterfall). Nonzero = obtained.
+    try:
+        _hm_keys = ["hm01_cut", "hm02_fly", "hm03_surf", "hm04_strength",
+                    "hm05_flash", "hm06_whirlpool", "hm07_waterfall"]
+        _hm_names = ["Cut", "Fly", "Surf", "Strength", "Flash", "Whirlpool", "Waterfall"]
+        _default_hm_addrs = [0xD5B0, 0xD5B1, 0xD5B2, 0xD5B3, 0xD5B4, 0xD5B5, 0xD5B6]
+        state["hms_obtained"] = [
+            _hm_names[_i]
+            for _i, _k in enumerate(_hm_keys)
+            if pyboy.memory[int(ram_offsets.get(_k, hex(_default_hm_addrs[_i])), 16)] > 0
+        ]
+    except Exception:
+        state["hms_obtained"] = []
+
+    # Battle flags
+    try:
+        # Newer layouts expose separate in-battle and battle-type bytes.
+        _in_b_addr = int(ram_offsets.get("in_battle_flag", ram_offsets.get("battle_type_flag", "0xD116")), 16)
+        _in_b_val = pyboy.memory[_in_b_addr]
+        state["in_battle"] = _in_b_val != 0
+        _bt_addr = int(ram_offsets.get("battle_type_flag", hex(_in_b_addr)), 16)
+        _bt_val = pyboy.memory[_bt_addr]
+        state["battle_type_val"] = _bt_val
+    except Exception:
+        state["in_battle"] = False
+        state["battle_type_val"] = 0
+
+    # Enemy stats — only valid during battle
+    if state.get("in_battle"):
+        try:
+            _es_addr = int(ram_offsets.get("enemy_species", "0xCFDE"), 16)
+            state["enemy_species"] = pyboy.memory[_es_addr]
+            _e_hc_addr = int(ram_offsets.get("enemy_hp_current", "0xCFF6"), 16)
+            _e_hm_addr = int(ram_offsets.get("enemy_hp_max", "0xCFF8"), 16)
+            _e_lv_addr = int(ram_offsets.get("enemy_level", "0xCFE8"), 16)
+            _e_t1_addr = int(ram_offsets.get("enemy_type1", "0xD127"), 16)
+            _e_t2_addr = int(ram_offsets.get("enemy_type2", "0xD128"), 16)
+            _e_hc = (pyboy.memory[_e_hc_addr] << 8) | pyboy.memory[_e_hc_addr + 1]
+            _e_hm = (pyboy.memory[_e_hm_addr] << 8) | pyboy.memory[_e_hm_addr + 1]
+            _e_lv = pyboy.memory[_e_lv_addr]
+            _e_t1 = _GEN2_TYPE.get(pyboy.memory[_e_t1_addr], f"Type{pyboy.memory[_e_t1_addr]}")
+            _e_t2 = _GEN2_TYPE.get(pyboy.memory[_e_t2_addr], f"Type{pyboy.memory[_e_t2_addr]}")
+            _e_types = _e_t1 if _e_t1 == _e_t2 else f"{_e_t1}/{_e_t2}"
+            _e_pct = round(100 * _e_hc / _e_hm) if _e_hm > 0 else 0
+            state["enemy_info"] = {
+                "species": state.get("enemy_species"),
+                "hp_cur": _e_hc, "hp_max": _e_hm, "hp_pct": _e_pct,
+                "level": _e_lv, "types": _e_types,
+            }
+        except Exception:
+            state["enemy_info"] = None
+            state["enemy_species"] = None
+    else:
+        state["enemy_info"] = None
+        state["enemy_species"] = None
 
     return state
 
@@ -402,19 +640,64 @@ def format_ram_state(state: dict) -> str:
     lines.append(f"  Johto badges ({j_count}/8): {badges_str}")
     if kanto:
         lines.append(f"  Kanto badges: {', '.join(kanto)}")
+
+    # Battle context (highest priority when in_battle=True)
+    if state.get("in_battle"):
+        btype = state.get("battle_type_val", 0)
+        btype_str = "Wild" if btype == 1 else ("Trainer" if btype == 2 else "Battle")
+        enemy = state.get("enemy_info")
+        if enemy:
+            e_hp_str = f"HP {enemy['hp_cur']}/{enemy['hp_max']} ({enemy['hp_pct']}%)"
+            lines.append(
+                f"  BATTLE ({btype_str}): Enemy Lv.{enemy['level']} | {e_hp_str} | "
+                f"Type: {enemy['types']}"
+            )
+        else:
+            lines.append(f"  BATTLE ({btype_str}): enemy stats unavailable")
+
     hp_cur = state.get("lead_hp_current")
     hp_max = state.get("lead_hp_max")
     level = state.get("lead_level")
     pct = state.get("lead_hp_pct")
     party = state.get("party_count")
+    hp_stabilised = state.get("hp_stabilised", True)
     if hp_max:
-        heal_warn = " ⚠ LOW HP — HEAL NOW" if pct is not None and pct < 25 else ""
-        lines.append(f"  Lead Pokémon: Lv.{level} HP {hp_cur}/{hp_max} ({pct}%){heal_warn}")
-    if party is not None:
+        heal_warn = " ⚠ LOW HP — HEAL NOW" if hp_stabilised and pct is not None and pct < 25 else ""
+        moves_str = ""
+        lead_moves = state.get("lead_moves", [])
+        if lead_moves:
+            moves_str = f" | moves: {', '.join(lead_moves)}"
+        lines.append(f"  Lead Pokemon: Lv.{level} HP {hp_cur}/{hp_max} ({pct}%){heal_warn}{moves_str}")
+
+    # Full party summary
+    party_slots = state.get("party_slots", [])
+    if party_slots and len(party_slots) > 1:
+        slot_parts = []
+        for _i, _s in enumerate(party_slots):
+            if _s["fainted"]:
+                slot_parts.append(f"Slot{_i+1}:Lv{_s['level']} FAINTED")
+            elif _s["hp_pct"] < 25:
+                slot_parts.append(f"Slot{_i+1}:Lv{_s['level']} {_s['hp_cur']}/{_s['hp_max']}({_s['hp_pct']}%)⚠")
+            else:
+                slot_parts.append(f"Slot{_i+1}:Lv{_s['level']} {_s['hp_cur']}/{_s['hp_max']}({_s['hp_pct']}%)")
+        lines.append(f"  Party ({len(party_slots)}/{party}): {' | '.join(slot_parts)}")
+
+    if state.get("all_fainted"):
+        lines.append("  ⚠ BLACKOUT — All Pokemon fainted! You have been returned to the last Pokemon Center. Navigate back to your goal area.")
+
+    if party is not None and not party_slots:
         lines.append(f"  Party size: {party}")
+
     money = state.get("money")
     if money is not None:
         lines.append(f"  Money: ¥{money:,}")
+
+    # HMs obtained
+    hms = state.get("hms_obtained", [])
+    hm_all = ["Cut", "Fly", "Surf", "Strength", "Flash", "Whirlpool", "Waterfall"]
+    hm_display = " ".join(f"{h}{'✓' if h in hms else '✗'}" for h in hm_all)
+    lines.append(f"  HMs: {hm_display}")
+
     return "\n".join(lines)
 
 
@@ -577,76 +860,22 @@ def _extract_json(text: str) -> str:
 # ---------------------------------------------------------------------------
 
 _PERCEIVE_PROMPT = """\
-You are a screen-reader for a Game Boy Color Pokemon Silver game running in an emulator.
-Look at this screenshot and describe ONLY what you see — no strategy, no button suggestions.
+Read this Pokemon Silver screenshot and output compact JSON only.
+No strategy. No button advice.
 
-━━ GBC VISUAL SYMBOL GUIDE ━━
-Learn these visual patterns to accurately describe the scene:
-
-INDOOR vs OUTDOOR — check the floor tile:
-  • OUTDOOR: repeating light/dark green checkerboard grass tiles. Trees appear as rounded
-    green blobs or square dark-green blocks at edges. Route paths are narrower corridors.
-  • INDOOR: geometric floor tiles (brick, wood planks, carpet, tile patterns). Solid walls.
-    A counter or bookshelves usually visible. No sky.
-  If you see a checkerboard green grass floor → you are OUTDOORS.
-
-ITEM BALL (collectible on the ground):
-  • A small round white/cream sphere with a red top half, sitting on the ground.
-  • About the same size as the player character's head. Often surrounded by a small sparkle.
-  • Always report item balls in "visible_items" with direction from the player.
-
-WILD POKEMON on overworld:
-  • In tall grass patches, you can encounter wild Pokemon — show as flashing encounter, not a
-    sprite on the overworld. Report "tall grass ahead" in notes if tall grass is visible.
-  • Sprites visible on the overworld that are non-human animal shapes are WILD POKEMON,
-    NOT NPCs.
-
-PASSABLE vs IMPASSABLE tiles:
-  • Light/dark green checkerboard grass = passable (player can walk there)
-  • Dark tree trunk blocks = impassable
-  • Ledges (short brown step tiles) = passable going DOWN only, impassable going UP
-  • Water = impassable without Surf
-  • Building walls = impassable
-  • Open path/corridor = passable in all directions it extends
-
-NPC naming rules:
-  An NPC is a HUMAN-SHAPED sprite. Wild Pokemon are NOT NPCs.
-  Identify NPCs by role and screen position:
-  • "Prof. Elm (behind desk)", "Mom (near front door)", "Boy (near bookcase)",
-    "Aid (standing left)", "Rival (blocking path north)"
-  Use the position always. False negatives (missing an NPC) are far less harmful
-  than false positives (calling a Pokemon an NPC). If unsure, do NOT include it.
-
-LOCATION NAMEPLATE:
-  In Gen 2, a location nameplate appears as a dark box in the upper-right area of the screen
-  when you enter a new area. It shows the town or route name in white text.
-  If visible, set nameplate_text to that exact name.
-
-LOCATION NAMING:
-  - Outdoors: "New Bark Town", "Route 29", "Cherrygrove City"
-  - Indoors: "New Bark Town - Prof. Elm's Lab", "Cherrygrove City - Pokemon Center"
-  If you see checkerboard grass floor → location is outdoors (Route or Town name only).
-
-Reply with a JSON object ONLY — no markdown fences:
+Return:
 {
-  "screen_type": "overworld" | "dialogue" | "battle" | "menu" | "cutscene" | "unknown",
-  "is_outdoor": true | false,
-  "nameplate_text": "<exact text from the location banner if visible right now, otherwise null>",
-  "dialogue_text": "<exact text in the dialogue box, or null>",
-  "menu_options": ["<option 1>", "<option 2>"] or null,
-  "battle_info": "<brief description of battle state including HP bars and moves visible, or null>",
-  "player_facing": "Up" | "Down" | "Left" | "Right" | "Unknown",
+  "screen_type": "overworld" | "dialogue" | "battle" | "menu" | "unknown",
+  "dialogue_text": "<exact text or null>",
+  "location_name": "<best guess location or null>",
   "adjacent_npc": true | false,
-  "adjacent_npc_id": "<npc_id — REQUIRED when adjacent_npc=true, use 'Unknown NPC (<position>)' if unclear. null only when adjacent_npc=false>",
-  "visible_npcs": [
-    {"npc_id": "<npc_id>", "position": "<e.g. 2 tiles north>"}
-  ],
-  "visible_door_or_mat": true | false,
-  "door_direction": "<direction + distance, or null>",
-  "visible_items": "<item balls on the ground with direction from player, or null>",
-  "passable_directions": ["Up", "Down", "Left", "Right" — include only directions the player can actually walk],
-  "location_name": "<if is_outdoor=true: just Route/Town name. If is_outdoor=false: Town - Building>",
-  "notes": "<anything else important — tall grass patches, suspicious sprites, day/night state>"
+  "adjacent_npc_id": "<id or null>",
+  "yes_no_cursor": "YES" | "NO" | null,
+  "menu_options": ["..."] | null,
+  "battle_info": "<menu/message summary or null>",
+  "battle_moves": ["MOVE1","MOVE2","MOVE3","MOVE4"] | null,
+  "player_facing": "Up" | "Down" | "Left" | "Right" | "Unknown",
+  "is_outdoor": true | false | null
 }
 """
 
@@ -761,12 +990,20 @@ class WorldMap:
             self.save()
 
     def clear_walls(self, location: str) -> None:
-        """Remove all recorded walls for a location (used to reset impossible states)."""
+        """Remove all recorded walls AND tested dirs for a location.
+
+        Called when all 4 directions appear blocked (impossible state). Clearing
+        tested too is critical — otherwise _untried stays empty on the next turn
+        and the nav hint gives the model zero guidance on which direction to try.
+        """
         entry = self.data.get("locations", {}).get(location)
-        if entry and entry.get("walls"):
+        if entry:
+            changed = bool(entry.get("walls") or entry.get("tested"))
             entry["walls"] = {}
-            self._summary_cache = None
-            self.save()
+            entry["tested"] = {}
+            if changed:
+                self._summary_cache = None
+                self.save()
 
     def get_walls(self, location: str) -> set[str]:
         entry = self.data.get("locations", {}).get(location, {})
@@ -1054,9 +1291,27 @@ def run_agent(
 
     print(f"[agent] Game={game_name} | vision={vision_model} | reason={reasoning_model}")
     print(f"[agent] ROM : {rom}")
-    print(f"[agent] Override: write to '{_message_file.resolve()}' to inject instructions.")
-    # instruction into the next turn's decide() call, then deleted.
-    _message_file = Path("agent_message.txt")
+    print(f"[agent] Override: type a message here and press Enter, or write to '{_message_file.resolve()}'.")
+
+    # ── Stdin reader thread ───────────────────────────────────────────────────
+    # Runs as a daemon so it doesn't block process exit. Typed lines are put
+    # into _stdin_queue and consumed at the start of each turn as operator msgs.
+    _stdin_queue: queue.Queue[str] = queue.Queue()
+
+    def _stdin_reader() -> None:
+        try:
+            while True:
+                line = sys.stdin.readline()
+                if not line:  # EOF
+                    break
+                line = line.strip()
+                if line:
+                    _stdin_queue.put(line)
+        except Exception:
+            pass
+
+    _stdin_thread = threading.Thread(target=_stdin_reader, daemon=True)
+    _stdin_thread.start()
 
     # Persistent notes: story log, goal, memory — survives crashes
     story_log: list[str] = []
@@ -1156,6 +1411,9 @@ def run_agent(
     _last_map: tuple[int, int] | None = None
     turns_at_same_tile: int = 0
     _tile_key: str = ""  # computed each turn from RAM
+    # HP stabilisation: RAM HP returns 0/0 for several frames after load_state().
+    # Only treat HP as valid after it has read non-zero hp_max for 2+ consecutive turns.
+    _hp_valid_turns: int = 0
 
     def flush_notes() -> None:
         try:
@@ -1206,24 +1464,52 @@ def run_agent(
             elapsed = int(time.time() - start_time)
             print(f"\n[turn {turn:04d} | {elapsed//60:02d}:{elapsed%60:02d}]", end=" ")
 
-            # ── Operator override (drop file) ─────────────────────────────────
+            # ── Operator override (drop file or stdin) ────────────────────────
             _operator_msg: str | None = None
+            # 1. Drain any lines typed directly into the terminal this turn
+            _stdin_lines: list[str] = []
+            while not _stdin_queue.empty():
+                try:
+                    _stdin_lines.append(_stdin_queue.get_nowait())
+                except Exception:
+                    break
+            if _stdin_lines:
+                _operator_msg = " | ".join(_stdin_lines)
+            # 2. Also honour the legacy drop-file
             if _message_file.exists():
                 try:
-                    _operator_msg = _message_file.read_text(encoding="utf-8").strip()
+                    _file_msg = _message_file.read_text(encoding="utf-8").strip()
                     _message_file.unlink()
-                    if _operator_msg:
-                        print(f"\n  [operator] *** OVERRIDE: {_operator_msg} ***")
+                    if _file_msg:
+                        _operator_msg = (_operator_msg + " | " + _file_msg) if _operator_msg else _file_msg
                 except Exception:
                     pass
+            if _operator_msg:
+                print(f"\n  [operator] *** OVERRIDE: {_operator_msg} ***")
 
             # ── Autosave ─────────────────────────────────────────────────────
             if save_sequence and turn > 1 and turn % AUTOSAVE_EVERY_N_TURNS == 0:
-                current_b64 = save_game(pyboy, save_sequence)
-                flush_state()
+                # Skip autosave if the previous-turn RAM state says we're in a battle.
+                # Executing the save sequence (Start→Down×5→A) during a battle would
+                # interact with the battle menu instead of the overworld pause menu.
+                _in_battle_prev = _ram_state.get("in_battle", False) if _ram_state else False
+                if _in_battle_prev:
+                    print(f"  [autosave] Skipping turn {turn} — in battle (will retry next interval)")
+                else:
+                    current_b64 = save_game(pyboy, save_sequence)
+                    flush_state()
 
             # ── Read RAM early — used for nav-key, pre-move snapshot, and decide ──
             _ram_state: dict = read_ram_state(pyboy, ram_offsets) if has_ram else {}
+            # Track HP stabilisation: hp_max reads 0 for several frames after load_state().
+            # Mark the state so format_ram_state() and the nav hint suppress HEAL warnings.
+            if _ram_state:
+                _cur_hp_max = _ram_state.get("lead_hp_max") or 0
+                if _cur_hp_max > 0:
+                    _hp_valid_turns += 1
+                else:
+                    _hp_valid_turns = 0
+                _ram_state["hp_stabilised"] = _hp_valid_turns >= 2
             _ram_text: str | None = format_ram_state(_ram_state) if _ram_state else None
 
             # ── Per-tile position tracking ────────────────────────────────────
@@ -1281,25 +1567,50 @@ def run_agent(
             _wlk = _tile_key or current_location
             _cardinal = {"Up", "Down", "Left", "Right"}
             known_walls = world_map.get_walls(_wlk) if _wlk else set()
-            _tested = {d for d in _cardinal if world_map.get_walls(_wlk) or True} & set()  # placeholder
-            # get_tested isn't exposed — compute untried as cardinal minus walls minus tested
             _all_tested: set[str] = set()
             if _wlk:
                 _loc_entry = world_map.data.get("locations", {}).get(_wlk, {})
                 _all_tested = set(k for k, v in _loc_entry.get("tested", {}).items() if v)
+            # passable = tested successfully (not a wall)
+            _passable = _all_tested - known_walls
+            # untried = haven't attempted at all from this tile yet
             _untried = _cardinal - known_walls - _all_tested
             if known_walls >= _cardinal:
                 # All 4 directions blocked at this exact tile — physically impossible.
-                print(f"  [wall-reset] All 4 directions blocked at tile {_wlk} — clearing.")
+                # This means dialogue/cutscene is freezing movement. Press B×5 immediately
+                # to dismiss any invisible dialogue before the VLM picks an action.
+                print(f"  [wall-reset] All 4 directions blocked at tile {_wlk} — dialogue freeze suspected. Pressing B×5 then clearing walls.")
+                for _ in range(5):
+                    press_button(pyboy, "B", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+                press_button(pyboy, "A", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
                 if _wlk:
                     world_map.clear_walls(_wlk)
                 known_walls = set()
+                _passable = set()
                 _untried = _cardinal.copy()
+            # ── Auto B-press when deeply stuck (possible invisible menu/freeze) ──
+            # If the character hasn't moved for 8+ turns, something is preventing
+            # input from registering. Press B on the emulator directly to dismiss
+            # any menu or dialogue the vision model failed to detect.
+            if turns_at_same_tile >= 8 and turns_at_same_tile % 4 == 0:
+                print(f"  [stuck-recovery] {turns_at_same_tile} turns at same tile — pressing B x3 to clear any frozen state")
+                for _ in range(3):
+                    press_button(pyboy, "B", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+            # If stuck 6+ turns with all 4 walls blocked, force B and skip VLM this turn
+            _all_blocked = len(known_walls) >= 4 or (not _untried and not _passable and len(known_walls) >= 3)
+            if turns_at_same_tile >= 6 and _all_blocked:
+                print(f"  [stuck-override] All directions blocked for {turns_at_same_tile} turns — forcing B, skipping VLM")
+                press_button(pyboy, "B", SETTLE_FRAMES_BUTTON * 2, shots_dir=shots_dir)
+                press_button(pyboy, "A", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+                consecutive_same = 0
+                continue
             # Build the tile hint — this is the primary navigation signal
             if _has_pos and _tile_key:
                 _tile_hint_parts = [f"RAM tile ({_cx},{_cy}) on map {_mb}/{_mn}."]
                 if known_walls:
                     _tile_hint_parts.append(f"Blocked from this tile: {', '.join(sorted(known_walls))}.")
+                if _passable:
+                    _tile_hint_parts.append(f"Previously passable from this tile: {', '.join(sorted(_passable))}. Use one of these to escape.")
                 if _untried:
                     _tile_hint_parts.append(f"Not yet tried from this tile: {', '.join(sorted(_untried))}. Try one of these.")
                 if turns_at_same_tile >= 2:
@@ -1324,7 +1635,159 @@ def run_agent(
                     )
                     nav_hint = (_party_hint + " | " + nav_hint) if nav_hint else _party_hint
 
-            scene = _with_retry(lambda: perceive(vision_client, vision_model, current_b64), pump_fn=pump_fn, on_auth_error=_auth_error_cb)
+                # ── Blackout hint ─────────────────────────────────────────────
+                if _ram_state.get("all_fainted"):
+                    _blackout_hint = (
+                        "BLACKOUT: All your Pokémon have fainted. You have been warped to the "
+                        "last Pokémon Center you visited. Heal at the counter (approach nurse, "
+                        "press A), then resume traveling toward your goal."
+                    )
+                    nav_hint = (_blackout_hint + " | " + nav_hint) if nav_hint else _blackout_hint
+
+                # ── Badge-phase story hint ─────────────────────────────────────
+                # Inject a concise next-step for the current story phase each turn.
+                _badge_count = _ram_state.get("johto_badge_count", 0)
+                _hms = set(_ram_state.get("hms_obtained", []))
+                _phase_map: dict[int, str] = {
+                    0: (
+                        "STORY[0/8 badges]: Get starter from Prof. Elm → "
+                        "visit Mr. Pokemon (Route 30, cottage north of Cherrygrove) → "
+                        "return to Elm → beat Rival Silver → go north via Routes 36/31 to "
+                        "Violet City → climb Sprout Tower for Flash(HM05) → "
+                        "beat Falkner(Flying gym, use Rock/Electric moves)."
+                    ),
+                    1: (
+                        "STORY[1/8 badges]: Head south: Route 32 → Union Cave → Route 33 → "
+                        "Azalea Town. Help Kurt at Slowpoke Well (go south of Azalea). "
+                        "In Ilex Forest: return Charcoal Man's Farfetch'd to get HM01 Cut. "
+                        "Beat Bugsy(Bug gym, use Fire/Flying/Rock moves)."
+                    ),
+                    2: (
+                        "STORY[2/8 badges]: Use Cut on tree in Ilex Forest, head north. "
+                        "Route 34 → Goldenrod City. Beat Whitney(Normal gym). "
+                        "Beware Miltank with Rollout — use Fighting-type moves or paralyse/poison it. "
+                        "Also explore National Park on Route 36."
+                    ),
+                    3: (
+                        "STORY[3/8 badges]: Head east to Ecruteak City (Routes 35-37). "
+                        "Visit Burned Tower NE of Ecruteak — legendary dogs escape (good). "
+                        "Beat all 5 Kimono Girls in the Dance Theater to receive HM03 Surf. "
+                        "Beat Morty(Ghost gym, use Normal/Dark moves — Ghost moves miss Ghost)."
+                    ),
+                    4: (
+                        "STORY[4/8 badges]: Go west via Routes 38-39 to Olivine City. "
+                        "Glitter Lighthouse: Jasmine's Ampharos is sick — need SecretPotion. "
+                        "Surf west to Cianwood City. Get SecretPotion from pharmacist. "
+                        "Beat Chuck(Fighting gym). Get HM02 Fly from Chuck's wife (outside gym). "
+                        "Return to Olivine, give SecretPotion to Jasmine at top of lighthouse."
+                    ),
+                    5: (
+                        "STORY[5/8 badges]: Beat Jasmine(Steel gym, use Fire/Ground/Fighting). "
+                        "Travel east to Mahogany Town (Route 42). "
+                        "North to Lake of Rage: catch/beat Red Gyarados with Lance. "
+                        "Help Lance clear Team Rocket Hideout in Mahogany (basement). "
+                        "Receive HM06 Whirlpool from Lance. Beat Pryce(Ice gym, use Fire/Rock/Steel)."
+                    ),
+                    6: (
+                        "STORY[6/8 badges]: Fly to Goldenrod — Team Rocket has seized the Radio Tower. "
+                        "Go to Goldenrod Underground, fight Rockets. Rescue Director from Warehouse "
+                        "(get Basement Key → Card Key). Beat Executive Ariana. Save Director at Radio Tower. "
+                        "Team Rocket disbands. Then: Route 44 → Ice Path(use Whirlpool) → Blackthorn City."
+                    ),
+                    7: (
+                        "STORY[7/8 badges]: Navigate Ice Path — use Strength to push boulders, "
+                        "pick up HM07 Waterfall from the floor. "
+                        "Beat Clair(Dragon gym, use Ice moves — Kingdra has no 4× weakness). "
+                        "Complete Dragon's Den quiz for Rising Badge. "
+                        "Fly to New Bark Town: receive Master Ball from Prof. Elm. "
+                        "Surf east → Route 27 → Mt. Silver gate → Victory Road → Indigo Plateau."
+                    ),
+                }
+                if _badge_count < 8 and _badge_count in _phase_map:
+                    _phase_hint = _phase_map[_badge_count]
+                    nav_hint = (_phase_hint + " | " + nav_hint) if nav_hint else _phase_hint
+
+                # ── Battle-mode hint ──────────────────────────────────────────
+                if _ram_state.get("in_battle") and _ram_state.get("enemy_info"):
+                    _einfo = _ram_state["enemy_info"]
+                    _lead_moves = _ram_state.get("lead_moves", [])
+                    _moves_str = ", ".join(_lead_moves) if _lead_moves else "unknown"
+                    _b_hint = (
+                        f"BATTLE: Enemy Lv.{_einfo['level']} type={_einfo['types']} "
+                        f"HP {_einfo['hp_cur']}/{_einfo['hp_max']} ({_einfo['hp_pct']}%). "
+                        f"Your lead moves: {_moves_str}. "
+                        "Navigate FIGHT menu with directions (repeat=1), confirm with A. "
+                        "Pick the move with the best type advantage against the enemy's type."
+                    )
+                    nav_hint = (_b_hint + " | " + nav_hint) if nav_hint else _b_hint
+
+            # If RAM reports dialogue open, skip vision/reasoning and advance text immediately.
+            if has_ram and _ram_state and _ram_state.get("dialogue_open"):
+                button = "A"
+                repeat = 1
+                reason = "RAM indicates dialogue open — advance with A"
+                print("  [auto]  RAM->dialogue -> forced A (skip VLM)")
+                # Minimal history entry for transparency
+                try:
+                    history.append({"role": "user", "content": "screen=dialogue | loc=? | facing=? | ram_dialogue=1"})
+                    history.append({"role": "assistant", "content": json.dumps({"button": button, "repeat": repeat, "reason": reason[:80]})})
+                except Exception:
+                    pass
+                current_b64 = press_button(pyboy, button, SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+                if button == last_button:
+                    consecutive_same += 1
+                else:
+                    consecutive_same = 1
+                    last_button = button
+                consecutive_a = consecutive_a + 1 if button == "A" else 0
+                continue
+
+            # RAM-first shortcuts to further reduce VLM usage.
+            if has_ram and _ram_state and _ram_state.get("menu_open") and not _ram_state.get("in_battle"):
+                button = "B"
+                reason = "RAM indicates menu open — close with B"
+                print("  [auto]  RAM->menu_open -> forced B (skip VLM)")
+                current_b64 = press_button(pyboy, button, SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+                if button == last_button:
+                    consecutive_same += 1
+                else:
+                    consecutive_same = 1
+                    last_button = button
+                consecutive_a = 0
+                continue
+
+            # If we're in battle and this isn't a vision-sample turn, advance deterministically with A.
+            # This keeps turn cost low while still sampling vision every few turns for menu context.
+            if has_ram and _ram_state and _ram_state.get("in_battle") and (turn % 2 == 1):
+                button = "A"
+                reason = "RAM in battle — deterministic advance/confirm with A"
+                print("  [auto]  RAM->battle -> forced A (skip VLM)")
+                current_b64 = press_button(pyboy, button, SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
+                if button == last_button:
+                    consecutive_same += 1
+                else:
+                    consecutive_same = 1
+                    last_button = button
+                consecutive_a += 1
+                continue
+
+            # Decide whether to call the vision model. Prefer RAM when available to reduce VLM usage.
+            need_vision = True
+            # If RAM offsets exist, use RAM-first policy to avoid vision calls for routine turns.
+            if has_ram and _ram_state:
+                # Basic heuristics: call vision only on (a) wall events, (b) operator overrides, (c) unfamiliar location,
+                # (d) every 5th turn to refresh the map, or (e) during battles every other turn to read menus.
+                if wall_detected or _operator_msg or not current_location or (turn % 5 == 0):
+                    need_vision = True
+                elif _ram_state.get('in_battle'):
+                    # In battle: sample vision every 2 turns to detect the fight/menu state, otherwise rely on RAM for move choice.
+                    need_vision = (turn % 2 == 0)
+                else:
+                    need_vision = False
+            if need_vision:
+                scene = _with_retry(lambda: perceive(vision_client, vision_model, current_b64), pump_fn=pump_fn, on_auth_error=_auth_error_cb)
+            else:
+                scene = "{}"
             if scene:
                 # Log all key fields from the scene JSON, not just the first 200 chars
                 try:
@@ -1441,14 +1904,15 @@ def run_agent(
                 _money = _ram_state.get("money")
                 _party = _ram_state.get("party_count")
                 _hp_valid = _hp_max is not None and _hp_max > 0
-                _hp_str = f"HP={_hp_cur}/{_hp_max}({_hp_pct}%)" if _hp_valid else "HP=n/a"
+                _hp_stable = _ram_state.get("hp_stabilised", False)
+                _hp_str = f"HP={_hp_cur}/{_hp_max}({_hp_pct}%)" if _hp_stable else ("HP=n/a" if not _hp_valid else "HP=stabilising...")
                 _money_str = f" | ¥{_money:,}" if _money is not None else ""
                 _party_str = f" | party={_party}" if _party is not None else ""
                 print(
                     f"  [ram]   map={_map_b}/{_map_n} pos=({_x},{_y}) | "
                     f"{_hp_str} | badges={_badges}/8{_party_str}{_money_str}"
                 )
-                if _hp_valid and _hp_pct is not None and _hp_pct < 25:
+                if _hp_stable and _hp_pct is not None and _hp_pct < 25:
                     print("  [ram]   ⚠ LOW HP — agent should seek a Pokemon Center")
                 if _party == 0:
                     print("  [ram]   ⚠ PARTY EMPTY — agent must get starter from Prof. Elm")
@@ -1591,7 +2055,12 @@ def run_agent(
                     _post_ram = read_ram_state(pyboy, ram_offsets)
                     _post_x = _post_ram.get("x_pos")
                     _post_y = _post_ram.get("y_pos")
-                    _moved = (_post_x != _pre_x or _post_y != _pre_y)
+                    _post_mb = _post_ram.get("map_bank")
+                    _post_mn = _post_ram.get("map_number")
+                    # Map bank/number change means a warp fired — definitely moved.
+                    # (Warp transitions take many frames; x/y may not have settled yet.)
+                    _map_changed = (_post_mb != _mb or _post_mn != _mn)
+                    _moved = _map_changed or (_post_x != _pre_x or _post_y != _pre_y)
                     wall_detected = not _moved
                 else:
                     # Fallback: hash comparison (works in large outdoor areas)
