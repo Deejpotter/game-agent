@@ -4,11 +4,11 @@
 
 There are **two independent agents** in this repo. Both play games 24/7 via a local VLM.
 
-| Agent                   | Emulator                | Transport                 | Console  |
-| ----------------------- | ----------------------- | ------------------------- | -------- |
-| `pyboy_agent/` package  | PyBoy (in-process)      | None — direct Python API  | GBC / GB |
-| `pyboy_agent.py`        | PyBoy (in-process)      | None — direct Python API  | GBC / GB |
-| `agent.py`              | mGBA (external process) | stdio MCP → Lua IPC files | GBA      |
+| Agent                  | Emulator                | Transport                 | Console  |
+| ---------------------- | ----------------------- | ------------------------- | -------- |
+| `pyboy_agent/` package | PyBoy (in-process)      | None — direct Python API  | GBC / GB |
+| `pyboy_agent.py`       | PyBoy (in-process)      | None — direct Python API  | GBC / GB |
+| `agent.py`             | mGBA (external process) | stdio MCP → Lua IPC files | GBA      |
 
 **`pyboy_agent/` is the canonical package** — use `python -m pyboy_agent` for all new GBC work. `pyboy_agent.py` is the original monolith and still works but is superseded. `agent.py` handles GBA via mGBA; do not break it.
 
@@ -45,6 +45,7 @@ pyboy_agent/
 ```
 
 **Two-stage turn loop** (`loop.py`):
+
 1. RAM read → `read_ram_state()` — position, HP, badges, battle flag
 2. Build `nav_hint` — `build_nav_hints()` (wall, stuck, operator override, badge phase…)
 3. `perceive()` — vision model → JSON scene (skipped by RAM fast-paths when unneeded)
@@ -76,6 +77,7 @@ mGBA's `--script` CLI flag doesn't work on Windows Qt builds. Instead the agent 
 ## Key Workflows
 
 **Run the package (preferred):**
+
 ```bash
 python -m pyboy_agent --rom "H:/Games/GBC/Pokemon Silver.gbc"
 python -m pyboy_agent --headless --max-turns 5       # quick test
@@ -83,6 +85,7 @@ python -m pyboy_agent --backend ollama               # switch backend
 ```
 
 **Run the legacy monolith (still works):**
+
 ```bash
 python pyboy_agent.py                                # uses ROM_PATH from .env
 python pyboy_agent.py --headless --max-turns 5
@@ -122,18 +125,18 @@ GBC: no `L`/`R`. HP = big-endian 16-bit. Money = 3-byte BCD. Open with `encoding
 
 ## Key Files
 
-| File / Directory                                          | Purpose                                                    |
-| --------------------------------------------------------- | ---------------------------------------------------------- |
-| `pyboy_agent/loop.py`                                     | Main turn orchestration (`run_agent()`)                    |
-| `pyboy_agent/navigation/hints.py`                         | All 12 nav hint sources — edit here for new hint logic     |
-| `pyboy_agent/navigation/wall_tracker.py`                  | Wall detection — RAM delta primary, hash fallback          |
-| `pyboy_agent/ram/reader.py`                               | All WRAM reads — add new RAM keys here                     |
-| `pyboy_agent/goals/tracker.py`                            | `NotesTracker` — story/goal/memory persistence             |
-| `pyboy_agent.py`                                          | Legacy monolith — do not break; shares `games/` profiles   |
-| `agent.py`                                                | mGBA/GBA agent — do not break; shares `games/` profiles    |
-| `games/pokemon-silver.json`                               | Reference GBC profile with RAM offsets                     |
-| `games/pokemon-sapphire.json`                             | Reference GBA profile                                      |
-| `.github/instructions/agent-loop.instructions.md`         | Editing guide for the agent loop and package modules       |
-| `.github/instructions/game-profiles.instructions.md`      | `games/*.json` authoring guide                             |
-| `.github/instructions/pyboy-package.instructions.md`      | Package module responsibilities and inter-module rules     |
-| `.github/todos.md`                                        | Backlog and completed items                                |
+| File / Directory                                     | Purpose                                                  |
+| ---------------------------------------------------- | -------------------------------------------------------- |
+| `pyboy_agent/loop.py`                                | Main turn orchestration (`run_agent()`)                  |
+| `pyboy_agent/navigation/hints.py`                    | All 12 nav hint sources — edit here for new hint logic   |
+| `pyboy_agent/navigation/wall_tracker.py`             | Wall detection — RAM delta primary, hash fallback        |
+| `pyboy_agent/ram/reader.py`                          | All WRAM reads — add new RAM keys here                   |
+| `pyboy_agent/goals/tracker.py`                       | `NotesTracker` — story/goal/memory persistence           |
+| `pyboy_agent.py`                                     | Legacy monolith — do not break; shares `games/` profiles |
+| `agent.py`                                           | mGBA/GBA agent — do not break; shares `games/` profiles  |
+| `games/pokemon-silver.json`                          | Reference GBC profile with RAM offsets                   |
+| `games/pokemon-sapphire.json`                        | Reference GBA profile                                    |
+| `.github/instructions/agent-loop.instructions.md`    | Editing guide for the agent loop and package modules     |
+| `.github/instructions/game-profiles.instructions.md` | `games/*.json` authoring guide                           |
+| `.github/instructions/pyboy-package.instructions.md` | Package module responsibilities and inter-module rules   |
+| `.github/todos.md`                                   | Backlog and completed items                              |

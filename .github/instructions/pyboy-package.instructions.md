@@ -9,37 +9,40 @@ The package is the canonical GBC agent. `pyboy_agent.py` (monolith) is the legac
 
 ## Module Responsibilities (who owns what)
 
-| Module | Owns | Does NOT own |
-|---|---|---|
-| `config.py` | All constants, `BACKENDS` dict, `BUTTON_MAP` | Any I/O or imports |
-| `backends.py` | `make_client()`, Copilot token refresh | Game logic |
-| `profiles.py` | Load and validate `games/*.json` | RAM reads |
-| `emulator.py` | PyBoy lifecycle, screenshots, button presses | VLM calls |
-| `ram/reader.py` | All `pyboy.memory[]` reads | Formatting or VLM |
-| `ram/formatter.py` | `format_ram_state()` → prompt string | RAM reads |
-| `ram/gen2_tables.py` | Lookup tables only | Any live reads |
-| `vision/perceive.py` | Vision model call → JSON string | Decision logic |
-| `llm/retry.py` | `with_retry()`, `extract_json()` | Domain logic |
-| `llm/decide.py` | Reasoning model call → 8-tuple | Emulator/RAM |
-| `navigation/world_map.py` | `WorldMap` persistence | Hint assembly |
-| `navigation/hints.py` | `build_nav_hints()` → str | WorldMap writes |
-| `navigation/wall_tracker.py` | `detect_and_record_wall()` | Hint assembly |
-| `goals/phase_guide.py` | `BADGE_PHASE_MAP` lookup table | Any I/O |
-| `goals/tracker.py` | `NotesTracker` — story/goal/memory | RAM or VLM |
-| `loop.py` | `run_agent()` orchestration | Domain logic |
-| `main.py` | CLI argparse | Loop logic |
+| Module                       | Owns                                         | Does NOT own       |
+| ---------------------------- | -------------------------------------------- | ------------------ |
+| `config.py`                  | All constants, `BACKENDS` dict, `BUTTON_MAP` | Any I/O or imports |
+| `backends.py`                | `make_client()`, Copilot token refresh       | Game logic         |
+| `profiles.py`                | Load and validate `games/*.json`             | RAM reads          |
+| `emulator.py`                | PyBoy lifecycle, screenshots, button presses | VLM calls          |
+| `ram/reader.py`              | All `pyboy.memory[]` reads                   | Formatting or VLM  |
+| `ram/formatter.py`           | `format_ram_state()` → prompt string         | RAM reads          |
+| `ram/gen2_tables.py`         | Lookup tables only                           | Any live reads     |
+| `vision/perceive.py`         | Vision model call → JSON string              | Decision logic     |
+| `llm/retry.py`               | `with_retry()`, `extract_json()`             | Domain logic       |
+| `llm/decide.py`              | Reasoning model call → 8-tuple               | Emulator/RAM       |
+| `navigation/world_map.py`    | `WorldMap` persistence                       | Hint assembly      |
+| `navigation/hints.py`        | `build_nav_hints()` → str                    | WorldMap writes    |
+| `navigation/wall_tracker.py` | `detect_and_record_wall()`                   | Hint assembly      |
+| `goals/phase_guide.py`       | `BADGE_PHASE_MAP` lookup table               | Any I/O            |
+| `goals/tracker.py`           | `NotesTracker` — story/goal/memory           | RAM or VLM         |
+| `loop.py`                    | `run_agent()` orchestration                  | Domain logic       |
+| `main.py`                    | CLI argparse                                 | Loop logic         |
 
 ## Public APIs
 
 ### `ram/`
+
 ```python
 from pyboy_agent.ram import read_ram_state, format_ram_state
 state = read_ram_state(pyboy, ram_offsets)   # → dict
 text  = format_ram_state(state)              # → str prompt block
 ```
+
 `state` keys: `map_bank`, `map_number`, `x_pos`, `y_pos`, `lead_hp_current`, `lead_hp_max`, `lead_hp_pct`, `johto_badge_count`, `kanto_badge_count`, `money`, `party_count`, `party_slots`, `in_battle`, `hp_stabilised`.
 
 ### `navigation/`
+
 ```python
 from pyboy_agent.navigation import (
     WorldMap, best_location_key,
@@ -51,6 +54,7 @@ wall_detected, wall_button = detect_and_record_wall(pyboy, button=button, ...)
 ```
 
 ### `goals/`
+
 ```python
 from pyboy_agent.goals import NotesTracker, BADGE_PHASE_MAP
 notes = NotesTracker(notes_path, initial_goal="Beat the Elite Four")
@@ -61,6 +65,7 @@ notes.recent_story   # last 15 events
 ```
 
 ### `llm/`
+
 ```python
 from pyboy_agent.llm.retry import with_retry, extract_json
 from pyboy_agent.llm.decide import decide

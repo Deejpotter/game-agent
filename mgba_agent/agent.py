@@ -186,7 +186,7 @@ def load_game_profile(name: str | None) -> dict[str, Any]:
             "system_prompt": GENERIC_SYSTEM_PROMPT,
             "save_sequence": None,
         }
-    path = Path(__file__).parent / "games" / f"{name}.json"
+    path = Path(__file__).parent.parent / "games" / f"{name}.json"
     if not path.exists():
         raise FileNotFoundError(
             f"No game profile found at {path}. "

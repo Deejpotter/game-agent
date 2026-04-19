@@ -30,6 +30,7 @@ from typing import TYPE_CHECKING, Any
 
 from pyboy_agent.ram.gen2_tables import (
     _GEN2_MOVE,
+    _GEN2_SPECIES,
     _GEN2_TYPE,
     _JOHTO_BADGES,
     _KANTO_BADGES,
@@ -220,6 +221,8 @@ def _read_party_compact(
         level = pyboy.memory[lead_base + 0x1F]
         hp_cur = (pyboy.memory[lead_base + 0x22] << 8) | pyboy.memory[lead_base + 0x23]
         hp_max = (pyboy.memory[lead_base + 0x24] << 8) | pyboy.memory[lead_base + 0x25]
+        lead_species_id = pyboy.memory[lead_base + 0x00]
+        state["lead_species"] = _GEN2_SPECIES.get(lead_species_id, f"?#{lead_species_id}")
         state["lead_level"] = level
         state["lead_hp_current"] = hp_cur
         state["lead_hp_max"] = hp_max
@@ -231,6 +234,7 @@ def _read_party_compact(
                 moves.append(_GEN2_MOVE.get(mv, f"Move#{mv}"))
         state["lead_moves"] = moves
     else:
+        state["lead_species"] = None
         state["lead_level"] = None
         state["lead_hp_current"] = None
         state["lead_hp_max"] = None
@@ -244,8 +248,10 @@ def _read_party_compact(
         hc = (pyboy.memory[sbase + 0x22] << 8) | pyboy.memory[sbase + 0x23]
         hm = (pyboy.memory[sbase + 0x24] << 8) | pyboy.memory[sbase + 0x25]
         st = pyboy.memory[sbase + 0x1E] if (sbase + 0x1E) < 0x10000 else 0
+        sp_id = pyboy.memory[sbase + 0x00]
         pct = round(100 * hc / hm) if hm > 0 else 0
         slots.append({
+            "species": _GEN2_SPECIES.get(sp_id, f"?#{sp_id}"),
             "level": lv, "hp_cur": hc, "hp_max": hm,
             "hp_pct": pct, "status": st, "fainted": hm > 0 and hc == 0,
         })
@@ -263,15 +269,18 @@ def _read_party_slots(
 ) -> None:
     """Read party data from per-slot WRAM addresses (pret/pokegold Silver layout)."""
     # Lead (slot 0) — these addresses come from the game profile or use Silver defaults.
-    hp_cur_addr = int(ram_offsets.get("party_slot0_hp_current", "0xDA4C"), 16)
-    hp_max_addr = int(ram_offsets.get("party_slot0_hp_max", "0xDA4E"), 16)
-    level_addr  = int(ram_offsets.get("party_slot0_level",      "0xDA49"), 16)
+    hp_cur_addr  = int(ram_offsets.get("party_slot0_hp_current", "0xDA4C"), 16)
+    hp_max_addr  = int(ram_offsets.get("party_slot0_hp_max",     "0xDA4E"), 16)
+    level_addr   = int(ram_offsets.get("party_slot0_level",      "0xDA49"), 16)
+    species_addr = int(ram_offsets.get("party_slot0_species",    "0xDA2A"), 16)
 
     # HP is big-endian 16-bit (high byte first).
     hp_cur = (pyboy.memory[hp_cur_addr] << 8) | pyboy.memory[hp_cur_addr + 1]
     hp_max = (pyboy.memory[hp_max_addr] << 8) | pyboy.memory[hp_max_addr + 1]
     level  = pyboy.memory[level_addr]
+    lead_sp_id = pyboy.memory[species_addr]
 
+    state["lead_species"] = _GEN2_SPECIES.get(lead_sp_id, f"?#{lead_sp_id}")
     state["lead_hp_current"] = hp_cur
     state["lead_hp_max"] = hp_max
     state["lead_level"] = level
@@ -290,12 +299,13 @@ def _read_party_slots(
         if pyboy.memory[a] != 0
     ]
 
-    # All party slots (0-5) — HP, level, status.
+    # All party slots (0-5) — HP, level, status, species.
     # These are the pret/pokegold Silver (US) WRAM addresses for each slot.
-    _slot_hp_cur = [0xDA4C, 0xDA7C, 0xDAAC, 0xDADC, 0xDB0C, 0xDB3C]
-    _slot_hp_max = [0xDA4E, 0xDA7E, 0xDAAE, 0xDADE, 0xDB0E, 0xDB3E]
-    _slot_level  = [0xDA49, 0xDA79, 0xDAA9, 0xDAD9, 0xDB09, 0xDB39]
-    _slot_status = [0xDA4A, 0xDA7A, 0xDAAA, 0xDADA, 0xDB0A, 0xDB3A]
+    _slot_hp_cur  = [0xDA4C, 0xDA7C, 0xDAAC, 0xDADC, 0xDB0C, 0xDB3C]
+    _slot_hp_max  = [0xDA4E, 0xDA7E, 0xDAAE, 0xDADE, 0xDB0E, 0xDB3E]
+    _slot_level   = [0xDA49, 0xDA79, 0xDAA9, 0xDAD9, 0xDB09, 0xDB39]
+    _slot_status  = [0xDA4A, 0xDA7A, 0xDAAA, 0xDADA, 0xDB0A, 0xDB3A]
+    _slot_species = [0xDA2A, 0xDA5A, 0xDA8A, 0xDABA, 0xDAEA, 0xDB1A]
 
     slots = []
     for i in range(min(count, 6)):
@@ -303,8 +313,10 @@ def _read_party_slots(
         hm = (pyboy.memory[_slot_hp_max[i]] << 8) | pyboy.memory[_slot_hp_max[i] + 1]
         lv = pyboy.memory[_slot_level[i]]
         st = pyboy.memory[_slot_status[i]]
+        sp_id = pyboy.memory[_slot_species[i]]
         pct = round(100 * hc / hm) if hm > 0 else 0
         slots.append({
+            "species": _GEN2_SPECIES.get(sp_id, f"?#{sp_id}"),
             "level": lv, "hp_cur": hc, "hp_max": hm,
             "hp_pct": pct, "status": st, "fainted": hm > 0 and hc == 0,
         })
@@ -317,14 +329,15 @@ def _read_party_slots(
 def _read_enemy(pyboy: "PyBoy", ram_offsets: dict[str, str]) -> dict[str, Any] | None:
     """Read enemy Pokemon stats from WRAM. Returns None on any read failure."""
     try:
-        es_addr   = int(ram_offsets.get("enemy_species",    "0xCFDE"), 16)
+        es_addr   = int(ram_offsets.get("enemy_species",    "0xD0ED"), 16)
         e_hc_addr = int(ram_offsets.get("enemy_hp_current", "0xD0FF"), 16)
         e_hm_addr = int(ram_offsets.get("enemy_hp_max",     "0xD101"), 16)
         e_lv_addr = int(ram_offsets.get("enemy_level",      "0xD0FC"), 16)
         e_t1_addr = int(ram_offsets.get("enemy_type1",      "0xD127"), 16)
         e_t2_addr = int(ram_offsets.get("enemy_type2",      "0xD128"), 16)
 
-        species = pyboy.memory[es_addr]
+        species_id = pyboy.memory[es_addr]
+        species_name = _GEN2_SPECIES.get(species_id, f"?#{species_id}")
         # HP is big-endian 16-bit.
         e_hc = (pyboy.memory[e_hc_addr] << 8) | pyboy.memory[e_hc_addr + 1]
         e_hm = (pyboy.memory[e_hm_addr] << 8) | pyboy.memory[e_hm_addr + 1]
@@ -335,7 +348,7 @@ def _read_enemy(pyboy: "PyBoy", ram_offsets: dict[str, str]) -> dict[str, Any] |
         e_pct = round(100 * e_hc / e_hm) if e_hm > 0 else 0
 
         return {
-            "species": species,
+            "species": species_name,
             "hp_cur": e_hc, "hp_max": e_hm, "hp_pct": e_pct,
             "level": e_lv, "types": e_types,
         }

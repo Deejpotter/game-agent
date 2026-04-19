@@ -60,7 +60,7 @@ def format_ram_state(state: dict[str, Any]) -> str:
         if enemy:
             e_hp_str = f"HP {enemy['hp_cur']}/{enemy['hp_max']} ({enemy['hp_pct']}%)"
             lines.append(
-                f"  BATTLE ({btype_str}): Enemy Lv.{enemy['level']} | "
+                f"  BATTLE ({btype_str}): Enemy {enemy['species']} Lv.{enemy['level']} | "
                 f"{e_hp_str} | Type: {enemy['types']}"
             )
         else:
@@ -84,8 +84,12 @@ def format_ram_state(state: dict[str, Any]) -> str:
         if lead_moves:
             moves_str = f" | moves: {', '.join(lead_moves)}"
 
+        species_str = state.get("lead_species") or ""
+        if species_str:
+            species_str = f"{species_str} "
+
         lines.append(
-            f"  Lead Pokemon: Lv.{level} HP {hp_cur}/{hp_max} ({pct}%)"
+            f"  Lead Pokemon: {species_str}Lv.{level} HP {hp_cur}/{hp_max} ({pct}%)"
             f"{heal_warn}{moves_str}"
         )
 
@@ -94,15 +98,16 @@ def format_ram_state(state: dict[str, Any]) -> str:
     if party_slots and len(party_slots) > 1:
         slot_parts: list[str] = []
         for i, s in enumerate(party_slots):
+            sp = s.get("species") or f"Slot{i+1}"
             if s["fainted"]:
-                slot_parts.append(f"Slot{i+1}:Lv{s['level']} FAINTED")
+                slot_parts.append(f"{sp}:Lv{s['level']} FAINTED")
             elif s["hp_pct"] < 25:
                 slot_parts.append(
-                    f"Slot{i+1}:Lv{s['level']} {s['hp_cur']}/{s['hp_max']}({s['hp_pct']}%)⚠"
+                    f"{sp}:Lv{s['level']} {s['hp_cur']}/{s['hp_max']}({s['hp_pct']}%)⚠"
                 )
             else:
                 slot_parts.append(
-                    f"Slot{i+1}:Lv{s['level']} {s['hp_cur']}/{s['hp_max']}({s['hp_pct']}%)"
+                    f"{sp}:Lv{s['level']} {s['hp_cur']}/{s['hp_max']}({s['hp_pct']}%)"
                 )
         lines.append(f"  Party ({len(party_slots)}/{party}): {' | '.join(slot_parts)}")
 
