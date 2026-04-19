@@ -359,29 +359,10 @@ def run_agent(
 
             # ── RAM fast-paths (skip VLM for obvious states) ──────────────
             if has_ram and _ram_state:
-                # Dialogue open → advance immediately with A.
-                # But if we've been in this fast-path for >20 turns without
-                # the flag clearing, the RAM read is likely a false positive.
-                # Fall through to the VLM to escape the loop.
-                _dlg_fp_limit = 20
-                if not _operator_msg and _ram_state.get("dialogue_open") and _consecutive_dialogue_fp < _dlg_fp_limit:
-                    _consecutive_dialogue_fp += 1
-                    _ram_fast_press(
-                        pyboy, "A", "RAM->dialogue",
-                        consecutive_same, consecutive_a, last_button,
-                        history, shots_dir=shots_dir,
-                    )
-                    current_b64, button, consecutive_same, consecutive_a, last_button = (
-                        press_button(pyboy, "A", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir),
-                        "A", consecutive_same + 1 if last_button == "A" else 1,
-                        consecutive_a + 1, "A",
-                    )
-                    continue
-                elif _ram_state.get("dialogue_open") and _consecutive_dialogue_fp >= _dlg_fp_limit:
-                    print(f"  [auto]  dialogue fast-path limit reached ({_dlg_fp_limit}) — falling through to VLM")
-                    _consecutive_dialogue_fp = 0  # reset so it can fast-path again after VLM acts
-                else:
-                    _consecutive_dialogue_fp = 0  # dialogue_open is False, reset counter
+                # NOTE: dialogue fast-path removed — the dialogue_open RAM flag
+                # at 0xC4F2 produces false positives in Pokemon Silver, causing
+                # infinite A-pressing loops. The VLM handles dialogue via
+                # screen_type detection instead.
 
                 # Menu open (not battle) → close with B.
                 if not _operator_msg and _ram_state.get("menu_open") and not _ram_state.get("in_battle"):
