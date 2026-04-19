@@ -81,15 +81,15 @@ def with_retry(
                 isinstance(exc, openai.APIStatusError)
                 and exc.status_code == 401
                 and on_auth_error is not None
-                and auth_refreshes < 2
+                and auth_refreshes < 5
             ):
                 auth_refreshes += 1
                 print(
                     f"  [llm] 401 Unauthorized — refreshing token "
                     f"(refresh {auth_refreshes}/2)…"
                 )
-                # Wait 5s for OpenClaw to refresh the credentials file.
-                time.sleep(5)
+                # Wait 30s for OpenClaw to refresh the credentials file.
+                time.sleep(30)
                 try:
                     on_auth_error()
                 except Exception as refresh_exc:
