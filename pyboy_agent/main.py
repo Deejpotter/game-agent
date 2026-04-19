@@ -105,8 +105,8 @@ def main(argv: list[str] | None = None) -> None:
     vision_client  = make_client(backend_cfg)
     reason_client  = make_client(backend_cfg)
 
-    vision_model   = backend_cfg["vision_model"]
-    reasoning_model = backend_cfg["reasoning_model"]
+    vision_model   = backend_cfg["model"]
+    reasoning_model = backend_cfg.get("reasoning_model") or backend_cfg["model"]
 
     print(f"[main] Vision  : {vision_model}")
     print(f"[main] Reason  : {reasoning_model}")
