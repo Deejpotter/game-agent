@@ -107,7 +107,9 @@ def _tick_button(pyboy: "PyBoy", vlm_button: str, settle_frames: int, render: bo
     """
     gbc_key = BUTTON_MAP.get(vlm_button)
     if gbc_key:
-        pyboy.button(gbc_key)
+        # Hold the button for the full settle duration so directional inputs
+        # actually move the character (not just turn on the spot).
+        pyboy.button(gbc_key, delay=settle_frames)
     pyboy.tick(settle_frames, render)
 
 
