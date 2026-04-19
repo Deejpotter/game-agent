@@ -88,6 +88,8 @@ def with_retry(
                     f"  [llm] 401 Unauthorized — refreshing token "
                     f"(refresh {auth_refreshes}/2)…"
                 )
+                # Wait 5s for OpenClaw to refresh the credentials file.
+                time.sleep(5)
                 try:
                     on_auth_error()
                 except Exception as refresh_exc:

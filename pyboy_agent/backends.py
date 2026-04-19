@@ -49,7 +49,11 @@ def load_copilot_token() -> str:
 
 
 def make_copilot_client() -> OpenAI:
-    """Create an OpenAI-compatible client pointed at the GitHub Copilot API."""
+    """Create an OpenAI-compatible client pointed at the GitHub Copilot API.
+
+    Always re-reads the token file so the client reflects the latest token
+    refreshed by OpenClaw.  Call this again on 401 to get a fresh client.
+    """
     return OpenAI(
         base_url="https://api.githubcopilot.com",
         api_key=load_copilot_token(),
