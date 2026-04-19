@@ -102,8 +102,13 @@ def main(argv: list[str] | None = None) -> None:
     is_local  = is_local_backend(backend_cfg)
     is_copilot = is_copilot_backend(backend_cfg)
 
-    vision_client  = make_client(backend_cfg)
-    reason_client  = make_client(backend_cfg)
+    if is_copilot:
+        from pyboy_agent.backends import make_copilot_client
+        vision_client = make_copilot_client()
+        reason_client = make_copilot_client()
+    else:
+        vision_client  = make_client(backend_cfg)
+        reason_client  = make_client(backend_cfg)
 
     vision_model   = backend_cfg["model"]
     reasoning_model = backend_cfg.get("reasoning_model") or backend_cfg["model"]
