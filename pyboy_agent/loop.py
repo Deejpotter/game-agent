@@ -219,6 +219,7 @@ def run_agent(
     last_button:       str | None = None
     consecutive_same   = 0
     consecutive_a      = 0
+    _consecutive_dialogue_fp = 0  # consecutive turns spent in dialogue fast-path
     wall_detected      = False
     wall_button:       str | None = None
     current_location   = ""
@@ -359,7 +360,12 @@ def run_agent(
             # ── RAM fast-paths (skip VLM for obvious states) ──────────────
             if has_ram and _ram_state:
                 # Dialogue open → advance immediately with A.
-                if not _operator_msg and _ram_state.get("dialogue_open"):
+                # But if we've been in this fast-path for >20 turns without
+                # the flag clearing, the RAM read is likely a false positive.
+                # Fall through to the VLM to escape the loop.
+                _dlg_fp_limit = 20
+                if not _operator_msg and _ram_state.get("dialogue_open") and _consecutive_dialogue_fp < _dlg_fp_limit:
+                    _consecutive_dialogue_fp += 1
                     _ram_fast_press(
                         pyboy, "A", "RAM->dialogue",
                         consecutive_same, consecutive_a, last_button,
@@ -371,6 +377,11 @@ def run_agent(
                         consecutive_a + 1, "A",
                     )
                     continue
+                elif _ram_state.get("dialogue_open") and _consecutive_dialogue_fp >= _dlg_fp_limit:
+                    print(f"  [auto]  dialogue fast-path limit reached ({_dlg_fp_limit}) — falling through to VLM")
+                    _consecutive_dialogue_fp = 0  # reset so it can fast-path again after VLM acts
+                else:
+                    _consecutive_dialogue_fp = 0  # dialogue_open is False, reset counter
 
                 # Menu open (not battle) → close with B.
                 if not _operator_msg and _ram_state.get("menu_open") and not _ram_state.get("in_battle"):
