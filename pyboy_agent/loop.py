@@ -359,7 +359,7 @@ def run_agent(
             # ── RAM fast-paths (skip VLM for obvious states) ──────────────
             if has_ram and _ram_state:
                 # Dialogue open → advance immediately with A.
-                if _ram_state.get("dialogue_open"):
+                if not _operator_msg and _ram_state.get("dialogue_open"):
                     _ram_fast_press(
                         pyboy, "A", "RAM->dialogue",
                         consecutive_same, consecutive_a, last_button,
@@ -373,7 +373,7 @@ def run_agent(
                     continue
 
                 # Menu open (not battle) → close with B.
-                if _ram_state.get("menu_open") and not _ram_state.get("in_battle"):
+                if not _operator_msg and _ram_state.get("menu_open") and not _ram_state.get("in_battle"):
                     current_b64 = press_button(pyboy, "B", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
                     button = "B"
                     consecutive_same = consecutive_same + 1 if last_button == "B" else 1
@@ -383,7 +383,7 @@ def run_agent(
                     continue
 
                 # In battle on odd turns → advance/confirm with A.
-                if _ram_state.get("in_battle") and turn % 2 == 1:
+                if not _operator_msg and _ram_state.get("in_battle") and turn % 2 == 1:
                     current_b64 = press_button(pyboy, "A", SETTLE_FRAMES_BUTTON, shots_dir=shots_dir)
                     button = "A"
                     consecutive_same = consecutive_same + 1 if last_button == "A" else 1
