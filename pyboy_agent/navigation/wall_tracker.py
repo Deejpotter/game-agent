@@ -76,6 +76,15 @@ def detect_and_record_wall(
     if button not in {"Up", "Down", "Left", "Right"}:
         return False, None
 
+    # Don't record walls during cutscenes/scripts: if pre-RAM has no position
+    # or position appears to be in a scripted hold (dialogue_open + no HPs),
+    # skip wall recording entirely to avoid poisoning the world map.
+    _pre_x = pre_ram_state.get("x_pos")
+    _pre_y = pre_ram_state.get("y_pos")
+    _in_script = pre_ram_state.get("dialogue_open") and not pre_ram_state.get("lead_hp_max")
+    if _in_script:
+        return False, None
+
     wall_detected: bool
 
     if has_ram:
