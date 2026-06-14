@@ -1,0 +1,12 @@
+{
+  "name": "Player's Mom",
+  "category": "NPC Sprite",
+  "filename": "mom.png",
+  "source_path": "gfx/sprites/mom.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/mom.png",
+  "description": "The player's mother in New Bark Town. Saves money on the player's behalf when enabled — purchases healing items and occasionally rare goods.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 49,
+  "name": "Venomoth",
+  "api_name": "venomoth",
+  "category": "Poison Moth Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Shield Dust",
+    "Tinted Lens"
+  ],
+  "hidden_abilities": [
+    "Wonder Skin"
+  ],
+  "height_dm": 15,
+  "weight_hg": 125,
+  "base_stats": {
+    "hp": 70,
+    "attack": 65,
+    "defense": 60,
+    "special_attack": 90,
+    "special_defense": 75,
+    "speed": 90
+  },
+  "base_experience": 158,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The powder on its wings is poisonous if it is dark in color. If it is light, it causes paralysis.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Venonat",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/049-venomoth.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/49.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

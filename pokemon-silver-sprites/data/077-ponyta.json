@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 77,
+  "name": "Ponyta",
+  "api_name": "ponyta",
+  "category": "Fire Horse Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Run Away",
+    "Flash Fire"
+  ],
+  "hidden_abilities": [
+    "Flame Body"
+  ],
+  "height_dm": 10,
+  "weight_hg": 300,
+  "base_stats": {
+    "hp": 50,
+    "attack": 85,
+    "defense": 55,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 90
+  },
+  "base_experience": 82,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its hind legs, which have hard­ er-than-diamond hooves, kick back at any presence it senses behind it.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/077-ponyta.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/77.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

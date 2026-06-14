@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 181,
+  "name": "Ampharos",
+  "api_name": "ampharos",
+  "category": "Light Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Plus"
+  ],
+  "height_dm": 14,
+  "weight_hg": 615,
+  "base_stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 85,
+    "special_attack": 115,
+    "special_defense": 90,
+    "speed": 55
+  },
+  "base_experience": 230,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The bright light on its tail can be seen far away. It has been treasured since ancient times as a beacon.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Flaaffy",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/181-ampharos.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/181.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

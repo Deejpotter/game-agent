@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 249,
+  "name": "Lugia",
+  "api_name": "lugia",
+  "category": "Diving Pokémon",
+  "types": [
+    "Psychic",
+    "Flying"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Multiscale"
+  ],
+  "height_dm": 52,
+  "weight_hg": 2160,
+  "base_stats": {
+    "hp": 106,
+    "attack": 90,
+    "defense": 130,
+    "special_attack": 90,
+    "special_defense": 154,
+    "speed": 110
+  },
+  "base_experience": 306,
+  "capture_rate": 3,
+  "base_happiness": 0,
+  "growth_rate": "slow",
+  "flavor_text": "It is said to be the guardian of the seas. It is rumored to have been seen on the night of a storm.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/249-lugia.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/249.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

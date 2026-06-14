@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 149,
+  "name": "Dragonite",
+  "api_name": "dragonite",
+  "category": "Dragon Pokémon",
+  "types": [
+    "Dragon",
+    "Flying"
+  ],
+  "abilities": [
+    "Inner Focus"
+  ],
+  "hidden_abilities": [
+    "Multiscale"
+  ],
+  "height_dm": 22,
+  "weight_hg": 2100,
+  "base_stats": {
+    "hp": 91,
+    "attack": 134,
+    "defense": 95,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 80
+  },
+  "base_experience": 270,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "This marine POKé­ MON has an impres­ sive build that lets it freely fly over raging seas without trouble.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Dragonair",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/149-dragonite.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/149.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

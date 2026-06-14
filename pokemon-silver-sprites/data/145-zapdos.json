@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 145,
+  "name": "Zapdos",
+  "api_name": "zapdos",
+  "category": "Electric Pokémon",
+  "types": [
+    "Electric",
+    "Flying"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Static"
+  ],
+  "height_dm": 16,
+  "weight_hg": 526,
+  "base_stats": {
+    "hp": 90,
+    "attack": 90,
+    "defense": 85,
+    "special_attack": 125,
+    "special_defense": 90,
+    "speed": 100
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "This legendary bird POKéMON is said to appear only when a thun­ dercloud parts into two halves.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/145-zapdos.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/145.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

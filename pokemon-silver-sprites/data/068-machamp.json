@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 68,
+  "name": "Machamp",
+  "api_name": "machamp",
+  "category": "Superpower Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Guts",
+    "No Guard"
+  ],
+  "hidden_abilities": [
+    "Steadfast"
+  ],
+  "height_dm": 16,
+  "weight_hg": 1300,
+  "base_stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 80,
+    "special_attack": 65,
+    "special_defense": 85,
+    "speed": 55
+  },
+  "base_experience": 227,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It uses its four powerful arms to pin the limbs of its foe, then throws the victim over the horizon.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Machoke",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/068-machamp.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/68.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

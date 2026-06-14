@@ -1,0 +1,41 @@
+{
+  "pokedex_number": 94,
+  "name": "Gengar",
+  "api_name": "gengar",
+  "category": "Shadow Pokémon",
+  "types": [
+    "Ghost",
+    "Poison"
+  ],
+  "abilities": [
+    "Cursed Body"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 15,
+  "weight_hg": 405,
+  "base_stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 60,
+    "special_attack": 130,
+    "special_defense": 75,
+    "speed": 110
+  },
+  "base_experience": 225,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "To steal the life of its target, it slips into the prey's shadow and silently waits for an opportunity.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Haunter",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/094-gengar.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/94.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

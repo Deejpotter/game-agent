@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 187,
+  "name": "Hoppip",
+  "api_name": "hoppip",
+  "category": "Cottonweed Pokémon",
+  "types": [
+    "Grass",
+    "Flying"
+  ],
+  "abilities": [
+    "Chlorophyll",
+    "Leaf Guard"
+  ],
+  "hidden_abilities": [
+    "Infiltrator"
+  ],
+  "height_dm": 4,
+  "weight_hg": 5,
+  "base_stats": {
+    "hp": 35,
+    "attack": 35,
+    "defense": 40,
+    "special_attack": 35,
+    "special_defense": 55,
+    "speed": 50
+  },
+  "base_experience": 50,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Its body is so light, it must grip the ground firmly with its feet to keep from being blown away.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/187-hoppip.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/187.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

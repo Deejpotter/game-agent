@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 27,
+  "name": "Sandshrew",
+  "api_name": "sandshrew",
+  "category": "Mouse Pokémon",
+  "types": [
+    "Ground"
+  ],
+  "abilities": [
+    "Sand Veil"
+  ],
+  "hidden_abilities": [
+    "Sand Rush"
+  ],
+  "height_dm": 6,
+  "weight_hg": 120,
+  "base_stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 85,
+    "special_attack": 20,
+    "special_defense": 30,
+    "speed": 40
+  },
+  "base_experience": 60,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Disliking water, it lives in deep burrows in arid areas. It can roll itself instantly into a ball.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/027-sandshrew.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/27.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

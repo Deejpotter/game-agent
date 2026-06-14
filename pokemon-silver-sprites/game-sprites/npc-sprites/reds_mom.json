@@ -1,0 +1,12 @@
+{
+  "name": "Red's Mom",
+  "category": "NPC Sprite",
+  "filename": "reds_mom.png",
+  "source_path": "gfx/sprites/reds_mom.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/reds_mom.png",
+  "description": "Red's mother NPC in Pallet Town. Mentions that Red left for Mt. Silver after becoming the Champion of the Indigo League.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

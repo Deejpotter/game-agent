@@ -1,0 +1,12 @@
+{
+  "name": "Professor Oak",
+  "category": "NPC Sprite",
+  "filename": "oak.png",
+  "source_path": "gfx/sprites/oak.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/oak.png",
+  "description": "Professor Oak, the original Pokemon professor from Pallet Town. In Gold/Silver he evaluates the player's Pokedex and provides the Pokerus explanation.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

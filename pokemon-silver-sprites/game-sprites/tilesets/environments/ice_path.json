@@ -1,0 +1,12 @@
+{
+  "name": "Ice Path tileset",
+  "category": "Tileset",
+  "filename": "ice_path.png",
+  "source_path": "gfx/tilesets/ice_path.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/ice_path.png",
+  "description": "Tileset for Ice Path — a sliding-ice-puzzle cave east of Mahogany Town. Contains icy floors, boulders, and rock walls. Required to reach Blackthorn City.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

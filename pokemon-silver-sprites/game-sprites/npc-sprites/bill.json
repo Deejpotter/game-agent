@@ -1,0 +1,12 @@
+{
+  "name": "Bill",
+  "category": "NPC Sprite",
+  "filename": "bill.png",
+  "source_path": "gfx/sprites/bill.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/bill.png",
+  "description": "Bill, the PC Box inventor from Goldenrod City. Gives the player an Eevee after collecting all Johto Pokedex data. His system connects all Pokemon Centers.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

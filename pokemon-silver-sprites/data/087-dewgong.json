@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 87,
+  "name": "Dewgong",
+  "api_name": "dewgong",
+  "category": "Sea Lion Pokémon",
+  "types": [
+    "Water",
+    "Ice"
+  ],
+  "abilities": [
+    "Thick Fat",
+    "Hydration"
+  ],
+  "hidden_abilities": [
+    "Ice Body"
+  ],
+  "height_dm": 17,
+  "weight_hg": 1200,
+  "base_stats": {
+    "hp": 90,
+    "attack": 70,
+    "defense": 80,
+    "special_attack": 70,
+    "special_defense": 95,
+    "speed": 70
+  },
+  "base_experience": 166,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It loves frigid seas with ice floes. It uses its long tail to change swimming direction quickly.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Seel",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/087-dewgong.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/87.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 190,
+  "name": "Aipom",
+  "api_name": "aipom",
+  "category": "Long Tail Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Pickup"
+  ],
+  "hidden_abilities": [
+    "Skill Link"
+  ],
+  "height_dm": 8,
+  "weight_hg": 115,
+  "base_stats": {
+    "hp": 55,
+    "attack": 70,
+    "defense": 55,
+    "special_attack": 40,
+    "special_defense": 55,
+    "speed": 85
+  },
+  "base_experience": 72,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "It lives atop tall trees. When leap­ ing from branch to branch, it deftly uses its tail for balance.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/190-aipom.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/190.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

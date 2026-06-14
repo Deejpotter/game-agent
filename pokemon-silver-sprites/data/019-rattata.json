@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 19,
+  "name": "Rattata",
+  "api_name": "rattata",
+  "category": "Mouse Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Guts"
+  ],
+  "hidden_abilities": [
+    "Hustle"
+  ],
+  "height_dm": 3,
+  "weight_hg": 35,
+  "base_stats": {
+    "hp": 30,
+    "attack": 56,
+    "defense": 35,
+    "special_attack": 25,
+    "special_defense": 35,
+    "speed": 72
+  },
+  "base_experience": 51,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Living wherever there is food available, it ceaselessly scav­ enges for edibles the entire day.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/019-rattata.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/19.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 66,
+  "name": "Machop",
+  "api_name": "machop",
+  "category": "Superpower Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Guts",
+    "No Guard"
+  ],
+  "hidden_abilities": [
+    "Steadfast"
+  ],
+  "height_dm": 8,
+  "weight_hg": 195,
+  "base_stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 50,
+    "special_attack": 35,
+    "special_defense": 35,
+    "speed": 35
+  },
+  "base_experience": 61,
+  "capture_rate": 180,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It loves to work out and build its muscles. It is never satisfied, even if it trains hard all day long.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/066-machop.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/66.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

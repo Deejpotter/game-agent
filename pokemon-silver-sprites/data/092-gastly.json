@@ -1,0 +1,41 @@
+{
+  "pokedex_number": 92,
+  "name": "Gastly",
+  "api_name": "gastly",
+  "category": "Gas Pokémon",
+  "types": [
+    "Ghost",
+    "Poison"
+  ],
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 13,
+  "weight_hg": 1,
+  "base_stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "special_attack": 100,
+    "special_defense": 35,
+    "speed": 80
+  },
+  "base_experience": 62,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Its thin body is made of gas. It can envelop an opponent of any size and cause suffocation.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/092-gastly.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/92.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 176,
+  "name": "Togetic",
+  "api_name": "togetic",
+  "category": "Happiness Pokémon",
+  "types": [
+    "Fairy",
+    "Flying"
+  ],
+  "abilities": [
+    "Hustle",
+    "Serene Grace"
+  ],
+  "hidden_abilities": [
+    "Super Luck"
+  ],
+  "height_dm": 6,
+  "weight_hg": 32,
+  "base_stats": {
+    "hp": 55,
+    "attack": 40,
+    "defense": 85,
+    "special_attack": 80,
+    "special_defense": 105,
+    "speed": 40
+  },
+  "base_experience": 142,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "It grows dispirit­ ed if it is not with kind people. It can float in midair without moving its wings.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Togepi",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/176-togetic.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/176.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

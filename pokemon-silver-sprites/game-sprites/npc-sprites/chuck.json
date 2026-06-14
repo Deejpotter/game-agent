@@ -1,0 +1,12 @@
+{
+  "name": "Chuck",
+  "category": "NPC Sprite",
+  "filename": "chuck.png",
+  "source_path": "gfx/sprites/chuck.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/chuck.png",
+  "description": "Chuck, the Cianwood City Gym Leader specializing in Fighting-type Pokemon. Uses Primeape and Poliwrath. Gives the Storm Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 47,
+  "name": "Parasect",
+  "api_name": "parasect",
+  "category": "Mushroom Pokémon",
+  "types": [
+    "Bug",
+    "Grass"
+  ],
+  "abilities": [
+    "Effect Spore",
+    "Dry Skin"
+  ],
+  "hidden_abilities": [
+    "Damp"
+  ],
+  "height_dm": 10,
+  "weight_hg": 295,
+  "base_stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 80,
+    "special_attack": 60,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "base_experience": 142,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The larger the mushroom on its back grows, the stronger the mush­ room spores it scatters.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Paras",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/047-parasect.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/47.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

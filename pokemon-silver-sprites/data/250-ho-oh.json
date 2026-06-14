@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 250,
+  "name": "Ho-Oh",
+  "api_name": "ho-oh",
+  "category": "Rainbow Pokémon",
+  "types": [
+    "Fire",
+    "Flying"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Regenerator"
+  ],
+  "height_dm": 38,
+  "weight_hg": 1990,
+  "base_stats": {
+    "hp": 106,
+    "attack": 130,
+    "defense": 90,
+    "special_attack": 110,
+    "special_defense": 154,
+    "speed": 90
+  },
+  "base_experience": 306,
+  "capture_rate": 3,
+  "base_happiness": 0,
+  "growth_rate": "slow",
+  "flavor_text": "A legend says that its body glows in seven colors. A rainbow is said to form behind it when it flies.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/250-ho-oh.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/250.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

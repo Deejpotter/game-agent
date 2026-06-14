@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 104,
+  "name": "Cubone",
+  "api_name": "cubone",
+  "category": "Lonely Pokémon",
+  "types": [
+    "Ground"
+  ],
+  "abilities": [
+    "Rock Head",
+    "Lightning Rod"
+  ],
+  "hidden_abilities": [
+    "Battle Armor"
+  ],
+  "height_dm": 4,
+  "weight_hg": 65,
+  "base_stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 95,
+    "special_attack": 40,
+    "special_defense": 50,
+    "speed": 35
+  },
+  "base_experience": 64,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It always wears the skull of its dead mother, so no one has any idea what its hidden face looks like.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/104-cubone.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/104.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

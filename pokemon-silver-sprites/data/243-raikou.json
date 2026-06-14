@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 243,
+  "name": "Raikou",
+  "api_name": "raikou",
+  "category": "Thunder Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 19,
+  "weight_hg": 1780,
+  "base_stats": {
+    "hp": 90,
+    "attack": 85,
+    "defense": 75,
+    "special_attack": 115,
+    "special_defense": 100,
+    "speed": 115
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "A POKéMON that races across the land while barking a cry that sounds like crashing thunder.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/243-raikou.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/243.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

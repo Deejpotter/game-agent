@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 22,
+  "name": "Fearow",
+  "api_name": "fearow",
+  "category": "Beak Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Keen Eye"
+  ],
+  "hidden_abilities": [
+    "Sniper"
+  ],
+  "height_dm": 12,
+  "weight_hg": 380,
+  "base_stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 65,
+    "special_attack": 61,
+    "special_defense": 61,
+    "speed": 100
+  },
+  "base_experience": 155,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It cleverly uses its thin, long beak to pluck and eat small insects that hide under the ground.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Spearow",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/022-fearow.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/22.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

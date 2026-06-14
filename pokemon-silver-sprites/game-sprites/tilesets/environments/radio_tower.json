@@ -1,0 +1,12 @@
+{
+  "name": "Radio Tower tileset",
+  "category": "Tileset",
+  "filename": "radio_tower.png",
+  "source_path": "gfx/tilesets/radio_tower.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/radio_tower.png",
+  "description": "Tileset for the Goldenrod Radio Tower — a major story location. Team Rocket takes it over broadcasting a signal to call Giovanni back. Five floors of staff and rocket grunts.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

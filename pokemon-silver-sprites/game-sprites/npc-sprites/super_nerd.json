@@ -1,0 +1,12 @@
+{
+  "name": "Super Nerd trainer",
+  "category": "NPC Sprite",
+  "filename": "super_nerd.png",
+  "source_path": "gfx/sprites/super_nerd.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/super_nerd.png",
+  "description": "Super Nerd trainer class sprite — found in Radio Tower and research facilities, using Electric-type or gimmick Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

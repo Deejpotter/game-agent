@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 97,
+  "name": "Hypno",
+  "api_name": "hypno",
+  "category": "Hypnosis Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Insomnia",
+    "Forewarn"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 16,
+  "weight_hg": 756,
+  "base_stats": {
+    "hp": 85,
+    "attack": 73,
+    "defense": 70,
+    "special_attack": 73,
+    "special_defense": 115,
+    "speed": 67
+  },
+  "base_experience": 169,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Always holding a pendulum that it rocks at a steady rhythm, it causes drowsiness in any­ one nearby.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Drowzee",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/097-hypno.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/97.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

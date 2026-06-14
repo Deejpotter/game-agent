@@ -1,0 +1,40 @@
+{
+  "pokedex_number": 11,
+  "name": "Metapod",
+  "api_name": "metapod",
+  "category": "Cocoon Pokémon",
+  "types": [
+    "Bug"
+  ],
+  "abilities": [
+    "Shed Skin"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 7,
+  "weight_hg": 99,
+  "base_stats": {
+    "hp": 50,
+    "attack": 20,
+    "defense": 55,
+    "special_attack": 25,
+    "special_defense": 25,
+    "speed": 30
+  },
+  "base_experience": 72,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It prepares for evolution by har­ dening its shell as much as possi­ ble to protect its soft body.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Caterpie",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/011-metapod.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/11.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

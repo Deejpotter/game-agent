@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 246,
+  "name": "Larvitar",
+  "api_name": "larvitar",
+  "category": "Rock Skin Pokémon",
+  "types": [
+    "Rock",
+    "Ground"
+  ],
+  "abilities": [
+    "Guts"
+  ],
+  "hidden_abilities": [
+    "Sand Veil"
+  ],
+  "height_dm": 6,
+  "weight_hg": 720,
+  "base_stats": {
+    "hp": 50,
+    "attack": 64,
+    "defense": 50,
+    "special_attack": 45,
+    "special_defense": 50,
+    "speed": 41
+  },
+  "base_experience": 60,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "It is born deep underground. It can't emerge until it has entirely consumed the soil around it.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/246-larvitar.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/246.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

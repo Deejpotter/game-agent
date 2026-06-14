@@ -1,0 +1,12 @@
+{
+  "name": "Laboratory tileset",
+  "category": "Tileset",
+  "filename": "lab.png",
+  "source_path": "gfx/tilesets/lab.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/lab.png",
+  "description": "Tileset for Professor Elm's lab in New Bark Town and similar research buildings. Contains lab benches, computers, bookshelves, and equipment.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

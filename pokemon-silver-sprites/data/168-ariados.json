@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 168,
+  "name": "Ariados",
+  "api_name": "ariados",
+  "category": "Long Leg Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Swarm",
+    "Insomnia"
+  ],
+  "hidden_abilities": [
+    "Sniper"
+  ],
+  "height_dm": 11,
+  "weight_hg": 335,
+  "base_stats": {
+    "hp": 70,
+    "attack": 90,
+    "defense": 70,
+    "special_attack": 60,
+    "special_defense": 70,
+    "speed": 40
+  },
+  "base_experience": 140,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "A single strand of a special string is endlessly spun out of its rear. The string leads back to its nest.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Spinarak",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/168-ariados.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/168.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 204,
+  "name": "Pineco",
+  "api_name": "pineco",
+  "category": "Bagworm Pokémon",
+  "types": [
+    "Bug"
+  ],
+  "abilities": [
+    "Sturdy"
+  ],
+  "hidden_abilities": [
+    "Overcoat"
+  ],
+  "height_dm": 6,
+  "weight_hg": 72,
+  "base_stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 90,
+    "special_attack": 35,
+    "special_defense": 35,
+    "speed": 15
+  },
+  "base_experience": 58,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It hangs and waits for flying insect prey to come near. It does not move about much on its own.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/204-pineco.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/204.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

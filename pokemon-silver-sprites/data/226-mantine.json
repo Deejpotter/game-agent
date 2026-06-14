@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 226,
+  "name": "Mantine",
+  "api_name": "mantine",
+  "category": "Kite Pokémon",
+  "types": [
+    "Water",
+    "Flying"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Water Absorb"
+  ],
+  "hidden_abilities": [
+    "Water Veil"
+  ],
+  "height_dm": 21,
+  "weight_hg": 2200,
+  "base_stats": {
+    "hp": 85,
+    "attack": 40,
+    "defense": 70,
+    "special_attack": 80,
+    "special_defense": 140,
+    "speed": 70
+  },
+  "base_experience": 170,
+  "capture_rate": 25,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Swimming freely in open seas, it may fly out of the water and over the waves if it builds up enough speed.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Mantyke",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/226-mantine.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/226.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

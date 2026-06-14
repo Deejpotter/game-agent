@@ -1,0 +1,12 @@
+{
+  "name": "Team Rocket Grunt (female)",
+  "category": "NPC Sprite",
+  "filename": "rocket_girl.png",
+  "source_path": "gfx/sprites/rocket_girl.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/rocket_girl.png",
+  "description": "Female Team Rocket Grunt overworld sprite. Rocket Grunts use Rattata, Zubat, Koffing, and Houndour.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Swimmer (male)",
+  "category": "NPC Sprite",
+  "filename": "swimmer_guy.png",
+  "source_path": "gfx/sprites/swimmer_guy.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/swimmer_guy.png",
+  "description": "Male Swimmer trainer class sprite — found surfing water routes between towns.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Player's house tileset",
+  "category": "Tileset",
+  "filename": "players_house.png",
+  "source_path": "gfx/tilesets/players_house.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/players_house.png",
+  "description": "Tileset for the player character's house in New Bark Town. Ground floor with TV, mom's kitchen, and staircase to the player's room.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

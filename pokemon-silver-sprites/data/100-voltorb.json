@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 100,
+  "name": "Voltorb",
+  "api_name": "voltorb",
+  "category": "Ball Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Soundproof",
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Aftermath"
+  ],
+  "height_dm": 5,
+  "weight_hg": 104,
+  "base_stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 50,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 100
+  },
+  "base_experience": 66,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It was discovered when POKé BALLS were introduced. It is said that there is some connection.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/100-voltorb.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/100.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

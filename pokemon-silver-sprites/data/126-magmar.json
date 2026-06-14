@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 126,
+  "name": "Magmar",
+  "api_name": "magmar",
+  "category": "Spitfire Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Flame Body"
+  ],
+  "hidden_abilities": [
+    "Vital Spirit"
+  ],
+  "height_dm": 13,
+  "weight_hg": 445,
+  "base_stats": {
+    "hp": 65,
+    "attack": 95,
+    "defense": 57,
+    "special_attack": 100,
+    "special_defense": 85,
+    "speed": 93
+  },
+  "base_experience": 173,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The fiery surface of its body gives off a wavering, rippling glare that is similar to the sun.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Magby",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/126-magmar.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/126.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

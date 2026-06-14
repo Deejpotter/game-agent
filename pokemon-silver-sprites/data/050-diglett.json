@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 50,
+  "name": "Diglett",
+  "api_name": "diglett",
+  "category": "Mole Pokémon",
+  "types": [
+    "Ground"
+  ],
+  "abilities": [
+    "Sand Veil",
+    "Arena Trap"
+  ],
+  "hidden_abilities": [
+    "Sand Force"
+  ],
+  "height_dm": 2,
+  "weight_hg": 8,
+  "base_stats": {
+    "hp": 10,
+    "attack": 55,
+    "defense": 25,
+    "special_attack": 35,
+    "special_defense": 45,
+    "speed": 95
+  },
+  "base_experience": 53,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If a DIGLETT DIGS through a field, it leaves the soil perfectly tilled and ideal for planting crops.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/050-diglett.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/50.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

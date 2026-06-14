@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 56,
+  "name": "Mankey",
+  "api_name": "mankey",
+  "category": "Pig Monkey Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Vital Spirit",
+    "Anger Point"
+  ],
+  "hidden_abilities": [
+    "Defiant"
+  ],
+  "height_dm": 5,
+  "weight_hg": 280,
+  "base_stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 35,
+    "special_attack": 35,
+    "special_defense": 45,
+    "speed": 70
+  },
+  "base_experience": 61,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It's unsafe to ap­ proach if it gets violently enraged for no reason and can't distinguish friends from foes.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/056-mankey.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/56.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 160,
+  "name": "Feraligatr",
+  "api_name": "feraligatr",
+  "category": "Big Jaw Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Torrent"
+  ],
+  "hidden_abilities": [
+    "Sheer Force"
+  ],
+  "height_dm": 23,
+  "weight_hg": 888,
+  "base_stats": {
+    "hp": 85,
+    "attack": 105,
+    "defense": 100,
+    "special_attack": 79,
+    "special_defense": 83,
+    "speed": 78
+  },
+  "base_experience": 239,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It is hard for it to support its own weight out of water, so it gets down on all fours. But it moves fast.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Croconaw",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/160-feraligatr.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/160.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

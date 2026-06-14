@@ -1,0 +1,12 @@
+{
+  "name": "Violet City roof tiles",
+  "category": "Tileset Anim",
+  "filename": "roofs_violet.png",
+  "source_path": "gfx/tilesets/roofs/violet.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/roofs/violet.png",
+  "description": "Roof color tiles for buildings in Violet City, the first Gym town. Home of Sprout Tower.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

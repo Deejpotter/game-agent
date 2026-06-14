@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 106,
+  "name": "Hitmonlee",
+  "api_name": "hitmonlee",
+  "category": "Kicking Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Limber",
+    "Reckless"
+  ],
+  "hidden_abilities": [
+    "Unburden"
+  ],
+  "height_dm": 15,
+  "weight_hg": 498,
+  "base_stats": {
+    "hp": 50,
+    "attack": 120,
+    "defense": 53,
+    "special_attack": 35,
+    "special_defense": 110,
+    "speed": 87
+  },
+  "base_experience": 159,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If it starts kick­ ing repeatedly, both legs will stretch even long­ er to strike a fleeing foe.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Tyrogue",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/106-hitmonlee.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/106.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

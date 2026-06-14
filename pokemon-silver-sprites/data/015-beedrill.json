@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 15,
+  "name": "Beedrill",
+  "api_name": "beedrill",
+  "category": "Poison Bee Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Swarm"
+  ],
+  "hidden_abilities": [
+    "Sniper"
+  ],
+  "height_dm": 10,
+  "weight_hg": 295,
+  "base_stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 40,
+    "special_attack": 45,
+    "special_defense": 80,
+    "speed": 75
+  },
+  "base_experience": 178,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It has three poison barbs. The barb on its tail secretes the most powerful poison.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Kakuna",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/015-beedrill.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/15.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

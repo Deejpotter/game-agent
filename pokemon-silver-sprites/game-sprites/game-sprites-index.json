@@ -1,0 +1,1120 @@
+{
+  "total": 159,
+  "source": "pret/pokegold (https://github.com/pret/pokegold)",
+  "game": "Pokemon Gold / Silver",
+  "entries": [
+    {
+      "name": "Cave tileset",
+      "category": "Tileset",
+      "filename": "cave.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for cave interiors: Mt. Mortar, Slowpoke Well, Tohjo Falls, Union Cave. ..."
+    },
+    {
+      "name": "Champion's Room tileset",
+      "category": "Tileset",
+      "filename": "champions_room.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the final Champion's room in the Pokemon League. Lance's arena. Orna..."
+    },
+    {
+      "name": "Dark Cave tileset",
+      "category": "Tileset",
+      "filename": "dark_cave.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Dark Cave near Violet City. Identical to cave but pitch-black until ..."
+    },
+    {
+      "name": "Elite Four room tileset",
+      "category": "Tileset",
+      "filename": "elite_four_room.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the four Elite Four chambers at the Pokemon League. Each room has a ..."
+    },
+    {
+      "name": "Facility tileset",
+      "category": "Tileset",
+      "filename": "facility.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset used in miscellaneous facilities such as the Safari Zone gate and specia..."
+    },
+    {
+      "name": "Forest (Ilex Forest) tileset",
+      "category": "Tileset",
+      "filename": "forest.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Ilex Forest \u00e2\u20ac\u201d the first major forest in Johto. Contains dense trees,..."
+    },
+    {
+      "name": "Game Corner tileset",
+      "category": "Tileset",
+      "filename": "game_corner.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the Goldenrod Game Corner casino. Slot machine floors, neon counters..."
+    },
+    {
+      "name": "Route Gate tileset",
+      "category": "Tileset",
+      "filename": "gate.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for route gates and checkpoints between routes. Also used at the Mahogan..."
+    },
+    {
+      "name": "House interior tileset",
+      "category": "Tileset",
+      "filename": "house.png",
+      "folder": "tilesets/environments",
+      "description": "Standard house interior tileset used in homes throughout Johto and Kanto. Contai..."
+    },
+    {
+      "name": "Ice Path tileset",
+      "category": "Tileset",
+      "filename": "ice_path.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Ice Path \u00e2\u20ac\u201d a sliding-ice-puzzle cave east of Mahogany Town. Contains..."
+    },
+    {
+      "name": "Johto outdoor tileset",
+      "category": "Tileset",
+      "filename": "johto.png",
+      "folder": "tilesets/environments",
+      "description": "The primary outdoor tileset for Johto's routes and towns. Contains tall grass, l..."
+    },
+    {
+      "name": "Johto modern outdoor tileset",
+      "category": "Tileset",
+      "filename": "johto_modern.png",
+      "folder": "tilesets/environments",
+      "description": "An alternate version of the Johto outdoor tileset used in certain towns and late..."
+    },
+    {
+      "name": "Kanto outdoor tileset",
+      "category": "Tileset",
+      "filename": "kanto.png",
+      "folder": "tilesets/environments",
+      "description": "The outdoor tileset for the post-game Kanto region \u00e2\u20ac\u201d routes and towns visited af..."
+    },
+    {
+      "name": "Laboratory tileset",
+      "category": "Tileset",
+      "filename": "lab.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Professor Elm's lab in New Bark Town and similar research buildings...."
+    },
+    {
+      "name": "Lighthouse tileset",
+      "category": "Tileset",
+      "filename": "lighthouse.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the Olivine Lighthouse (Glitter Lighthouse). Spiral staircases, beac..."
+    },
+    {
+      "name": "Mansion interior tileset",
+      "category": "Tileset",
+      "filename": "mansion.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for large mansion-style interiors, including the Mahogany Town rocket ba..."
+    },
+    {
+      "name": "Poke Mart tileset",
+      "category": "Tileset",
+      "filename": "mart.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for all Poke Mart interiors. Counter desks, shelves, and the cash regist..."
+    },
+    {
+      "name": "National Park tileset",
+      "category": "Tileset",
+      "filename": "park.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the National Park near Goldenrod City \u00e2\u20ac\u201d site of the Bug Catching Con..."
+    },
+    {
+      "name": "Player's house tileset",
+      "category": "Tileset",
+      "filename": "players_house.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the player character's house in New Bark Town. Ground floor with TV,..."
+    },
+    {
+      "name": "Player's bedroom tileset",
+      "category": "Tileset",
+      "filename": "players_room.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the player's bedroom where the game begins. Contains a bed, console,..."
+    },
+    {
+      "name": "Pokemon Center tileset",
+      "category": "Tileset",
+      "filename": "pokecenter.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for all Pokemon Center interiors. Contains the healing counter, Nurse Jo..."
+    },
+    {
+      "name": "Port tileset",
+      "category": "Tileset",
+      "filename": "port.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for port and harbor areas including Olivine City's dock and the S.S. Aqu..."
+    },
+    {
+      "name": "Radio Tower tileset",
+      "category": "Tileset",
+      "filename": "radio_tower.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the Goldenrod Radio Tower \u00e2\u20ac\u201d a major story location. Team Rocket take..."
+    },
+    {
+      "name": "Ruins of Alph tileset",
+      "category": "Tileset",
+      "filename": "ruins_of_alph.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the Ruins of Alph \u00e2\u20ac\u201d ancient ruins with Unown puzzles. Completing eac..."
+    },
+    {
+      "name": "Tower tileset",
+      "category": "Tileset",
+      "filename": "tower.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Sprout Tower in Violet City and the Burned Tower in Ecruteak City. T..."
+    },
+    {
+      "name": "Traditional house tileset",
+      "category": "Tileset",
+      "filename": "traditional_house.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Japanese-style traditional house interiors, used in Ecruteak City an..."
+    },
+    {
+      "name": "Train Station tileset",
+      "category": "Tileset",
+      "filename": "train_station.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for Goldenrod City's train station. The Magnet Train connects Goldenrod ..."
+    },
+    {
+      "name": "Underground tileset",
+      "category": "Tileset",
+      "filename": "underground.png",
+      "folder": "tilesets/environments",
+      "description": "Tileset for the Goldenrod Underground shopping area beneath the city. Contains s..."
+    },
+    {
+      "name": "Flower animation frame 1 (GBC color)",
+      "category": "Tileset Anim",
+      "filename": "flower_cgb_1.png",
+      "folder": "tilesets/animated/flowers",
+      "description": "First frame of the animated flower tiles in GBC color mode. Flowers sway on rout..."
+    },
+    {
+      "name": "Flower animation frame 2 (GBC color)",
+      "category": "Tileset Anim",
+      "filename": "flower_cgb_2.png",
+      "folder": "tilesets/animated/flowers",
+      "description": "Second frame of the animated flower tiles in GBC color mode."
+    },
+    {
+      "name": "Flower animation frame 1 (DMG grayscale)",
+      "category": "Tileset Anim",
+      "filename": "flower_dmg_1.png",
+      "folder": "tilesets/animated/flowers",
+      "description": "First frame of the flower animation for original Game Boy (grayscale) mode."
+    },
+    {
+      "name": "Flower animation frame 2 (DMG grayscale)",
+      "category": "Tileset Anim",
+      "filename": "flower_dmg_2.png",
+      "folder": "tilesets/animated/flowers",
+      "description": "Second frame of the flower animation for original Game Boy (grayscale) mode."
+    },
+    {
+      "name": "Lava animation frame 1",
+      "category": "Tileset Anim",
+      "filename": "lava_1.png",
+      "folder": "tilesets/animated/lava",
+      "description": "First frame of the animated lava tiles. Lava appears in the post-game Kanto regi..."
+    },
+    {
+      "name": "Lava animation frame 2",
+      "category": "Tileset Anim",
+      "filename": "lava_2.png",
+      "folder": "tilesets/animated/lava",
+      "description": "Second frame of the lava animation loop."
+    },
+    {
+      "name": "Lava animation frame 3",
+      "category": "Tileset Anim",
+      "filename": "lava_3.png",
+      "folder": "tilesets/animated/lava",
+      "description": "Third frame of the lava animation loop."
+    },
+    {
+      "name": "Lava animation frame 4",
+      "category": "Tileset Anim",
+      "filename": "lava_4.png",
+      "folder": "tilesets/animated/lava",
+      "description": "Fourth frame of the lava animation loop."
+    },
+    {
+      "name": "Azalea Town roof tiles",
+      "category": "Tileset Anim",
+      "filename": "roofs_azalea.png",
+      "folder": "tilesets/animated/rooftops",
+      "description": "Roof color tiles for buildings in Azalea Town, home of Kurt the Poke Ball crafts..."
+    },
+    {
+      "name": "Goldenrod City roof tiles",
+      "category": "Tileset Anim",
+      "filename": "roofs_goldenrod.png",
+      "folder": "tilesets/animated/rooftops",
+      "description": "Roof color tiles for buildings in Goldenrod City \u00e2\u20ac\u201d the largest city in Johto."
+    },
+    {
+      "name": "New Bark Town roof tiles",
+      "category": "Tileset Anim",
+      "filename": "roofs_new_bark.png",
+      "folder": "tilesets/animated/rooftops",
+      "description": "Roof color tiles for buildings in New Bark Town \u00e2\u20ac\u201d the player's starting hometown..."
+    },
+    {
+      "name": "Olivine City roof tiles",
+      "category": "Tileset Anim",
+      "filename": "roofs_olivine.png",
+      "folder": "tilesets/animated/rooftops",
+      "description": "Roof color tiles for buildings in Olivine City, the port town with the Glitter L..."
+    },
+    {
+      "name": "Violet City roof tiles",
+      "category": "Tileset Anim",
+      "filename": "roofs_violet.png",
+      "folder": "tilesets/animated/rooftops",
+      "description": "Roof color tiles for buildings in Violet City, the first Gym town. Home of Sprou..."
+    },
+    {
+      "name": "Tower pillar animation frame 1",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_1.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 1, used in Sprout Tower and Burned Tower."
+    },
+    {
+      "name": "Tower pillar animation frame 2",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_2.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 2."
+    },
+    {
+      "name": "Tower pillar animation frame 3",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_3.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 3."
+    },
+    {
+      "name": "Tower pillar animation frame 4",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_4.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 4."
+    },
+    {
+      "name": "Tower pillar animation frame 5",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_5.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 5."
+    },
+    {
+      "name": "Tower pillar animation frame 6",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_6.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 6."
+    },
+    {
+      "name": "Tower pillar animation frame 7",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_7.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 7."
+    },
+    {
+      "name": "Tower pillar animation frame 8",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_8.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 8."
+    },
+    {
+      "name": "Tower pillar animation frame 9",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_9.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 9."
+    },
+    {
+      "name": "Tower pillar animation frame 10",
+      "category": "Tileset Anim",
+      "filename": "tower-pillar_10.png",
+      "folder": "tilesets/animated/tower-pillars",
+      "description": "Animated pillar tile frame 10."
+    },
+    {
+      "name": "Water animation tiles",
+      "category": "Tileset Anim",
+      "filename": "water_water.png",
+      "folder": "tilesets/animated/water",
+      "description": "Animated water surface tiles \u00e2\u20ac\u201d the rippling blue water used on routes, lakes, an..."
+    },
+    {
+      "name": "Whirlpool animation frame 1",
+      "category": "Tileset Anim",
+      "filename": "whirlpool_1.png",
+      "folder": "tilesets/animated/whirlpool",
+      "description": "First frame of whirlpool animation. Whirlpools block certain water routes and ar..."
+    },
+    {
+      "name": "Whirlpool animation frame 2",
+      "category": "Tileset Anim",
+      "filename": "whirlpool_2.png",
+      "folder": "tilesets/animated/whirlpool",
+      "description": "Second frame of whirlpool animation."
+    },
+    {
+      "name": "Whirlpool animation frame 3",
+      "category": "Tileset Anim",
+      "filename": "whirlpool_3.png",
+      "folder": "tilesets/animated/whirlpool",
+      "description": "Third frame of whirlpool animation."
+    },
+    {
+      "name": "Whirlpool animation frame 4",
+      "category": "Tileset Anim",
+      "filename": "whirlpool_4.png",
+      "folder": "tilesets/animated/whirlpool",
+      "description": "Fourth frame of whirlpool animation."
+    },
+    {
+      "name": "Boulder dust animation",
+      "category": "Overworld",
+      "filename": "boulder_dust.png",
+      "folder": "overworld",
+      "description": "Dust cloud animation that appears when the player pushes a boulder using HM04 St..."
+    },
+    {
+      "name": "Fishing animation (Kris / female player)",
+      "category": "Overworld",
+      "filename": "chris_fish.png",
+      "folder": "overworld",
+      "description": "Overworld fishing animation frames for the female player character (Kris) castin..."
+    },
+    {
+      "name": "Cut grass animation",
+      "category": "Overworld",
+      "filename": "cut_grass.png",
+      "folder": "overworld",
+      "description": "Animation showing grass being sliced when HM01 Cut is used on tall grass. Cut re..."
+    },
+    {
+      "name": "Cut tree sprite",
+      "category": "Overworld",
+      "filename": "cut_tree.png",
+      "folder": "overworld",
+      "description": "The overworld sprite for a small tree that can be cut using HM01 Cut. These smal..."
+    },
+    {
+      "name": "Fishing rod sprite",
+      "category": "Overworld",
+      "filename": "fishing_rod.png",
+      "folder": "overworld",
+      "description": "The overworld sprite of the fishing rod being cast. Three versions exist: Old Ro..."
+    },
+    {
+      "name": "Tall grass rustle animation",
+      "category": "Overworld",
+      "filename": "grass_rustle.png",
+      "folder": "overworld",
+      "description": "The animation of tall grass rustling when a wild Pokemon encounter is triggered ..."
+    },
+    {
+      "name": "Headbutt tree animation",
+      "category": "Overworld",
+      "filename": "headbutt_tree.png",
+      "folder": "overworld",
+      "description": "Animation frames for trees when the move Headbutt is used on them. Some trees sh..."
+    },
+    {
+      "name": "Pokemon Center healing machine",
+      "category": "Overworld",
+      "filename": "heal_machine.png",
+      "folder": "overworld",
+      "description": "The large Nurse Joy healing machine inside every Pokemon Center. Placing the par..."
+    },
+    {
+      "name": "Character shadow sprite",
+      "category": "Overworld",
+      "filename": "shadow.png",
+      "folder": "overworld",
+      "description": "The small oval shadow that appears under the player character and NPCs while wal..."
+    },
+    {
+      "name": "Trainer battle Poke Ball animation",
+      "category": "Overworld",
+      "filename": "trainer_battle_pokeball_tiles.png",
+      "folder": "overworld",
+      "description": "The Poke Ball throw animation tiles used at the start of all trainer battles. Th..."
+    },
+    {
+      "name": "Beauty trainer",
+      "category": "NPC Sprite",
+      "filename": "beauty.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for the Beauty trainer class \u00e2\u20ac\u201d fashionable women found in citie..."
+    },
+    {
+      "name": "Large Lapras decoration",
+      "category": "NPC Sprite",
+      "filename": "big_lapras.png",
+      "folder": "npc-sprites",
+      "description": "Oversized Lapras sprite used as a room decoration item in the player's bedroom."
+    },
+    {
+      "name": "Large Onix decoration",
+      "category": "NPC Sprite",
+      "filename": "big_onix.png",
+      "folder": "npc-sprites",
+      "description": "Oversized Onix sprite used as a room decoration item."
+    },
+    {
+      "name": "Large Snorlax decoration",
+      "category": "NPC Sprite",
+      "filename": "big_snorlax.png",
+      "folder": "npc-sprites",
+      "description": "Oversized Snorlax sprite used as a room decoration item."
+    },
+    {
+      "name": "Biker trainer",
+      "category": "NPC Sprite",
+      "filename": "biker.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for the Biker trainer class \u00e2\u20ac\u201d found on cycling roads, using Poi..."
+    },
+    {
+      "name": "Bill",
+      "category": "NPC Sprite",
+      "filename": "bill.png",
+      "folder": "npc-sprites",
+      "description": "Bill, the PC Box inventor from Goldenrod City. Gives the player an Eevee after c..."
+    },
+    {
+      "name": "Bird NPC sprite",
+      "category": "NPC Sprite",
+      "filename": "bird.png",
+      "folder": "npc-sprites",
+      "description": "Generic bird sprite that appears perched on rooftops and in towns as decoration."
+    },
+    {
+      "name": "Black Belt trainer",
+      "category": "NPC Sprite",
+      "filename": "black_belt.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for the Black Belt trainer class \u00e2\u20ac\u201d Fighting-type specialists fo..."
+    },
+    {
+      "name": "Blaine",
+      "category": "NPC Sprite",
+      "filename": "blaine.png",
+      "folder": "npc-sprites",
+      "description": "Blaine, the Cinnabar Island Gym Leader who now operates from the Seafoam Islands..."
+    },
+    {
+      "name": "Blue (Gary Oak)",
+      "category": "NPC Sprite",
+      "filename": "blue.png",
+      "folder": "npc-sprites",
+      "description": "Blue (Gary Oak), who becomes the Viridian City Gym Leader in the post-game. Gran..."
+    },
+    {
+      "name": "Boulder / Strength rock",
+      "category": "NPC Sprite",
+      "filename": "boulder.png",
+      "folder": "npc-sprites",
+      "description": "The pushable boulder overworld sprite used in Strength puzzles throughout caves...."
+    },
+    {
+      "name": "Brock",
+      "category": "NPC Sprite",
+      "filename": "brock.png",
+      "folder": "npc-sprites",
+      "description": "Brock, the Pewter City Gym Leader specializing in Rock-type Pokemon. One of the ..."
+    },
+    {
+      "name": "Bruno",
+      "category": "NPC Sprite",
+      "filename": "bruno.png",
+      "folder": "npc-sprites",
+      "description": "Bruno, the second Elite Four member specializing in Fighting-type Pokemon. Uses ..."
+    },
+    {
+      "name": "Bug Catcher trainer",
+      "category": "NPC Sprite",
+      "filename": "bug_catcher.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for the Bug Catcher trainer class \u00e2\u20ac\u201d young trainers who speciali..."
+    },
+    {
+      "name": "Bugsy",
+      "category": "NPC Sprite",
+      "filename": "bugsy.png",
+      "folder": "npc-sprites",
+      "description": "Bugsy, the Azalea Town Gym Leader specializing in Bug-type Pokemon. Second Gym L..."
+    },
+    {
+      "name": "Cal",
+      "category": "NPC Sprite",
+      "filename": "cal.png",
+      "folder": "npc-sprites",
+      "description": "Cal, a trainer encountered in the Pokemon League's training areas. Uses a mixed ..."
+    },
+    {
+      "name": "Captain",
+      "category": "NPC Sprite",
+      "filename": "captain.png",
+      "folder": "npc-sprites",
+      "description": "The ship captain sprite, used for the captain of the S.S. Aqua ferry that travel..."
+    },
+    {
+      "name": "Kris (female player character)",
+      "category": "NPC Sprite",
+      "filename": "chris.png",
+      "folder": "npc-sprites",
+      "description": "The female player character Kris's overworld sprite \u00e2\u20ac\u201d the first selectable femal..."
+    },
+    {
+      "name": "Kris on bicycle",
+      "category": "NPC Sprite",
+      "filename": "chris_bike.png",
+      "folder": "npc-sprites",
+      "description": "Kris's overworld sprite while riding the Bicycle, obtained from the Bike Shop in..."
+    },
+    {
+      "name": "Chuck",
+      "category": "NPC Sprite",
+      "filename": "chuck.png",
+      "folder": "npc-sprites",
+      "description": "Chuck, the Cianwood City Gym Leader specializing in Fighting-type Pokemon. Uses ..."
+    },
+    {
+      "name": "Clair",
+      "category": "NPC Sprite",
+      "filename": "clair.png",
+      "folder": "npc-sprites",
+      "description": "Clair, the Blackthorn City Gym Leader who specializes in Dragon-type Pokemon. Th..."
+    },
+    {
+      "name": "Store clerk",
+      "category": "NPC Sprite",
+      "filename": "clerk.png",
+      "folder": "npc-sprites",
+      "description": "Store clerk NPC sprite, found at Poke Marts and shops throughout Johto and Kanto..."
+    },
+    {
+      "name": "Cool Trainer (female)",
+      "category": "NPC Sprite",
+      "filename": "cooltrainer_f.png",
+      "folder": "npc-sprites",
+      "description": "Female Cool Trainer sprite \u00e2\u20ac\u201d higher-level trainers found on later routes and Vic..."
+    },
+    {
+      "name": "Cool Trainer (male)",
+      "category": "NPC Sprite",
+      "filename": "cooltrainer_m.png",
+      "folder": "npc-sprites",
+      "description": "Male Cool Trainer sprite \u00e2\u20ac\u201d higher-level trainers found on later routes."
+    },
+    {
+      "name": "Daisy Oak",
+      "category": "NPC Sprite",
+      "filename": "daisy.png",
+      "folder": "npc-sprites",
+      "description": "Daisy Oak, Professor Oak's granddaughter and Blue's sister. Gives the player the..."
+    },
+    {
+      "name": "Dragon tamer trainer",
+      "category": "NPC Sprite",
+      "filename": "dragon.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for Dragon-type trainer class specialists found in Blackthorn C..."
+    },
+    {
+      "name": "Elder NPC",
+      "category": "NPC Sprite",
+      "filename": "elder.png",
+      "folder": "npc-sprites",
+      "description": "Elder NPC sprite used for wise old men like the Tin Tower elders in Ecruteak Cit..."
+    },
+    {
+      "name": "Professor Elm",
+      "category": "NPC Sprite",
+      "filename": "elm.png",
+      "folder": "npc-sprites",
+      "description": "Professor Elm, the Pokemon professor of New Bark Town who gives the player their..."
+    },
+    {
+      "name": "Erika",
+      "category": "NPC Sprite",
+      "filename": "erika.png",
+      "folder": "npc-sprites",
+      "description": "Erika, the Celadon City Gym Leader specializing in Grass-type Pokemon. Uses Tang..."
+    },
+    {
+      "name": "Lass trainer",
+      "category": "NPC Sprite",
+      "filename": "fairy.png",
+      "folder": "npc-sprites",
+      "description": "Lass-type trainer sprite used for young girl trainers on early routes."
+    },
+    {
+      "name": "Falkner",
+      "category": "NPC Sprite",
+      "filename": "falkner.png",
+      "folder": "npc-sprites",
+      "description": "Falkner, the Violet City Gym Leader specializing in Flying-type Pokemon. The fir..."
+    },
+    {
+      "name": "Famicom (NES) console",
+      "category": "NPC Sprite",
+      "filename": "famicom.png",
+      "folder": "npc-sprites",
+      "description": "The Famicom (NES) console sprite used as a decorative item that can be placed in..."
+    },
+    {
+      "name": "Fisher trainer",
+      "category": "NPC Sprite",
+      "filename": "fisher.png",
+      "folder": "npc-sprites",
+      "description": "Fisher trainer class sprite \u00e2\u20ac\u201d fishermen found near water routes who use Water-ty..."
+    },
+    {
+      "name": "Fishing Guru",
+      "category": "NPC Sprite",
+      "filename": "fishing_guru.png",
+      "folder": "npc-sprites",
+      "description": "The Fishing Guru NPC who distributes fishing rods to the player: Old Rod (Route ..."
+    },
+    {
+      "name": "Berry tree / Fruit tree",
+      "category": "NPC Sprite",
+      "filename": "fruit_tree.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for Berry trees that grow Berries. Berries can be harvested and..."
+    },
+    {
+      "name": "Game Boy kid",
+      "category": "NPC Sprite",
+      "filename": "gameboy_kid.png",
+      "folder": "npc-sprites",
+      "description": "Child NPC sprite holding a Game Boy \u00e2\u20ac\u201d used as a room decoration and generic chil..."
+    },
+    {
+      "name": "Gentleman trainer",
+      "category": "NPC Sprite",
+      "filename": "gentleman.png",
+      "folder": "npc-sprites",
+      "description": "Gentleman trainer class sprite \u00e2\u20ac\u201d older wealthy trainers found in cities who use ..."
+    },
+    {
+      "name": "Gold trophy",
+      "category": "NPC Sprite",
+      "filename": "gold_trophy.png",
+      "folder": "npc-sprites",
+      "description": "The Gold Trophy awarded for winning the Goldenrod City Bug Catching Contest with..."
+    },
+    {
+      "name": "Grandpa / Old man NPC",
+      "category": "NPC Sprite",
+      "filename": "gramps.png",
+      "folder": "npc-sprites",
+      "description": "Elderly male NPC sprite used for old men in towns who give advice or items."
+    },
+    {
+      "name": "Grandma / Old woman NPC",
+      "category": "NPC Sprite",
+      "filename": "granny.png",
+      "folder": "npc-sprites",
+      "description": "Elderly female NPC sprite used for old women in towns."
+    },
+    {
+      "name": "Gym Guide",
+      "category": "NPC Sprite",
+      "filename": "gym_guide.png",
+      "folder": "npc-sprites",
+      "description": "The Gym Guide NPC posted at the entrance of each Pokemon Gym who explains the Gy..."
+    },
+    {
+      "name": "Janine",
+      "category": "NPC Sprite",
+      "filename": "janine.png",
+      "folder": "npc-sprites",
+      "description": "Janine, the Fuchsia City Gym Leader specializing in Poison-type Pokemon. Koga's ..."
+    },
+    {
+      "name": "Jasmine",
+      "category": "NPC Sprite",
+      "filename": "jasmine.png",
+      "folder": "npc-sprites",
+      "description": "Jasmine, the Olivine City Gym Leader specializing in Steel-type Pokemon. The fir..."
+    },
+    {
+      "name": "Karen",
+      "category": "NPC Sprite",
+      "filename": "karen.png",
+      "folder": "npc-sprites",
+      "description": "Karen, the fourth Elite Four member specializing in Dark-type Pokemon. Famous qu..."
+    },
+    {
+      "name": "Kimono Girl",
+      "category": "NPC Sprite",
+      "filename": "kimono_girl.png",
+      "folder": "npc-sprites",
+      "description": "One of the five Kimono Girls in Ecruteak City who perform dances and challenge t..."
+    },
+    {
+      "name": "Koga",
+      "category": "NPC Sprite",
+      "filename": "koga.png",
+      "folder": "npc-sprites",
+      "description": "Koga, the third Elite Four member. Former Fuchsia City Gym Leader specializing i..."
+    },
+    {
+      "name": "Kurt",
+      "category": "NPC Sprite",
+      "filename": "kurt.png",
+      "folder": "npc-sprites",
+      "description": "Kurt, the Poke Ball craftsman in Azalea Town who makes special Poke Balls from A..."
+    },
+    {
+      "name": "Lance",
+      "category": "NPC Sprite",
+      "filename": "lance.png",
+      "folder": "npc-sprites",
+      "description": "Lance, the Pokemon Champion who rules from the League. Dragon-type master and co..."
+    },
+    {
+      "name": "Lass trainer",
+      "category": "NPC Sprite",
+      "filename": "lass.png",
+      "folder": "npc-sprites",
+      "description": "Lass trainer class sprite \u00e2\u20ac\u201d young girl trainers found on early routes using Clef..."
+    },
+    {
+      "name": "Link Receptionist",
+      "category": "NPC Sprite",
+      "filename": "link_receptionist.png",
+      "folder": "npc-sprites",
+      "description": "Receptionist NPC for Game Link cable trading and battling. Found at Pokemon Cent..."
+    },
+    {
+      "name": "Misty",
+      "category": "NPC Sprite",
+      "filename": "misty.png",
+      "folder": "npc-sprites",
+      "description": "Misty, the Cerulean City Gym Leader specializing in Water-type Pokemon. Found at..."
+    },
+    {
+      "name": "Player's Mom",
+      "category": "NPC Sprite",
+      "filename": "mom.png",
+      "folder": "npc-sprites",
+      "description": "The player's mother in New Bark Town. Saves money on the player's behalf when en..."
+    },
+    {
+      "name": "Monster / Creature sprite",
+      "category": "NPC Sprite",
+      "filename": "monster.png",
+      "folder": "npc-sprites",
+      "description": "Generic monster or creature NPC sprite used in certain story events."
+    },
+    {
+      "name": "Morty",
+      "category": "NPC Sprite",
+      "filename": "morty.png",
+      "folder": "npc-sprites",
+      "description": "Morty, the Ecruteak City Gym Leader specializing in Ghost-type Pokemon. Uses Gas..."
+    },
+    {
+      "name": "Nintendo 64 console",
+      "category": "NPC Sprite",
+      "filename": "n64.png",
+      "folder": "npc-sprites",
+      "description": "The Nintendo 64 console sprite used as a decorative room item. One of several re..."
+    },
+    {
+      "name": "Nurse Joy",
+      "category": "NPC Sprite",
+      "filename": "nurse.png",
+      "folder": "npc-sprites",
+      "description": "Nurse Joy, the Pokemon Center nurse who fully heals the player's party when spok..."
+    },
+    {
+      "name": "Professor Oak",
+      "category": "NPC Sprite",
+      "filename": "oak.png",
+      "folder": "npc-sprites",
+      "description": "Professor Oak, the original Pokemon professor from Pallet Town. In Gold/Silver h..."
+    },
+    {
+      "name": "Officer Jenny",
+      "category": "NPC Sprite",
+      "filename": "officer.png",
+      "folder": "npc-sprites",
+      "description": "Officer Jenny, the police officer NPC found in towns. Reports the rival's theft ..."
+    },
+    {
+      "name": "Sign / Notice board",
+      "category": "NPC Sprite",
+      "filename": "paper.png",
+      "folder": "npc-sprites",
+      "description": "Overworld sprite for paper signs and notice boards. Signs on routes describe wha..."
+    },
+    {
+      "name": "Pharmacist",
+      "category": "NPC Sprite",
+      "filename": "pharmacist.png",
+      "folder": "npc-sprites",
+      "description": "The pharmacist NPC in Cianwood City who creates a special medicine for Jasmine's..."
+    },
+    {
+      "name": "Poke Ball item (overworld)",
+      "category": "NPC Sprite",
+      "filename": "poke_ball.png",
+      "folder": "npc-sprites",
+      "description": "The Poke Ball as it appears on the overworld map \u00e2\u20ac\u201d a shiny ball indicating a hid..."
+    },
+    {
+      "name": "Pokedex",
+      "category": "NPC Sprite",
+      "filename": "pokedex.png",
+      "folder": "npc-sprites",
+      "description": "The Pokedex device sprite. Records data on every Pokemon seen and caught. Profes..."
+    },
+    {
+      "name": "PokeFan (female)",
+      "category": "NPC Sprite",
+      "filename": "pokefan_f.png",
+      "folder": "npc-sprites",
+      "description": "Female PokeFan trainer class sprite \u00e2\u20ac\u201d obsessive Pokemon fans who carry photos of..."
+    },
+    {
+      "name": "PokeFan (male)",
+      "category": "NPC Sprite",
+      "filename": "pokefan_m.png",
+      "folder": "npc-sprites",
+      "description": "Male PokeFan trainer class sprite. PokeFans can be registered for rematches via ..."
+    },
+    {
+      "name": "Pryce",
+      "category": "NPC Sprite",
+      "filename": "pryce.png",
+      "folder": "npc-sprites",
+      "description": "Pryce, the Mahogany Town Gym Leader specializing in Ice-type Pokemon. The 7th Jo..."
+    },
+    {
+      "name": "Receptionist",
+      "category": "NPC Sprite",
+      "filename": "receptionist.png",
+      "folder": "npc-sprites",
+      "description": "Generic receptionist NPC sprite found at Pokemon Centers, the Radio Tower, and o..."
+    },
+    {
+      "name": "Red",
+      "category": "NPC Sprite",
+      "filename": "red.png",
+      "folder": "npc-sprites",
+      "description": "Red, the silent protagonist of Pokemon Red/Blue, who retreated to Mt. Silver aft..."
+    },
+    {
+      "name": "Red's Mom",
+      "category": "NPC Sprite",
+      "filename": "reds_mom.png",
+      "folder": "npc-sprites",
+      "description": "Red's mother NPC in Pallet Town. Mentions that Red left for Mt. Silver after bec..."
+    },
+    {
+      "name": "Rival (Silver)",
+      "category": "NPC Sprite",
+      "filename": "rival.png",
+      "folder": "npc-sprites",
+      "description": "The rival character Silver \u00e2\u20ac\u201d son of Team Rocket boss Giovanni. Stole his starter..."
+    },
+    {
+      "name": "Rock obstacle sprite",
+      "category": "NPC Sprite",
+      "filename": "rock.png",
+      "folder": "npc-sprites",
+      "description": "Overworld rock sprite used as obstacles and scenery in caves and rocky routes. D..."
+    },
+    {
+      "name": "Rocker trainer",
+      "category": "NPC Sprite",
+      "filename": "rocker.png",
+      "folder": "npc-sprites",
+      "description": "Rocker trainer class sprite \u00e2\u20ac\u201d electric guitar-themed trainers who use Electric-t..."
+    },
+    {
+      "name": "Team Rocket Grunt (male)",
+      "category": "NPC Sprite",
+      "filename": "rocket.png",
+      "folder": "npc-sprites",
+      "description": "Male Team Rocket Grunt overworld sprite. Members of the villainous Team Rocket o..."
+    },
+    {
+      "name": "Team Rocket Grunt (female)",
+      "category": "NPC Sprite",
+      "filename": "rocket_girl.png",
+      "folder": "npc-sprites",
+      "description": "Female Team Rocket Grunt overworld sprite. Rocket Grunts use Rattata, Zubat, Kof..."
+    },
+    {
+      "name": "Sabrina",
+      "category": "NPC Sprite",
+      "filename": "sabrina.png",
+      "folder": "npc-sprites",
+      "description": "Sabrina, the Saffron City Gym Leader specializing in Psychic-type Pokemon. Uses ..."
+    },
+    {
+      "name": "Sage trainer",
+      "category": "NPC Sprite",
+      "filename": "sage.png",
+      "folder": "npc-sprites",
+      "description": "Sage trainer class sprite \u00e2\u20ac\u201d monks found in Sprout Tower and other spiritual loca..."
+    },
+    {
+      "name": "Sailor trainer",
+      "category": "NPC Sprite",
+      "filename": "sailor.png",
+      "folder": "npc-sprites",
+      "description": "Sailor trainer class sprite \u00e2\u20ac\u201d found on ships (S.S. Aqua) and port areas, using W..."
+    },
+    {
+      "name": "Scientist trainer",
+      "category": "NPC Sprite",
+      "filename": "scientist.png",
+      "folder": "npc-sprites",
+      "description": "Scientist trainer class sprite \u00e2\u20ac\u201d found in labs and underground facilities, using..."
+    },
+    {
+      "name": "Silver trophy",
+      "category": "NPC Sprite",
+      "filename": "silver_trophy.png",
+      "folder": "npc-sprites",
+      "description": "The Silver Trophy awarded for second place in the National Park Bug Catching Con..."
+    },
+    {
+      "name": "Slowpoke (overworld)",
+      "category": "NPC Sprite",
+      "filename": "slowpoke.png",
+      "folder": "npc-sprites",
+      "description": "Overworld Slowpoke sprite blocking Slowpoke Well in Azalea Town. Team Rocket is ..."
+    },
+    {
+      "name": "Super Nintendo (SNES) console",
+      "category": "NPC Sprite",
+      "filename": "snes.png",
+      "folder": "npc-sprites",
+      "description": "The Super Nintendo console sprite used as a decorative room item."
+    },
+    {
+      "name": "Sudowoodo (overworld)",
+      "category": "NPC Sprite",
+      "filename": "sudowoodo.png",
+      "folder": "npc-sprites",
+      "description": "Sudowoodo's overworld sprite blocking the road north of Goldenrod City, disguise..."
+    },
+    {
+      "name": "Super Nerd trainer",
+      "category": "NPC Sprite",
+      "filename": "super_nerd.png",
+      "folder": "npc-sprites",
+      "description": "Super Nerd trainer class sprite \u00e2\u20ac\u201d found in Radio Tower and research facilities, ..."
+    },
+    {
+      "name": "Surfing (HM03 Surf) sprite",
+      "category": "NPC Sprite",
+      "filename": "surf.png",
+      "folder": "npc-sprites",
+      "description": "The overworld sprite of the player surfing on a Pokemon using HM03 Surf. Require..."
+    },
+    {
+      "name": "Surfing Pikachu",
+      "category": "NPC Sprite",
+      "filename": "surfing_pikachu.png",
+      "folder": "npc-sprites",
+      "description": "Special overworld sprite for a Pikachu that knows Surf \u00e2\u20ac\u201d a rare event Pokemon fr..."
+    },
+    {
+      "name": "Lt. Surge",
+      "category": "NPC Sprite",
+      "filename": "surge.png",
+      "folder": "npc-sprites",
+      "description": "Lt. Surge, the Vermilion City Gym Leader specializing in Electric-type Pokemon. ..."
+    },
+    {
+      "name": "Swimmer (female)",
+      "category": "NPC Sprite",
+      "filename": "swimmer_girl.png",
+      "folder": "npc-sprites",
+      "description": "Female Swimmer trainer class sprite \u00e2\u20ac\u201d found in water routes and swimming pools, ..."
+    },
+    {
+      "name": "Swimmer (male)",
+      "category": "NPC Sprite",
+      "filename": "swimmer_guy.png",
+      "folder": "npc-sprites",
+      "description": "Male Swimmer trainer class sprite \u00e2\u20ac\u201d found surfing water routes between towns."
+    },
+    {
+      "name": "Teacher NPC",
+      "category": "NPC Sprite",
+      "filename": "teacher.png",
+      "folder": "npc-sprites",
+      "description": "Teacher NPC sprite found in schools and Pokemon Academy-style buildings, giving ..."
+    },
+    {
+      "name": "Twins trainer",
+      "category": "NPC Sprite",
+      "filename": "twin.png",
+      "folder": "npc-sprites",
+      "description": "Twins trainer class sprite \u00e2\u20ac\u201d paired girl trainers who challenge the player simul..."
+    },
+    {
+      "name": "Whitney",
+      "category": "NPC Sprite",
+      "filename": "whitney.png",
+      "folder": "npc-sprites",
+      "description": "Whitney, the Goldenrod City Gym Leader specializing in Normal-type Pokemon. Famo..."
+    },
+    {
+      "name": "Will",
+      "category": "NPC Sprite",
+      "filename": "will.png",
+      "folder": "npc-sprites",
+      "description": "Will, the first Elite Four member specializing in Psychic-type Pokemon. Uses Xat..."
+    },
+    {
+      "name": "Youngster trainer",
+      "category": "NPC Sprite",
+      "filename": "youngster.png",
+      "folder": "npc-sprites",
+      "description": "Youngster trainer class sprite \u00e2\u20ac\u201d young boy trainers found on early routes using ..."
+    },
+    {
+      "name": "Kris back sprite (battle)",
+      "category": "Player",
+      "filename": "chris_back.png",
+      "folder": "player",
+      "description": "The back view of the female player character Kris during Pokemon battles. The fi..."
+    }
+  ]
+}

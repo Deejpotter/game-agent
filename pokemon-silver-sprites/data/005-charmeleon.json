@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 5,
+  "name": "Charmeleon",
+  "api_name": "charmeleon",
+  "category": "Flame Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_abilities": [
+    "Solar Power"
+  ],
+  "height_dm": 11,
+  "weight_hg": 190,
+  "base_stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "special_attack": 80,
+    "special_defense": 65,
+    "speed": 80
+  },
+  "base_experience": 142,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It has a barbaric nature. In battle, it whips its fiery tail around and slashes away with sharp claws.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Charmander",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/005-charmeleon.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/5.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

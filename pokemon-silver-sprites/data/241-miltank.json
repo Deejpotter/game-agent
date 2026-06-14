@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 241,
+  "name": "Miltank",
+  "api_name": "miltank",
+  "category": "Milk Cow Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Thick Fat",
+    "Scrappy"
+  ],
+  "hidden_abilities": [
+    "Sap Sipper"
+  ],
+  "height_dm": 12,
+  "weight_hg": 755,
+  "base_stats": {
+    "hp": 95,
+    "attack": 80,
+    "defense": 105,
+    "special_attack": 40,
+    "special_defense": 70,
+    "speed": 100
+  },
+  "base_experience": 172,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "If it has just had a baby, the milk it produces con­ tains much more nutrition than usual.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/241-miltank.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/241.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

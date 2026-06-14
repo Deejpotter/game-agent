@@ -1,0 +1,12 @@
+{
+  "name": "Lighthouse tileset",
+  "category": "Tileset",
+  "filename": "lighthouse.png",
+  "source_path": "gfx/tilesets/lighthouse.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/lighthouse.png",
+  "description": "Tileset for the Olivine Lighthouse (Glitter Lighthouse). Spiral staircases, beacon equipment, and railings. Jasmine nurses a sick Ampharos at the top.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

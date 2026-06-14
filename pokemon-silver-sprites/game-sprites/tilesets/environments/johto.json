@@ -1,0 +1,12 @@
+{
+  "name": "Johto outdoor tileset",
+  "category": "Tileset",
+  "filename": "johto.png",
+  "source_path": "gfx/tilesets/johto.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/johto.png",
+  "description": "The primary outdoor tileset for Johto's routes and towns. Contains tall grass, ledges (one-way drops), cut trees, signs, building doors, paths, water, and flowers. This sheet contains the ledge and tree tiles the player interacts with most.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

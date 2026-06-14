@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 90,
+  "name": "Shellder",
+  "api_name": "shellder",
+  "category": "Bivalve Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Shell Armor",
+    "Skill Link"
+  ],
+  "hidden_abilities": [
+    "Overcoat"
+  ],
+  "height_dm": 3,
+  "weight_hg": 40,
+  "base_stats": {
+    "hp": 30,
+    "attack": 65,
+    "defense": 100,
+    "special_attack": 45,
+    "special_defense": 25,
+    "speed": 40
+  },
+  "base_experience": 61,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Grains of sand trapped in its shells mix with its body fluids to form beautiful pearls.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/090-shellder.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/90.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

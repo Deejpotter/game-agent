@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 79,
+  "name": "Slowpoke",
+  "api_name": "slowpoke",
+  "category": "Dopey Pokémon",
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "abilities": [
+    "Oblivious",
+    "Own Tempo"
+  ],
+  "hidden_abilities": [
+    "Regenerator"
+  ],
+  "height_dm": 12,
+  "weight_hg": 360,
+  "base_stats": {
+    "hp": 90,
+    "attack": 65,
+    "defense": 65,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 15
+  },
+  "base_experience": 63,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "A sweet sap leaks from its tail's tip. Although not nutritious, the tail is pleasant to chew on.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/079-slowpoke.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/79.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 237,
+  "name": "Hitmontop",
+  "api_name": "hitmontop",
+  "category": "Handstand Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Technician"
+  ],
+  "hidden_abilities": [
+    "Steadfast"
+  ],
+  "height_dm": 14,
+  "weight_hg": 480,
+  "base_stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 95,
+    "special_attack": 35,
+    "special_defense": 110,
+    "speed": 70
+  },
+  "base_experience": 159,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It launches kicks while spinning. If it spins at high speed, it may bore its way into the ground.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Tyrogue",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/237-hitmontop.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/237.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

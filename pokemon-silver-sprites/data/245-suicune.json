@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 245,
+  "name": "Suicune",
+  "api_name": "suicune",
+  "category": "Aurora Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 20,
+  "weight_hg": 1870,
+  "base_stats": {
+    "hp": 100,
+    "attack": 75,
+    "defense": 115,
+    "special_attack": 90,
+    "special_defense": 115,
+    "speed": 85
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "This POKéMON races across the land. It is said that north winds will somehow blow when­ ever it appears.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/245-suicune.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/245.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Lt. Surge",
+  "category": "NPC Sprite",
+  "filename": "surge.png",
+  "source_path": "gfx/sprites/surge.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/surge.png",
+  "description": "Lt. Surge, the Vermilion City Gym Leader specializing in Electric-type Pokemon. Former military soldier. Uses Raichu in the post-game. Gives the Thunder Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Black Belt trainer",
+  "category": "NPC Sprite",
+  "filename": "black_belt.png",
+  "source_path": "gfx/sprites/black_belt.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/black_belt.png",
+  "description": "Overworld sprite for the Black Belt trainer class — Fighting-type specialists found in gyms and on routes.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

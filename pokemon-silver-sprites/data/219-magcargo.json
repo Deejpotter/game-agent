@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 219,
+  "name": "Magcargo",
+  "api_name": "magcargo",
+  "category": "Lava Pokémon",
+  "types": [
+    "Fire",
+    "Rock"
+  ],
+  "abilities": [
+    "Magma Armor",
+    "Flame Body"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 8,
+  "weight_hg": 550,
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 120,
+    "special_attack": 90,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "base_experience": 151,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its brittle shell occasionally spouts intense flames that cir­ culate throughout its body.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Slugma",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/219-magcargo.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/219.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

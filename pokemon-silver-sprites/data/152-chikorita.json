@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 152,
+  "name": "Chikorita",
+  "api_name": "chikorita",
+  "category": "Leaf Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_abilities": [
+    "Leaf Guard"
+  ],
+  "height_dm": 9,
+  "weight_hg": 64,
+  "base_stats": {
+    "hp": 45,
+    "attack": 49,
+    "defense": 65,
+    "special_attack": 49,
+    "special_defense": 65,
+    "speed": 45
+  },
+  "base_experience": 64,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Its pleasantly aromatic leaves have the ability to check the hu­ midity and tem­ perature.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/152-chikorita.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/152.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

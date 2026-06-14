@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 113,
+  "name": "Chansey",
+  "api_name": "chansey",
+  "category": "Egg Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Natural Cure",
+    "Serene Grace"
+  ],
+  "hidden_abilities": [
+    "Healer"
+  ],
+  "height_dm": 11,
+  "weight_hg": 346,
+  "base_stats": {
+    "hp": 250,
+    "attack": 5,
+    "defense": 5,
+    "special_attack": 35,
+    "special_defense": 105,
+    "speed": 50
+  },
+  "base_experience": 395,
+  "capture_rate": 30,
+  "base_happiness": 140,
+  "growth_rate": "fast",
+  "flavor_text": "Few in number and difficult to cap­ ture, it is said to bring happiness to the trainer who catches it.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Happiny",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/113-chansey.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/113.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

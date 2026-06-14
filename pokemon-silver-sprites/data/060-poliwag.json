@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 60,
+  "name": "Poliwag",
+  "api_name": "poliwag",
+  "category": "Tadpole Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Water Absorb",
+    "Damp"
+  ],
+  "hidden_abilities": [
+    "Swift Swim"
+  ],
+  "height_dm": 6,
+  "weight_hg": 124,
+  "base_stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 90
+  },
+  "base_experience": 60,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The direction of its belly spiral differs by area. The equator is thought to have an effect on this.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/060-poliwag.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/60.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

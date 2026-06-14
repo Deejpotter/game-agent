@@ -1,0 +1,12 @@
+{
+  "name": "National Park tileset",
+  "category": "Tileset",
+  "filename": "park.png",
+  "source_path": "gfx/tilesets/park.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/park.png",
+  "description": "Tileset for the National Park near Goldenrod City — site of the Bug Catching Contest. Contains manicured paths, park benches, and enclosed grass areas.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 89,
+  "name": "Muk",
+  "api_name": "muk",
+  "category": "Sludge Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Stench",
+    "Sticky Hold"
+  ],
+  "hidden_abilities": [
+    "Poison Touch"
+  ],
+  "height_dm": 12,
+  "weight_hg": 300,
+  "base_stats": {
+    "hp": 105,
+    "attack": 105,
+    "defense": 75,
+    "special_attack": 65,
+    "special_defense": 100,
+    "speed": 50
+  },
+  "base_experience": 175,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its body is made of a powerful poi­ son. Touching it accidentally will cause a fever that requires bed rest.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Grimer",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/089-muk.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/89.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

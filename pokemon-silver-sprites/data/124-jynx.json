@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 124,
+  "name": "Jynx",
+  "api_name": "jynx",
+  "category": "Human Shape Pokémon",
+  "types": [
+    "Ice",
+    "Psychic"
+  ],
+  "abilities": [
+    "Oblivious",
+    "Forewarn"
+  ],
+  "hidden_abilities": [
+    "Dry Skin"
+  ],
+  "height_dm": 14,
+  "weight_hg": 406,
+  "base_stats": {
+    "hp": 65,
+    "attack": 50,
+    "defense": 35,
+    "special_attack": 115,
+    "special_defense": 95,
+    "speed": 95
+  },
+  "base_experience": 159,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It speaks a lan­ guage similar to that of humans. However, it seems to use dancing to communicate.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Smoochum",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/124-jynx.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/124.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

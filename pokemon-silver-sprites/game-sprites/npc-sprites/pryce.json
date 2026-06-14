@@ -1,0 +1,12 @@
+{
+  "name": "Pryce",
+  "category": "NPC Sprite",
+  "filename": "pryce.png",
+  "source_path": "gfx/sprites/pryce.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/pryce.png",
+  "description": "Pryce, the Mahogany Town Gym Leader specializing in Ice-type Pokemon. The 7th Johto Gym Leader. Uses Seel, Dewgong, and Piloswine. Gives the Glacier Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

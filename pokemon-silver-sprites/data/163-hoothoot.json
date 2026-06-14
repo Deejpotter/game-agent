@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 163,
+  "name": "Hoothoot",
+  "api_name": "hoothoot",
+  "category": "Owl Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Insomnia",
+    "Keen Eye"
+  ],
+  "hidden_abilities": [
+    "Tinted Lens"
+  ],
+  "height_dm": 7,
+  "weight_hg": 212,
+  "base_stats": {
+    "hp": 60,
+    "attack": 30,
+    "defense": 30,
+    "special_attack": 36,
+    "special_defense": 56,
+    "speed": 50
+  },
+  "base_experience": 52,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It has a perfect sense of time. Whatever happens, it keeps rhythm by precisely tilting its head in time.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/163-hoothoot.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/163.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 173,
+  "name": "Cleffa",
+  "api_name": "cleffa",
+  "category": "Star Shape Pokémon",
+  "types": [
+    "Fairy"
+  ],
+  "abilities": [
+    "Cute Charm",
+    "Magic Guard"
+  ],
+  "hidden_abilities": [
+    "Friend Guard"
+  ],
+  "height_dm": 3,
+  "weight_hg": 30,
+  "base_stats": {
+    "hp": 50,
+    "attack": 25,
+    "defense": 28,
+    "special_attack": 45,
+    "special_defense": 55,
+    "speed": 15
+  },
+  "base_experience": 44,
+  "capture_rate": 150,
+  "base_happiness": 140,
+  "growth_rate": "fast",
+  "flavor_text": "When numerous me­ teors illuminate the night sky, sightings of CLEFFA strangely increase.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/173-cleffa.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/173.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

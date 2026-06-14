@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 70,
+  "name": "Weepinbell",
+  "api_name": "weepinbell",
+  "category": "Flycatcher Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Gluttony"
+  ],
+  "height_dm": 10,
+  "weight_hg": 64,
+  "base_stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 50,
+    "special_attack": 85,
+    "special_defense": 45,
+    "speed": 55
+  },
+  "base_experience": 137,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "If its prey is bigger than its mouth, it slices up the victim with sharp leaves, then eats every morsel.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Bellsprout",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/070-weepinbell.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/70.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

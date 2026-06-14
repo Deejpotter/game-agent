@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 216,
+  "name": "Teddiursa",
+  "api_name": "teddiursa",
+  "category": "Little Bear Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Pickup",
+    "Quick Feet"
+  ],
+  "hidden_abilities": [
+    "Honey Gather"
+  ],
+  "height_dm": 6,
+  "weight_hg": 88,
+  "base_stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 50,
+    "special_attack": 50,
+    "special_defense": 50,
+    "speed": 40
+  },
+  "base_experience": 66,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Before food be­ comes scarce in wintertime, its habit is to hoard food in many hid­ den locations.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/216-teddiursa.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/216.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

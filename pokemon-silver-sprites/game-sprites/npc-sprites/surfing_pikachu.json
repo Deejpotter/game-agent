@@ -1,0 +1,12 @@
+{
+  "name": "Surfing Pikachu",
+  "category": "NPC Sprite",
+  "filename": "surfing_pikachu.png",
+  "source_path": "gfx/sprites/surfing_pikachu.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/surfing_pikachu.png",
+  "description": "Special overworld sprite for a Pikachu that knows Surf — a rare event Pokemon from the Pokemon Stadium 2 minigame, unobtainable through normal gameplay.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

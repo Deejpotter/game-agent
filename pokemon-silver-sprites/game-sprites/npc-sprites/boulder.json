@@ -1,0 +1,12 @@
+{
+  "name": "Boulder / Strength rock",
+  "category": "NPC Sprite",
+  "filename": "boulder.png",
+  "source_path": "gfx/sprites/boulder.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/boulder.png",
+  "description": "The pushable boulder overworld sprite used in Strength puzzles throughout caves. Must be pushed into holes to create paths or solve puzzles.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

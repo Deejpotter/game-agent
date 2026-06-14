@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 131,
+  "name": "Lapras",
+  "api_name": "lapras",
+  "category": "Transport Pokémon",
+  "types": [
+    "Water",
+    "Ice"
+  ],
+  "abilities": [
+    "Water Absorb",
+    "Shell Armor"
+  ],
+  "hidden_abilities": [
+    "Hydration"
+  ],
+  "height_dm": 25,
+  "weight_hg": 2200,
+  "base_stats": {
+    "hp": 130,
+    "attack": 85,
+    "defense": 80,
+    "special_attack": 85,
+    "special_defense": 95,
+    "speed": 60
+  },
+  "base_experience": 187,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "It ferries people across the sea on its back. It may sing an enchanting cry if it is in a good mood.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/131-lapras.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/131.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

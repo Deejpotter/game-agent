@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 46,
+  "name": "Paras",
+  "api_name": "paras",
+  "category": "Mushroom Pokémon",
+  "types": [
+    "Bug",
+    "Grass"
+  ],
+  "abilities": [
+    "Effect Spore",
+    "Dry Skin"
+  ],
+  "hidden_abilities": [
+    "Damp"
+  ],
+  "height_dm": 3,
+  "weight_hg": 54,
+  "base_stats": {
+    "hp": 35,
+    "attack": 70,
+    "defense": 55,
+    "special_attack": 45,
+    "special_defense": 55,
+    "speed": 25
+  },
+  "base_experience": 57,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "As its body grows large, oriental mushrooms named tochukaso start sprouting out of its back.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/046-paras.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/46.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

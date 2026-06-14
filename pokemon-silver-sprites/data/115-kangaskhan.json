@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 115,
+  "name": "Kangaskhan",
+  "api_name": "kangaskhan",
+  "category": "Parent Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Early Bird",
+    "Scrappy"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 22,
+  "weight_hg": 800,
+  "base_stats": {
+    "hp": 105,
+    "attack": 95,
+    "defense": 80,
+    "special_attack": 40,
+    "special_defense": 80,
+    "speed": 90
+  },
+  "base_experience": 172,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "To protect its young, it will never give up during battle, no matter how badly wounded it is.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/115-kangaskhan.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/115.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

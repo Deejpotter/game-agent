@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 23,
+  "name": "Ekans",
+  "api_name": "ekans",
+  "category": "Snake Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Shed Skin"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 20,
+  "weight_hg": 69,
+  "base_stats": {
+    "hp": 35,
+    "attack": 60,
+    "defense": 44,
+    "special_attack": 40,
+    "special_defense": 54,
+    "speed": 55
+  },
+  "base_experience": 58,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It always hides in grass. When first born, it has no poison, so its bite is painful, but harmless.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/023-ekans.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/23.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

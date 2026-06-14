@@ -1,0 +1,12 @@
+{
+  "name": "Tower pillar animation frame 1",
+  "category": "Tileset Anim",
+  "filename": "tower-pillar_1.png",
+  "source_path": "gfx/tilesets/tower-pillar/1.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/tower-pillar/1.png",
+  "description": "Animated pillar tile frame 1, used in Sprout Tower and Burned Tower.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

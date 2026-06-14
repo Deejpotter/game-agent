@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 91,
+  "name": "Cloyster",
+  "api_name": "cloyster",
+  "category": "Bivalve Pokémon",
+  "types": [
+    "Water",
+    "Ice"
+  ],
+  "abilities": [
+    "Shell Armor",
+    "Skill Link"
+  ],
+  "hidden_abilities": [
+    "Overcoat"
+  ],
+  "height_dm": 15,
+  "weight_hg": 1325,
+  "base_stats": {
+    "hp": 50,
+    "attack": 95,
+    "defense": 180,
+    "special_attack": 85,
+    "special_defense": 45,
+    "speed": 70
+  },
+  "base_experience": 184,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "CLOYSTER that live in seas with harsh tidal currents grow large, sharp spikes on their shells.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Shellder",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/091-cloyster.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/91.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

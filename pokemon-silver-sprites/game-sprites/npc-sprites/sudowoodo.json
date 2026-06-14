@@ -1,0 +1,12 @@
+{
+  "name": "Sudowoodo (overworld)",
+  "category": "NPC Sprite",
+  "filename": "sudowoodo.png",
+  "source_path": "gfx/sprites/sudowoodo.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/sudowoodo.png",
+  "description": "Sudowoodo's overworld sprite blocking the road north of Goldenrod City, disguised as a tree. Water it with the SquirtBottle to trigger a battle with this unique Rock-type.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

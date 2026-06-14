@@ -1,0 +1,12 @@
+{
+  "name": "Tower pillar animation frame 6",
+  "category": "Tileset Anim",
+  "filename": "tower-pillar_6.png",
+  "source_path": "gfx/tilesets/tower-pillar/6.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/tower-pillar/6.png",
+  "description": "Animated pillar tile frame 6.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

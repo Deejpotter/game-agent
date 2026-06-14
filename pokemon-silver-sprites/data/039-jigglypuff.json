@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 39,
+  "name": "Jigglypuff",
+  "api_name": "jigglypuff",
+  "category": "Balloon Pokémon",
+  "types": [
+    "Normal",
+    "Fairy"
+  ],
+  "abilities": [
+    "Cute Charm",
+    "Competitive"
+  ],
+  "hidden_abilities": [
+    "Friend Guard"
+  ],
+  "height_dm": 5,
+  "weight_hg": 55,
+  "base_stats": {
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "special_attack": 45,
+    "special_defense": 25,
+    "speed": 20
+  },
+  "base_experience": 95,
+  "capture_rate": 170,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "Looking into its cute, round eyes causes it to sing a relaxing melody, inducing its enemies to sleep.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Igglybuff",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/039-jigglypuff.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/39.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

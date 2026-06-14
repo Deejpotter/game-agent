@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 156,
+  "name": "Quilava",
+  "api_name": "quilava",
+  "category": "Volcano Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_abilities": [
+    "Flash Fire"
+  ],
+  "height_dm": 9,
+  "weight_hg": 190,
+  "base_stats": {
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "special_attack": 80,
+    "special_defense": 65,
+    "speed": 80
+  },
+  "base_experience": 142,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "This POKéMON is fully covered by nonflammable fur. It can withstand any kind of fire attack.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Cyndaquil",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/156-quilava.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/156.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

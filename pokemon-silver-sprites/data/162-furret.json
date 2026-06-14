@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 162,
+  "name": "Furret",
+  "api_name": "furret",
+  "category": "Long Body Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Keen Eye"
+  ],
+  "hidden_abilities": [
+    "Frisk"
+  ],
+  "height_dm": 18,
+  "weight_hg": 325,
+  "base_stats": {
+    "hp": 85,
+    "attack": 76,
+    "defense": 64,
+    "special_attack": 45,
+    "special_defense": 55,
+    "speed": 90
+  },
+  "base_experience": 145,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "There is no tell­ ing where the tail begins. Despite its short legs, it is quick at hunt­ ing RATTATA.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Sentret",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/162-furret.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/162.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

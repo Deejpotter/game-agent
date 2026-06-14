@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 13,
+  "name": "Weedle",
+  "api_name": "weedle",
+  "category": "Hairy Bug Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Shield Dust"
+  ],
+  "hidden_abilities": [
+    "Run Away"
+  ],
+  "height_dm": 3,
+  "weight_hg": 32,
+  "base_stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "special_attack": 20,
+    "special_defense": 20,
+    "speed": 50
+  },
+  "base_experience": 39,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It attacks using a two-inch poison barb on its head. It can usually be found under the leaves it eats.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/013-weedle.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/13.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

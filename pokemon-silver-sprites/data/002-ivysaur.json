@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 2,
+  "name": "Ivysaur",
+  "api_name": "ivysaur",
+  "category": "Seed Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_abilities": [
+    "Chlorophyll"
+  ],
+  "height_dm": 10,
+  "weight_hg": 130,
+  "base_stats": {
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "special_attack": 80,
+    "special_defense": 80,
+    "speed": 60
+  },
+  "base_experience": 142,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "If the bud on its back starts to smell sweet, it is evidence that the large flower will soon bloom.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Bulbasaur",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/002-ivysaur.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/2.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

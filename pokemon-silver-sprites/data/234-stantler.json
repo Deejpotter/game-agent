@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 234,
+  "name": "Stantler",
+  "api_name": "stantler",
+  "category": "Big Horn Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Frisk"
+  ],
+  "hidden_abilities": [
+    "Sap Sipper"
+  ],
+  "height_dm": 14,
+  "weight_hg": 712,
+  "base_stats": {
+    "hp": 73,
+    "attack": 95,
+    "defense": 62,
+    "special_attack": 85,
+    "special_defense": 65,
+    "speed": 85
+  },
+  "base_experience": 163,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Those who stare at its antlers will gradually lose control of their senses and be unable to stand.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/234-stantler.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/234.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

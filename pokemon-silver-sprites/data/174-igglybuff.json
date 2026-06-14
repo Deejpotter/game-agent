@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 174,
+  "name": "Igglybuff",
+  "api_name": "igglybuff",
+  "category": "Balloon Pokémon",
+  "types": [
+    "Normal",
+    "Fairy"
+  ],
+  "abilities": [
+    "Cute Charm",
+    "Competitive"
+  ],
+  "hidden_abilities": [
+    "Friend Guard"
+  ],
+  "height_dm": 3,
+  "weight_hg": 10,
+  "base_stats": {
+    "hp": 90,
+    "attack": 30,
+    "defense": 15,
+    "special_attack": 40,
+    "special_defense": 20,
+    "speed": 15
+  },
+  "base_experience": 42,
+  "capture_rate": 170,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "Its extremely flexible and elas­ tic body makes it bounce continuous­ ly--anytime, any­ where.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/174-igglybuff.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/174.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

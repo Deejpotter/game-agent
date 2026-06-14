@@ -1,0 +1,12 @@
+{
+  "name": "Flower animation frame 1 (GBC color)",
+  "category": "Tileset Anim",
+  "filename": "flower_cgb_1.png",
+  "source_path": "gfx/tilesets/flower/cgb_1.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/flower/cgb_1.png",
+  "description": "First frame of the animated flower tiles in GBC color mode. Flowers sway on routes.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

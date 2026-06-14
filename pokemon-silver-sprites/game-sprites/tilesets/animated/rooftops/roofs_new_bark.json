@@ -1,0 +1,12 @@
+{
+  "name": "New Bark Town roof tiles",
+  "category": "Tileset Anim",
+  "filename": "roofs_new_bark.png",
+  "source_path": "gfx/tilesets/roofs/new_bark.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/roofs/new_bark.png",
+  "description": "Roof color tiles for buildings in New Bark Town — the player's starting hometown.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

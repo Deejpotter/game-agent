@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 196,
+  "name": "Espeon",
+  "api_name": "espeon",
+  "category": "Sun Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Synchronize"
+  ],
+  "hidden_abilities": [
+    "Magic Bounce"
+  ],
+  "height_dm": 9,
+  "weight_hg": 265,
+  "base_stats": {
+    "hp": 65,
+    "attack": 65,
+    "defense": 60,
+    "special_attack": 130,
+    "special_defense": 95,
+    "speed": 110
+  },
+  "base_experience": 184,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "By reading air currents, it can predict things such as the weath­ er or its foe's next move.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Eevee",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/196-espeon.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/196.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Cut grass animation",
+  "category": "Overworld",
+  "filename": "cut_grass.png",
+  "source_path": "gfx/overworld/cut_grass.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/cut_grass.png",
+  "description": "Animation showing grass being sliced when HM01 Cut is used on tall grass. Cut reveals items and clears the tile temporarily.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

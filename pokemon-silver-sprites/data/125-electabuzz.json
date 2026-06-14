@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 125,
+  "name": "Electabuzz",
+  "api_name": "electabuzz",
+  "category": "Electric Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Vital Spirit"
+  ],
+  "height_dm": 11,
+  "weight_hg": 300,
+  "base_stats": {
+    "hp": 65,
+    "attack": 83,
+    "defense": 57,
+    "special_attack": 95,
+    "special_defense": 85,
+    "speed": 105
+  },
+  "base_experience": 172,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its body constant­ ly discharges electricity. Get­ ting close to it will make your hair stand on end.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Elekid",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/125-electabuzz.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/125.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

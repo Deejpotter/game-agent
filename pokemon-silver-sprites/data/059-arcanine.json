@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 59,
+  "name": "Arcanine",
+  "api_name": "arcanine",
+  "category": "Legendary Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Flash Fire"
+  ],
+  "hidden_abilities": [
+    "Justified"
+  ],
+  "height_dm": 19,
+  "weight_hg": 1550,
+  "base_stats": {
+    "hp": 90,
+    "attack": 110,
+    "defense": 80,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 95
+  },
+  "base_experience": 194,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Its magnificent bark conveys a sense of majesty. Anyone hearing it can't help but grovel before it.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Growlithe",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/059-arcanine.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/59.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

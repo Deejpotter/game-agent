@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 185,
+  "name": "Sudowoodo",
+  "api_name": "sudowoodo",
+  "category": "Imitation Pokémon",
+  "types": [
+    "Rock"
+  ],
+  "abilities": [
+    "Sturdy",
+    "Rock Head"
+  ],
+  "hidden_abilities": [
+    "Rattled"
+  ],
+  "height_dm": 12,
+  "weight_hg": 380,
+  "base_stats": {
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "special_attack": 30,
+    "special_defense": 65,
+    "speed": 30
+  },
+  "base_experience": 144,
+  "capture_rate": 65,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It disguises it­ self as a tree to avoid attack. It hates water, so it will disappear if it starts raining.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Bonsly",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/185-sudowoodo.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/185.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 112,
+  "name": "Rhydon",
+  "api_name": "rhydon",
+  "category": "Drill Pokémon",
+  "types": [
+    "Ground",
+    "Rock"
+  ],
+  "abilities": [
+    "Lightning Rod",
+    "Rock Head"
+  ],
+  "hidden_abilities": [
+    "Reckless"
+  ],
+  "height_dm": 19,
+  "weight_hg": 1200,
+  "base_stats": {
+    "hp": 105,
+    "attack": 130,
+    "defense": 120,
+    "special_attack": 45,
+    "special_defense": 45,
+    "speed": 40
+  },
+  "base_experience": 170,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Its brain devel­ oped when it began walking on hind legs. Its thick hide protects it even in magma.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Rhyhorn",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/112-rhydon.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/112.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 121,
+  "name": "Starmie",
+  "api_name": "starmie",
+  "category": "Mysterious Pokémon",
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "abilities": [
+    "Illuminate",
+    "Natural Cure"
+  ],
+  "hidden_abilities": [
+    "Analytic"
+  ],
+  "height_dm": 11,
+  "weight_hg": 800,
+  "base_stats": {
+    "hp": 60,
+    "attack": 75,
+    "defense": 85,
+    "special_attack": 100,
+    "special_defense": 85,
+    "speed": 115
+  },
+  "base_experience": 182,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Regardless of the environment it lives in, its body grows to form a symmetrical geo­ metric shape.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Staryu",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/121-starmie.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/121.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

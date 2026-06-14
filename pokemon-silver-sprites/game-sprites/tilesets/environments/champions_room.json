@@ -1,0 +1,12 @@
+{
+  "name": "Champion's Room tileset",
+  "category": "Tileset",
+  "filename": "champions_room.png",
+  "source_path": "gfx/tilesets/champions_room.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/champions_room.png",
+  "description": "Tileset for the final Champion's room in the Pokemon League. Lance's arena. Ornate floor tiles and pillars mark the destination of the main story.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

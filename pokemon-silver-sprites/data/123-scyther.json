@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 123,
+  "name": "Scyther",
+  "api_name": "scyther",
+  "category": "Mantis Pokémon",
+  "types": [
+    "Bug",
+    "Flying"
+  ],
+  "abilities": [
+    "Swarm",
+    "Technician"
+  ],
+  "hidden_abilities": [
+    "Steadfast"
+  ],
+  "height_dm": 15,
+  "weight_hg": 560,
+  "base_stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 80,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 105
+  },
+  "base_experience": 100,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "When it moves, it leaves only a blur. If it hides in grass, its pro­ tective colors make it invisible.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/123-scyther.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/123.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

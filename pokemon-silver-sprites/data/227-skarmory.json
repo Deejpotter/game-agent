@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 227,
+  "name": "Skarmory",
+  "api_name": "skarmory",
+  "category": "Armor Bird Pokémon",
+  "types": [
+    "Steel",
+    "Flying"
+  ],
+  "abilities": [
+    "Keen Eye",
+    "Sturdy"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 17,
+  "weight_hg": 505,
+  "base_stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 140,
+    "special_attack": 40,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_experience": 163,
+  "capture_rate": 25,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "After nesting in bramble bushes, the wings of its chicks grow hard from scratches by thorns.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/227-skarmory.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/227.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

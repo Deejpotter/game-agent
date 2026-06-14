@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 101,
+  "name": "Electrode",
+  "api_name": "electrode",
+  "category": "Ball Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Soundproof",
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Aftermath"
+  ],
+  "height_dm": 12,
+  "weight_hg": 666,
+  "base_stats": {
+    "hp": 60,
+    "attack": 50,
+    "defense": 70,
+    "special_attack": 80,
+    "special_defense": 80,
+    "speed": 150
+  },
+  "base_experience": 172,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It stores an over­ flowing amount of electric energy inside its body. Even a small shock makes it explode.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Voltorb",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/101-electrode.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/101.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

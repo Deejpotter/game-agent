@@ -1,0 +1,12 @@
+{
+  "name": "Rival (Silver)",
+  "category": "NPC Sprite",
+  "filename": "rival.png",
+  "source_path": "gfx/sprites/rival.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/rival.png",
+  "description": "The rival character Silver — son of Team Rocket boss Giovanni. Stole his starter Pokemon from Elm's lab. His arc involves learning to care for Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

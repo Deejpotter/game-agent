@@ -67,7 +67,7 @@ def main(argv: list[str] | None = None) -> None:
         epilog=__doc__,
     )
     parser.add_argument("--rom",       metavar="PATH", help="Path to the ROM file.")
-    parser.add_argument("--backend",   default="lmstudio", choices=["lmstudio", "ollama", "openai", "copilot"], help="API backend (default: lmstudio).")
+    parser.add_argument("--backend",   default="lmstudio", choices=["lmstudio", "ollama", "openai", "copilot", "nova"], help="API backend (default: lmstudio).")
     parser.add_argument("--headless",  action="store_true", help="Run without SDL2 window.")
     parser.add_argument("--max-turns", type=int, default=0, dest="max_turns", help="Stop after N turns (0=forever).")
     parser.add_argument("--state",     metavar="PATH", help="PyBoy state file to load on startup.")
@@ -106,6 +106,13 @@ def main(argv: list[str] | None = None) -> None:
         from pyboy_agent.backends import make_copilot_client
         vision_client = make_copilot_client()
         reason_client = make_copilot_client()
+    elif "reason_base_url" in backend_cfg:
+        # Backend with separate vision / reasoning endpoints (e.g. nova).
+        vision_client = make_client(backend_cfg)
+        reason_client = make_client({
+            "base_url": backend_cfg["reason_base_url"],
+            "api_key":  backend_cfg["reason_api_key"],
+        })
     else:
         vision_client  = make_client(backend_cfg)
         reason_client  = make_client(backend_cfg)

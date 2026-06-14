@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 45,
+  "name": "Vileplume",
+  "api_name": "vileplume",
+  "category": "Flower Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Effect Spore"
+  ],
+  "height_dm": 12,
+  "weight_hg": 186,
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 85,
+    "special_attack": 110,
+    "special_defense": 90,
+    "speed": 50
+  },
+  "base_experience": 221,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The bud bursts into bloom with a bang. It then starts scattering allergenic, poi­ sonous pollen.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Gloom",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/045-vileplume.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/45.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

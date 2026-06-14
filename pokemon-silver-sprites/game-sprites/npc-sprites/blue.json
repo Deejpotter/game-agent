@@ -1,0 +1,12 @@
+{
+  "name": "Blue (Gary Oak)",
+  "category": "NPC Sprite",
+  "filename": "blue.png",
+  "source_path": "gfx/sprites/blue.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/blue.png",
+  "description": "Blue (Gary Oak), who becomes the Viridian City Gym Leader in the post-game. Grandson of Professor Oak and rival from the original Red/Blue games.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

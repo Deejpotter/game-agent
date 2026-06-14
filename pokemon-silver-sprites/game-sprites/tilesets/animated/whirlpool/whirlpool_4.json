@@ -1,0 +1,12 @@
+{
+  "name": "Whirlpool animation frame 4",
+  "category": "Tileset Anim",
+  "filename": "whirlpool_4.png",
+  "source_path": "gfx/tilesets/whirlpool/4.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/whirlpool/4.png",
+  "description": "Fourth frame of whirlpool animation.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

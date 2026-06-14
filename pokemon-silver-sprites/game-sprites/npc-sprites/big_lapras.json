@@ -1,0 +1,12 @@
+{
+  "name": "Large Lapras decoration",
+  "category": "NPC Sprite",
+  "filename": "big_lapras.png",
+  "source_path": "gfx/sprites/big_lapras.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/big_lapras.png",
+  "description": "Oversized Lapras sprite used as a room decoration item in the player's bedroom.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

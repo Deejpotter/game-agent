@@ -1,0 +1,12 @@
+{
+  "name": "Fishing rod sprite",
+  "category": "Overworld",
+  "filename": "fishing_rod.png",
+  "source_path": "gfx/overworld/fishing_rod.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/fishing_rod.png",
+  "description": "The overworld sprite of the fishing rod being cast. Three versions exist: Old Rod (Magikarp only), Good Rod (Poliwag, Goldeen etc.), Super Rod (rare Pokemon).",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

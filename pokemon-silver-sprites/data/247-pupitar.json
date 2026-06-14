@@ -1,0 +1,41 @@
+{
+  "pokedex_number": 247,
+  "name": "Pupitar",
+  "api_name": "pupitar",
+  "category": "Hard Shell Pokémon",
+  "types": [
+    "Rock",
+    "Ground"
+  ],
+  "abilities": [
+    "Shed Skin"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 12,
+  "weight_hg": 1520,
+  "base_stats": {
+    "hp": 70,
+    "attack": 84,
+    "defense": 70,
+    "special_attack": 65,
+    "special_defense": 70,
+    "speed": 51
+  },
+  "base_experience": 144,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "Even sealed in its shell, it can move freely. Hard and fast, it has out­ standing destruc­ tive power.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Larvitar",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/247-pupitar.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/247.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

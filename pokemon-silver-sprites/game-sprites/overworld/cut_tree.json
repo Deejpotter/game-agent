@@ -1,0 +1,12 @@
+{
+  "name": "Cut tree sprite",
+  "category": "Overworld",
+  "filename": "cut_tree.png",
+  "source_path": "gfx/overworld/cut_tree.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/cut_tree.png",
+  "description": "The overworld sprite for a small tree that can be cut using HM01 Cut. These small saplings block many route entrances and shortcuts throughout Johto and Kanto.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

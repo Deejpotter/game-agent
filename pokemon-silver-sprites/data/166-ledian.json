@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 166,
+  "name": "Ledian",
+  "api_name": "ledian",
+  "category": "Five Star Pokémon",
+  "types": [
+    "Bug",
+    "Flying"
+  ],
+  "abilities": [
+    "Swarm",
+    "Early Bird"
+  ],
+  "hidden_abilities": [
+    "Iron Fist"
+  ],
+  "height_dm": 14,
+  "weight_hg": 356,
+  "base_stats": {
+    "hp": 55,
+    "attack": 35,
+    "defense": 50,
+    "special_attack": 55,
+    "special_defense": 110,
+    "speed": 85
+  },
+  "base_experience": 137,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "The star patterns on its back grow larger or smaller depending on the number of stars in the night sky.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Ledyba",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/166-ledian.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/166.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

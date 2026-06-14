@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 88,
+  "name": "Grimer",
+  "api_name": "grimer",
+  "category": "Sludge Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Stench",
+    "Sticky Hold"
+  ],
+  "hidden_abilities": [
+    "Poison Touch"
+  ],
+  "height_dm": 9,
+  "weight_hg": 300,
+  "base_stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 50,
+    "special_attack": 40,
+    "special_defense": 50,
+    "speed": 25
+  },
+  "base_experience": 65,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Wherever GRIMER has passed, so many germs are left behind that no plants will ever grow again.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/088-grimer.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/88.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

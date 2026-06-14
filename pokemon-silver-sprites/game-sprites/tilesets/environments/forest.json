@@ -1,0 +1,12 @@
+{
+  "name": "Forest (Ilex Forest) tileset",
+  "category": "Tileset",
+  "filename": "forest.png",
+  "source_path": "gfx/tilesets/forest.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/forest.png",
+  "description": "Tileset for Ilex Forest — the first major forest in Johto. Contains dense trees, cut stumps, grass, and the shrine to the legendary Pokemon Celebi.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

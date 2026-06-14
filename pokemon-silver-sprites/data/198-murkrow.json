@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 198,
+  "name": "Murkrow",
+  "api_name": "murkrow",
+  "category": "Darkness Pokémon",
+  "types": [
+    "Dark",
+    "Flying"
+  ],
+  "abilities": [
+    "Insomnia",
+    "Super Luck"
+  ],
+  "hidden_abilities": [
+    "Prankster"
+  ],
+  "height_dm": 5,
+  "weight_hg": 21,
+  "base_stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 42,
+    "special_attack": 85,
+    "special_defense": 42,
+    "speed": 91
+  },
+  "base_experience": 81,
+  "capture_rate": 30,
+  "base_happiness": 35,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It is said that when chased, it lures its attacker onto dark mountain trails where the foe will get lost.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/198-murkrow.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/198.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 36,
+  "name": "Clefable",
+  "api_name": "clefable",
+  "category": "Fairy Pokémon",
+  "types": [
+    "Fairy"
+  ],
+  "abilities": [
+    "Cute Charm",
+    "Magic Guard"
+  ],
+  "hidden_abilities": [
+    "Unaware"
+  ],
+  "height_dm": 13,
+  "weight_hg": 400,
+  "base_stats": {
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "special_attack": 95,
+    "special_defense": 90,
+    "speed": 60
+  },
+  "base_experience": 217,
+  "capture_rate": 25,
+  "base_happiness": 140,
+  "growth_rate": "fast",
+  "flavor_text": "Its very sensitive ears lets it dis­ tinguish distant sounds. As a re­ sult, it prefers quiet places.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Clefairy",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/036-clefable.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/36.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

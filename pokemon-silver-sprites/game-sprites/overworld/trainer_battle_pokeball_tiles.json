@@ -1,0 +1,12 @@
+{
+  "name": "Trainer battle Poke Ball animation",
+  "category": "Overworld",
+  "filename": "trainer_battle_pokeball_tiles.png",
+  "source_path": "gfx/overworld/trainer_battle_pokeball_tiles.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/trainer_battle_pokeball_tiles.png",
+  "description": "The Poke Ball throw animation tiles used at the start of all trainer battles. The trainer throws their ball which expands into the battle screen.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 57,
+  "name": "Primeape",
+  "api_name": "primeape",
+  "category": "Pig Monkey Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Vital Spirit",
+    "Anger Point"
+  ],
+  "hidden_abilities": [
+    "Defiant"
+  ],
+  "height_dm": 10,
+  "weight_hg": 320,
+  "base_stats": {
+    "hp": 65,
+    "attack": 105,
+    "defense": 60,
+    "special_attack": 60,
+    "special_defense": 70,
+    "speed": 95
+  },
+  "base_experience": 159,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It becomes wildly furious if it even senses someone looking at it. It chases anyone that meets its glare.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Mankey",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/057-primeape.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/57.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

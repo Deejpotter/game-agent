@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 242,
+  "name": "Blissey",
+  "api_name": "blissey",
+  "category": "Happiness Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Natural Cure",
+    "Serene Grace"
+  ],
+  "hidden_abilities": [
+    "Healer"
+  ],
+  "height_dm": 15,
+  "weight_hg": 468,
+  "base_stats": {
+    "hp": 255,
+    "attack": 10,
+    "defense": 10,
+    "special_attack": 75,
+    "special_defense": 135,
+    "speed": 55
+  },
+  "base_experience": 608,
+  "capture_rate": 30,
+  "base_happiness": 140,
+  "growth_rate": "fast",
+  "flavor_text": "It has a very com­ passionate nature. If it sees a sick POKéMON, it will nurse the sufferer back to health.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Chansey",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/242-blissey.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/242.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

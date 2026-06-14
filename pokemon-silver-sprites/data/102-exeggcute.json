@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 102,
+  "name": "Exeggcute",
+  "api_name": "exeggcute",
+  "category": "Egg Pokémon",
+  "types": [
+    "Grass",
+    "Psychic"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Harvest"
+  ],
+  "height_dm": 4,
+  "weight_hg": 25,
+  "base_stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 80,
+    "special_attack": 60,
+    "special_defense": 45,
+    "speed": 40
+  },
+  "base_experience": 65,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Using telepathy only they can receive, they always form a cluster of six EXEGGCUTE.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/102-exeggcute.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/102.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

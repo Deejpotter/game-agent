@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 16,
+  "name": "Pidgey",
+  "api_name": "pidgey",
+  "category": "Tiny Bird Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Keen Eye",
+    "Tangled Feet"
+  ],
+  "hidden_abilities": [
+    "Big Pecks"
+  ],
+  "height_dm": 3,
+  "weight_hg": 18,
+  "base_stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "special_attack": 35,
+    "special_defense": 35,
+    "speed": 56
+  },
+  "base_experience": 50,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Common in grassy areas and forests, it is very docile and will chase off enemies by flap­ ping up sand.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/016-pidgey.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/16.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

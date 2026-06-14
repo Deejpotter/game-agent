@@ -1,0 +1,12 @@
+{
+  "name": "PokeFan (male)",
+  "category": "NPC Sprite",
+  "filename": "pokefan_m.png",
+  "source_path": "gfx/sprites/pokefan_m.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/pokefan_m.png",
+  "description": "Male PokeFan trainer class sprite. PokeFans can be registered for rematches via the Pokegear phone system.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

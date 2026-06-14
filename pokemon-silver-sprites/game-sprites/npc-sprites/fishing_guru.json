@@ -1,0 +1,12 @@
+{
+  "name": "Fishing Guru",
+  "category": "NPC Sprite",
+  "filename": "fishing_guru.png",
+  "source_path": "gfx/sprites/fishing_guru.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/fishing_guru.png",
+  "description": "The Fishing Guru NPC who distributes fishing rods to the player: Old Rod (Route 32), Good Rod (Olivine City), Super Rod (Route 12 in Kanto).",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

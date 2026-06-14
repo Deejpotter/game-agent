@@ -1,0 +1,12 @@
+{
+  "name": "Tall grass rustle animation",
+  "category": "Overworld",
+  "filename": "grass_rustle.png",
+  "source_path": "gfx/overworld/grass_rustle.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/grass_rustle.png",
+  "description": "The animation of tall grass rustling when a wild Pokemon encounter is triggered while walking through grass on any route.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

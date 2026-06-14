@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 140,
+  "name": "Kabuto",
+  "api_name": "kabuto",
+  "category": "Shellfish Pokémon",
+  "types": [
+    "Rock",
+    "Water"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Battle Armor"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 5,
+  "weight_hg": 115,
+  "base_stats": {
+    "hp": 30,
+    "attack": 80,
+    "defense": 90,
+    "special_attack": 55,
+    "special_defense": 45,
+    "speed": 55
+  },
+  "base_experience": 71,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "This POKéMON lived in ancient times. On rare occasions, it has been discovered as a living fossil.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/140-kabuto.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/140.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

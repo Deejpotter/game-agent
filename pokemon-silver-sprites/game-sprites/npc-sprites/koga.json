@@ -1,0 +1,12 @@
+{
+  "name": "Koga",
+  "category": "NPC Sprite",
+  "filename": "koga.png",
+  "source_path": "gfx/sprites/koga.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/koga.png",
+  "description": "Koga, the third Elite Four member. Former Fuchsia City Gym Leader specializing in Poison-type Pokemon. Uses Ariados, Forretress, Muk, Venomoth, and Crobat.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

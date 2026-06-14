@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 96,
+  "name": "Drowzee",
+  "api_name": "drowzee",
+  "category": "Hypnosis Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Insomnia",
+    "Forewarn"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 10,
+  "weight_hg": 324,
+  "base_stats": {
+    "hp": 60,
+    "attack": 48,
+    "defense": 45,
+    "special_attack": 43,
+    "special_defense": 90,
+    "speed": 42
+  },
+  "base_experience": 66,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It remembers every dream it eats. It rarely eats the dreams of adults because children's are much tastier.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/096-drowzee.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/96.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

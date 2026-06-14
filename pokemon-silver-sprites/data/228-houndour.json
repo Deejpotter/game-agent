@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 228,
+  "name": "Houndour",
+  "api_name": "houndour",
+  "category": "Dark Pokémon",
+  "types": [
+    "Dark",
+    "Fire"
+  ],
+  "abilities": [
+    "Early Bird",
+    "Flash Fire"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 6,
+  "weight_hg": 108,
+  "base_stats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 30,
+    "special_attack": 80,
+    "special_defense": 50,
+    "speed": 65
+  },
+  "base_experience": 66,
+  "capture_rate": 120,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "To corner prey, they check each other's location using barks that only they can understand.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/228-houndour.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/228.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

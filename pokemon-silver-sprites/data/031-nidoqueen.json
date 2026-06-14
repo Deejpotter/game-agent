@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 31,
+  "name": "Nidoqueen",
+  "api_name": "nidoqueen",
+  "category": "Drill Pokémon",
+  "types": [
+    "Poison",
+    "Ground"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Rivalry"
+  ],
+  "hidden_abilities": [
+    "Sheer Force"
+  ],
+  "height_dm": 13,
+  "weight_hg": 600,
+  "base_stats": {
+    "hp": 90,
+    "attack": 92,
+    "defense": 87,
+    "special_attack": 75,
+    "special_defense": 85,
+    "speed": 76
+  },
+  "base_experience": 227,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It uses its scaly, rugged body to seal the entrance of its nest and protect its young from predators.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Nidorina",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/031-nidoqueen.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/31.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

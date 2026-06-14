@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 9,
+  "name": "Blastoise",
+  "api_name": "blastoise",
+  "category": "Shellfish Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Torrent"
+  ],
+  "hidden_abilities": [
+    "Rain Dish"
+  ],
+  "height_dm": 16,
+  "weight_hg": 855,
+  "base_stats": {
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "special_attack": 85,
+    "special_defense": 105,
+    "speed": 78
+  },
+  "base_experience": 239,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The rocket cannons on its shell fire jets of water capable of punch­ ing holes through thick steel.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Wartortle",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/009-blastoise.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/9.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

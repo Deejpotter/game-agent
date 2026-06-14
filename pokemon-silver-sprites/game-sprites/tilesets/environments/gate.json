@@ -1,0 +1,12 @@
+{
+  "name": "Route Gate tileset",
+  "category": "Tileset",
+  "filename": "gate.png",
+  "source_path": "gfx/tilesets/gate.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/gate.png",
+  "description": "Tileset for route gates and checkpoints between routes. Also used at the Mahogany Town gate leading to the Lake of Rage.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "House interior tileset",
+  "category": "Tileset",
+  "filename": "house.png",
+  "source_path": "gfx/tilesets/house.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/house.png",
+  "description": "Standard house interior tileset used in homes throughout Johto and Kanto. Contains furniture, bookshelves, doors, and floor patterns.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

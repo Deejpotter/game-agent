@@ -1,0 +1,12 @@
+{
+  "name": "Whirlpool animation frame 1",
+  "category": "Tileset Anim",
+  "filename": "whirlpool_1.png",
+  "source_path": "gfx/tilesets/whirlpool/1.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/whirlpool/1.png",
+  "description": "First frame of whirlpool animation. Whirlpools block certain water routes and are cleared using HM06 Whirlpool, learned from Pryce after the 7th badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 184,
+  "name": "Azumarill",
+  "api_name": "azumarill",
+  "category": "Aqua Rabbit Pokémon",
+  "types": [
+    "Water",
+    "Fairy"
+  ],
+  "abilities": [
+    "Thick Fat",
+    "Huge Power"
+  ],
+  "hidden_abilities": [
+    "Sap Sipper"
+  ],
+  "height_dm": 8,
+  "weight_hg": 285,
+  "base_stats": {
+    "hp": 100,
+    "attack": 50,
+    "defense": 80,
+    "special_attack": 60,
+    "special_defense": 80,
+    "speed": 50
+  },
+  "base_experience": 189,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "When it plays in water, it rolls up its elongated ears to prevent their insides from get­ ting wet.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Marill",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/184-azumarill.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/184.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

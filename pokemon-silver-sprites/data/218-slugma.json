@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 218,
+  "name": "Slugma",
+  "api_name": "slugma",
+  "category": "Lava Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Magma Armor",
+    "Flame Body"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 7,
+  "weight_hg": 350,
+  "base_stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 40,
+    "special_attack": 70,
+    "special_defense": 40,
+    "speed": 20
+  },
+  "base_experience": 50,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "A common sight in volcanic areas, it slowly slithers around in a con­ stant search for warm places.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/218-slugma.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/218.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

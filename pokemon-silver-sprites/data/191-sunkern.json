@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 191,
+  "name": "Sunkern",
+  "api_name": "sunkern",
+  "category": "Seed Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Chlorophyll",
+    "Solar Power"
+  ],
+  "hidden_abilities": [
+    "Early Bird"
+  ],
+  "height_dm": 3,
+  "weight_hg": 18,
+  "base_stats": {
+    "hp": 30,
+    "attack": 30,
+    "defense": 30,
+    "special_attack": 30,
+    "special_defense": 30,
+    "speed": 30
+  },
+  "base_experience": 36,
+  "capture_rate": 235,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It lives by drink­ ing only dewdrops from under the leaves of plants. It is said that it eats nothing else.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/191-sunkern.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/191.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

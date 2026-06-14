@@ -1,0 +1,12 @@
+{
+  "name": "Erika",
+  "category": "NPC Sprite",
+  "filename": "erika.png",
+  "source_path": "gfx/sprites/erika.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/erika.png",
+  "description": "Erika, the Celadon City Gym Leader specializing in Grass-type Pokemon. Uses Tangela, Jumpluff, and Victreebel. Gives the Rainbow Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

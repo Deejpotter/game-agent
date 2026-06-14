@@ -1,0 +1,12 @@
+{
+  "name": "Link Receptionist",
+  "category": "NPC Sprite",
+  "filename": "link_receptionist.png",
+  "source_path": "gfx/sprites/link_receptionist.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/link_receptionist.png",
+  "description": "Receptionist NPC for Game Link cable trading and battling. Found at Pokemon Centers and the Colosseum building in Goldenrod City.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

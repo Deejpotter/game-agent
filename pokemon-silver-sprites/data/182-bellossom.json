@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 182,
+  "name": "Bellossom",
+  "api_name": "bellossom",
+  "category": "Flower Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Healer"
+  ],
+  "height_dm": 4,
+  "weight_hg": 58,
+  "base_stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 95,
+    "special_attack": 90,
+    "special_defense": 100,
+    "speed": 50
+  },
+  "base_experience": 221,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Plentiful in the tropics. When it dances, its petals rub together and make a pleasant ringing sound.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Gloom",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/182-bellossom.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/182.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

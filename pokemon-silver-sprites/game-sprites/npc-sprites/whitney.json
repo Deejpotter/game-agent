@@ -1,0 +1,12 @@
+{
+  "name": "Whitney",
+  "category": "NPC Sprite",
+  "filename": "whitney.png",
+  "source_path": "gfx/sprites/whitney.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/whitney.png",
+  "description": "Whitney, the Goldenrod City Gym Leader specializing in Normal-type Pokemon. Famous for her Miltank — considered one of the hardest Gym Leaders by new players.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

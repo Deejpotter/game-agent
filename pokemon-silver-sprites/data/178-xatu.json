@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 178,
+  "name": "Xatu",
+  "api_name": "xatu",
+  "category": "Mystic Pokémon",
+  "types": [
+    "Psychic",
+    "Flying"
+  ],
+  "abilities": [
+    "Synchronize",
+    "Early Bird"
+  ],
+  "hidden_abilities": [
+    "Magic Bounce"
+  ],
+  "height_dm": 15,
+  "weight_hg": 150,
+  "base_stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 70,
+    "special_attack": 95,
+    "special_defense": 70,
+    "speed": 95
+  },
+  "base_experience": 165,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "In South America, it is said that its right eye sees the future and its left eye views the past.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Natu",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/178-xatu.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/178.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

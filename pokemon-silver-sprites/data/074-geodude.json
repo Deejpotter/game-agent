@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 74,
+  "name": "Geodude",
+  "api_name": "geodude",
+  "category": "Rock Pokémon",
+  "types": [
+    "Rock",
+    "Ground"
+  ],
+  "abilities": [
+    "Rock Head",
+    "Sturdy"
+  ],
+  "hidden_abilities": [
+    "Sand Veil"
+  ],
+  "height_dm": 4,
+  "weight_hg": 200,
+  "base_stats": {
+    "hp": 40,
+    "attack": 80,
+    "defense": 100,
+    "special_attack": 30,
+    "special_defense": 30,
+    "speed": 20
+  },
+  "base_experience": 60,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It uses its arms to steadily climb steep mountain paths. It swings its fists around if angered.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/074-geodude.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/74.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

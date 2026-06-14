@@ -1,0 +1,40 @@
+{
+  "pokedex_number": 151,
+  "name": "Mew",
+  "api_name": "mew",
+  "category": "New Species Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Synchronize"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 4,
+  "weight_hg": 40,
+  "base_stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "base_experience": 270,
+  "capture_rate": 45,
+  "base_happiness": 100,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Its DNA is said to contain the genet­ ic codes of all POKéMON, so it can use all kinds of techniques.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": true,
+  "habitat": "rare",
+  "sprite_file": "../sprites/151-mew.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/151.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

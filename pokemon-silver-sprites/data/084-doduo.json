@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 84,
+  "name": "Doduo",
+  "api_name": "doduo",
+  "category": "Twin Bird Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Run Away",
+    "Early Bird"
+  ],
+  "hidden_abilities": [
+    "Tangled Feet"
+  ],
+  "height_dm": 14,
+  "weight_hg": 392,
+  "base_stats": {
+    "hp": 35,
+    "attack": 85,
+    "defense": 45,
+    "special_attack": 35,
+    "special_defense": 35,
+    "speed": 75
+  },
+  "base_experience": 62,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It races through grassy plains with powerful strides, leaving footprints up to four inches deep.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/084-doduo.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/84.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

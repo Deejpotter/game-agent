@@ -1,0 +1,12 @@
+{
+  "name": "Captain",
+  "category": "NPC Sprite",
+  "filename": "captain.png",
+  "source_path": "gfx/sprites/captain.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/captain.png",
+  "description": "The ship captain sprite, used for the captain of the S.S. Aqua ferry that travels between Olivine City (Johto) and Vermilion City (Kanto).",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

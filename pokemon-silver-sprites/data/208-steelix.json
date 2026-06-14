@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 208,
+  "name": "Steelix",
+  "api_name": "steelix",
+  "category": "Iron Snake Pokémon",
+  "types": [
+    "Steel",
+    "Ground"
+  ],
+  "abilities": [
+    "Rock Head",
+    "Sturdy"
+  ],
+  "hidden_abilities": [
+    "Sheer Force"
+  ],
+  "height_dm": 92,
+  "weight_hg": 4000,
+  "base_stats": {
+    "hp": 75,
+    "attack": 85,
+    "defense": 200,
+    "special_attack": 55,
+    "special_defense": 65,
+    "speed": 30
+  },
+  "base_experience": 179,
+  "capture_rate": 25,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It is said that if an ONIX lives for over 100 years, its composition changes to become diamond-like.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Onix",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/208-steelix.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/208.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

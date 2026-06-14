@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 146,
+  "name": "Moltres",
+  "api_name": "moltres",
+  "category": "Flame Pokémon",
+  "types": [
+    "Fire",
+    "Flying"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Flame Body"
+  ],
+  "height_dm": 20,
+  "weight_hg": 600,
+  "base_stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "special_attack": 125,
+    "special_defense": 85,
+    "speed": 90
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "This legendary bird POKéMON is said to bring early spring to the wintry lands it visits.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/146-moltres.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/146.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

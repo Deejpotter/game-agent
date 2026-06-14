@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 21,
+  "name": "Spearow",
+  "api_name": "spearow",
+  "category": "Tiny Bird Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Keen Eye"
+  ],
+  "hidden_abilities": [
+    "Sniper"
+  ],
+  "height_dm": 3,
+  "weight_hg": 20,
+  "base_stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "special_attack": 31,
+    "special_defense": 31,
+    "speed": 70
+  },
+  "base_experience": 52,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Very protective of its territory, it flaps its short wings busily to dart around at high speed.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/021-spearow.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/21.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Famicom (NES) console",
+  "category": "NPC Sprite",
+  "filename": "famicom.png",
+  "source_path": "gfx/sprites/famicom.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/famicom.png",
+  "description": "The Famicom (NES) console sprite used as a decorative item that can be placed in the player's room.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

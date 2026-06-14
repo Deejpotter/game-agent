@@ -1,0 +1,12 @@
+{
+  "name": "Berry tree / Fruit tree",
+  "category": "NPC Sprite",
+  "filename": "fruit_tree.png",
+  "source_path": "gfx/sprites/fruit_tree.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/fruit_tree.png",
+  "description": "Overworld sprite for Berry trees that grow Berries. Berries can be harvested and given to Pokemon to hold, or used for various effects.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

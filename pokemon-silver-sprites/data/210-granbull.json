@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 210,
+  "name": "Granbull",
+  "api_name": "granbull",
+  "category": "Fairy Pokémon",
+  "types": [
+    "Fairy"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Quick Feet"
+  ],
+  "hidden_abilities": [
+    "Rattled"
+  ],
+  "height_dm": 14,
+  "weight_hg": 487,
+  "base_stats": {
+    "hp": 90,
+    "attack": 120,
+    "defense": 75,
+    "special_attack": 60,
+    "special_defense": 60,
+    "speed": 45
+  },
+  "base_experience": 158,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "Because its fangs are too heavy, it always keeps its head tilted down. However, its BITE is powerful.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Snubbull",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/210-granbull.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/210.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 213,
+  "name": "Shuckle",
+  "api_name": "shuckle",
+  "category": "Mold Pokémon",
+  "types": [
+    "Bug",
+    "Rock"
+  ],
+  "abilities": [
+    "Sturdy",
+    "Gluttony"
+  ],
+  "hidden_abilities": [
+    "Contrary"
+  ],
+  "height_dm": 6,
+  "weight_hg": 205,
+  "base_stats": {
+    "hp": 20,
+    "attack": 10,
+    "defense": 230,
+    "special_attack": 10,
+    "special_defense": 230,
+    "speed": 5
+  },
+  "base_experience": 177,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It stores BERRIES inside its shell. To avoid attacks, it hides beneath rocks and remains completely still.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/213-shuckle.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/213.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Fishing animation (Kris / female player)",
+  "category": "Overworld",
+  "filename": "chris_fish.png",
+  "source_path": "gfx/overworld/chris_fish.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/chris_fish.png",
+  "description": "Overworld fishing animation frames for the female player character (Kris) casting a fishing rod into water to encounter wild Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

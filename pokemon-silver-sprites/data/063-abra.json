@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 63,
+  "name": "Abra",
+  "api_name": "abra",
+  "category": "Psi Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Synchronize",
+    "Inner Focus"
+  ],
+  "hidden_abilities": [
+    "Magic Guard"
+  ],
+  "height_dm": 9,
+  "weight_hg": 195,
+  "base_stats": {
+    "hp": 25,
+    "attack": 20,
+    "defense": 15,
+    "special_attack": 105,
+    "special_defense": 55,
+    "speed": 90
+  },
+  "base_experience": 62,
+  "capture_rate": 200,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "If it decides to TELEPORT randomly, it creates the illusion that it has created copies of itself.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/063-abra.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/63.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

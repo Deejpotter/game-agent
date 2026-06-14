@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 197,
+  "name": "Umbreon",
+  "api_name": "umbreon",
+  "category": "Moonlight Pokémon",
+  "types": [
+    "Dark"
+  ],
+  "abilities": [
+    "Synchronize"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 10,
+  "weight_hg": 270,
+  "base_stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 110,
+    "special_attack": 60,
+    "special_defense": 130,
+    "speed": 65
+  },
+  "base_experience": 184,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "medium",
+  "flavor_text": "When darkness falls, the rings on the body begin to glow, striking fear in the hearts of anyone nearby.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Eevee",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/197-umbreon.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/197.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

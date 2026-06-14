@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 144,
+  "name": "Articuno",
+  "api_name": "articuno",
+  "category": "Freeze Pokémon",
+  "types": [
+    "Ice",
+    "Flying"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Snow Cloak"
+  ],
+  "height_dm": 17,
+  "weight_hg": 554,
+  "base_stats": {
+    "hp": 90,
+    "attack": 85,
+    "defense": 100,
+    "special_attack": 95,
+    "special_defense": 125,
+    "speed": 85
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "One of the legen­ dary bird POKéMON, it chills moisture in the atmosphere to create snow while flying.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/144-articuno.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/144.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

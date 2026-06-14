@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 116,
+  "name": "Horsea",
+  "api_name": "horsea",
+  "category": "Dragon Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Sniper"
+  ],
+  "hidden_abilities": [
+    "Damp"
+  ],
+  "height_dm": 4,
+  "weight_hg": 80,
+  "base_stats": {
+    "hp": 30,
+    "attack": 40,
+    "defense": 70,
+    "special_attack": 70,
+    "special_defense": 25,
+    "speed": 60
+  },
+  "base_experience": 59,
+  "capture_rate": 225,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its big, developed fins move rapidly, allowing it to swim backward while still facing forward.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/116-horsea.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/116.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

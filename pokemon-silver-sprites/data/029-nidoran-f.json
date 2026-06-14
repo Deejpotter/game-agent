@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 29,
+  "name": "Nidoran♀",
+  "api_name": "nidoran-f",
+  "category": "Poison Pin Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Rivalry"
+  ],
+  "hidden_abilities": [
+    "Hustle"
+  ],
+  "height_dm": 4,
+  "weight_hg": 70,
+  "base_stats": {
+    "hp": 55,
+    "attack": 47,
+    "defense": 52,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 41
+  },
+  "base_experience": 55,
+  "capture_rate": 235,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Although not very combative, it will torment its foes with poison spikes if it is threat­ ened in any way.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/029-nidoran-f.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/29.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

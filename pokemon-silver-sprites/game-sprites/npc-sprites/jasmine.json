@@ -1,0 +1,12 @@
+{
+  "name": "Jasmine",
+  "category": "NPC Sprite",
+  "filename": "jasmine.png",
+  "source_path": "gfx/sprites/jasmine.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/jasmine.png",
+  "description": "Jasmine, the Olivine City Gym Leader specializing in Steel-type Pokemon. The first Steel-type Gym Leader in the series. Her Steelix is her ace.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

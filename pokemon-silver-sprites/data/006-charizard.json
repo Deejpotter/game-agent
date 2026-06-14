@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 6,
+  "name": "Charizard",
+  "api_name": "charizard",
+  "category": "Flame Pokémon",
+  "types": [
+    "Fire",
+    "Flying"
+  ],
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_abilities": [
+    "Solar Power"
+  ],
+  "height_dm": 17,
+  "weight_hg": 905,
+  "base_stats": {
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "special_attack": 109,
+    "special_defense": 85,
+    "speed": 100
+  },
+  "base_experience": 240,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Breathing intense, hot flames, it can melt almost any­ thing. Its breath inflicts terrible pain on enemies.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Charmeleon",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/006-charizard.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/6.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

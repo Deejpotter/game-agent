@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 30,
+  "name": "Nidorina",
+  "api_name": "nidorina",
+  "category": "Poison Pin Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Rivalry"
+  ],
+  "hidden_abilities": [
+    "Hustle"
+  ],
+  "height_dm": 8,
+  "weight_hg": 200,
+  "base_stats": {
+    "hp": 70,
+    "attack": 62,
+    "defense": 67,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 56
+  },
+  "base_experience": 128,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It has a calm and caring nature. Because its horn grows slowly, it prefers not to fight.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Nidoran♀",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/030-nidorina.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/30.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

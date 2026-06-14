@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 169,
+  "name": "Crobat",
+  "api_name": "crobat",
+  "category": "Bat Pokémon",
+  "types": [
+    "Poison",
+    "Flying"
+  ],
+  "abilities": [
+    "Inner Focus"
+  ],
+  "hidden_abilities": [
+    "Infiltrator"
+  ],
+  "height_dm": 18,
+  "weight_hg": 750,
+  "base_stats": {
+    "hp": 85,
+    "attack": 90,
+    "defense": 80,
+    "special_attack": 70,
+    "special_defense": 80,
+    "speed": 130
+  },
+  "base_experience": 241,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The development of wings on its legs enables it to fly fast but also makes it tough to stop and rest.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Golbat",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/169-crobat.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/169.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

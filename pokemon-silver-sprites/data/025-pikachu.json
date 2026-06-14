@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 25,
+  "name": "Pikachu",
+  "api_name": "pikachu",
+  "category": "Mouse Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Lightning Rod"
+  ],
+  "height_dm": 4,
+  "weight_hg": 60,
+  "base_stats": {
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "special_attack": 50,
+    "special_defense": 50,
+    "speed": 90
+  },
+  "base_experience": 112,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It raises its tail to check its sur­ roundings. The tail is sometimes struck by light­ ning in this pose.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Pichu",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/025-pikachu.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/25.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

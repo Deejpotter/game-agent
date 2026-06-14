@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 35,
+  "name": "Clefairy",
+  "api_name": "clefairy",
+  "category": "Fairy Pokémon",
+  "types": [
+    "Fairy"
+  ],
+  "abilities": [
+    "Cute Charm",
+    "Magic Guard"
+  ],
+  "hidden_abilities": [
+    "Friend Guard"
+  ],
+  "height_dm": 6,
+  "weight_hg": 75,
+  "base_stats": {
+    "hp": 70,
+    "attack": 45,
+    "defense": 48,
+    "special_attack": 60,
+    "special_defense": 65,
+    "speed": 35
+  },
+  "base_experience": 113,
+  "capture_rate": 150,
+  "base_happiness": 140,
+  "growth_rate": "fast",
+  "flavor_text": "Its adorable be­ havior and cry make it highly popular. However, this cute POKéMON is rarely found.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Cleffa",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/035-clefairy.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/35.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

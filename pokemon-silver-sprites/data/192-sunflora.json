@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 192,
+  "name": "Sunflora",
+  "api_name": "sunflora",
+  "category": "Sun Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Chlorophyll",
+    "Solar Power"
+  ],
+  "hidden_abilities": [
+    "Early Bird"
+  ],
+  "height_dm": 8,
+  "weight_hg": 85,
+  "base_stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 55,
+    "special_attack": 105,
+    "special_defense": 85,
+    "speed": 30
+  },
+  "base_experience": 149,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "In the daytime, it rushes about in a hectic manner, but it comes to a com­ plete stop when the sun sets.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Sunkern",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/192-sunflora.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/192.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

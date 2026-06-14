@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 212,
+  "name": "Scizor",
+  "api_name": "scizor",
+  "category": "Pincer Pokémon",
+  "types": [
+    "Bug",
+    "Steel"
+  ],
+  "abilities": [
+    "Swarm",
+    "Technician"
+  ],
+  "hidden_abilities": [
+    "Light Metal"
+  ],
+  "height_dm": 18,
+  "weight_hg": 1180,
+  "base_stats": {
+    "hp": 70,
+    "attack": 130,
+    "defense": 100,
+    "special_attack": 55,
+    "special_defense": 80,
+    "speed": 65
+  },
+  "base_experience": 175,
+  "capture_rate": 25,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its wings are not used for flying. They are flapped at high speed to adjust its body temperature.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Scyther",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/212-scizor.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/212.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

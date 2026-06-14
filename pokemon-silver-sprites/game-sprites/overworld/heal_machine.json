@@ -1,0 +1,12 @@
+{
+  "name": "Pokemon Center healing machine",
+  "category": "Overworld",
+  "filename": "heal_machine.png",
+  "source_path": "gfx/overworld/heal_machine.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/heal_machine.png",
+  "description": "The large Nurse Joy healing machine inside every Pokemon Center. Placing the party on it fully restores all HP and PP for free.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

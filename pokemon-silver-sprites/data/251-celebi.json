@@ -1,0 +1,41 @@
+{
+  "pokedex_number": 251,
+  "name": "Celebi",
+  "api_name": "celebi",
+  "category": "Time Travel Pokémon",
+  "types": [
+    "Psychic",
+    "Grass"
+  ],
+  "abilities": [
+    "Natural Cure"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 6,
+  "weight_hg": 50,
+  "base_stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 100,
+    "special_attack": 100,
+    "special_defense": 100,
+    "speed": 100
+  },
+  "base_experience": 270,
+  "capture_rate": 45,
+  "base_happiness": 100,
+  "growth_rate": "medium-slow",
+  "flavor_text": "When CELEBI disap­ pears deep in a forest, it is said to leave behind an egg it brought from the future.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": true,
+  "habitat": "forest",
+  "sprite_file": "../sprites/251-celebi.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/251.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 85,
+  "name": "Dodrio",
+  "api_name": "dodrio",
+  "category": "Triple Bird Pokémon",
+  "types": [
+    "Normal",
+    "Flying"
+  ],
+  "abilities": [
+    "Run Away",
+    "Early Bird"
+  ],
+  "hidden_abilities": [
+    "Tangled Feet"
+  ],
+  "height_dm": 18,
+  "weight_hg": 852,
+  "base_stats": {
+    "hp": 60,
+    "attack": 110,
+    "defense": 70,
+    "special_attack": 60,
+    "special_defense": 60,
+    "speed": 110
+  },
+  "base_experience": 165,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If one of the heads gets to eat, the others will be satisfied, too, and they will stop squabbling.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Doduo",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/085-dodrio.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/85.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Dark Cave tileset",
+  "category": "Tileset",
+  "filename": "dark_cave.png",
+  "source_path": "gfx/tilesets/dark_cave.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/dark_cave.png",
+  "description": "Tileset for Dark Cave near Violet City. Identical to cave but pitch-black until HM05 Flash is used, revealing hidden items and Pokemon like Dunsparce.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

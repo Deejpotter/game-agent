@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 195,
+  "name": "Quagsire",
+  "api_name": "quagsire",
+  "category": "Water Fish Pokémon",
+  "types": [
+    "Water",
+    "Ground"
+  ],
+  "abilities": [
+    "Damp",
+    "Water Absorb"
+  ],
+  "hidden_abilities": [
+    "Unaware"
+  ],
+  "height_dm": 14,
+  "weight_hg": 750,
+  "base_stats": {
+    "hp": 95,
+    "attack": 85,
+    "defense": 85,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 35
+  },
+  "base_experience": 151,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Due to its relaxed and carefree atti­ tude, it often bumps its head on boulders and boat hulls as it swims.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Wooper",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/195-quagsire.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/195.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

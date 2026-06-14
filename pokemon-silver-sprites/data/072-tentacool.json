@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 72,
+  "name": "Tentacool",
+  "api_name": "tentacool",
+  "category": "Jellyfish Pokémon",
+  "types": [
+    "Water",
+    "Poison"
+  ],
+  "abilities": [
+    "Clear Body",
+    "Liquid Ooze"
+  ],
+  "hidden_abilities": [
+    "Rain Dish"
+  ],
+  "height_dm": 9,
+  "weight_hg": 455,
+  "base_stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "special_attack": 50,
+    "special_defense": 100,
+    "speed": 70
+  },
+  "base_experience": 67,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "It drifts aimless­ ly in waves. Very difficult to see in water, it may not be noticed until it stings.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/072-tentacool.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/72.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

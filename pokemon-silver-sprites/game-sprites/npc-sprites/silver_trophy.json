@@ -1,0 +1,12 @@
+{
+  "name": "Silver trophy",
+  "category": "NPC Sprite",
+  "filename": "silver_trophy.png",
+  "source_path": "gfx/sprites/silver_trophy.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/silver_trophy.png",
+  "description": "The Silver Trophy awarded for second place in the National Park Bug Catching Contest.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

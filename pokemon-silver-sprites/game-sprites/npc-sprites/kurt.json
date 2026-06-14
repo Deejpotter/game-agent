@@ -1,0 +1,12 @@
+{
+  "name": "Kurt",
+  "category": "NPC Sprite",
+  "filename": "kurt.png",
+  "source_path": "gfx/sprites/kurt.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/kurt.png",
+  "description": "Kurt, the Poke Ball craftsman in Azalea Town who makes special Poke Balls from Apricorns: Fast Ball, Friend Ball, Heavy Ball, Level Ball, Love Ball, Lure Ball, Moon Ball.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

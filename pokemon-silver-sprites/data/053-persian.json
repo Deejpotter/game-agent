@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 53,
+  "name": "Persian",
+  "api_name": "persian",
+  "category": "Classy Cat Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Limber",
+    "Technician"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 10,
+  "weight_hg": 320,
+  "base_stats": {
+    "hp": 65,
+    "attack": 70,
+    "defense": 60,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 115
+  },
+  "base_experience": 154,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its lithe muscles allow it to walk without making a sound. It attacks in an instant.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Meowth",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/053-persian.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/53.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

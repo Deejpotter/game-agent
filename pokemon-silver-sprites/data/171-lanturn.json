@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 171,
+  "name": "Lanturn",
+  "api_name": "lanturn",
+  "category": "Light Pokémon",
+  "types": [
+    "Water",
+    "Electric"
+  ],
+  "abilities": [
+    "Volt Absorb",
+    "Illuminate"
+  ],
+  "hidden_abilities": [
+    "Water Absorb"
+  ],
+  "height_dm": 12,
+  "weight_hg": 225,
+  "base_stats": {
+    "hp": 125,
+    "attack": 58,
+    "defense": 58,
+    "special_attack": 76,
+    "special_defense": 76,
+    "speed": 67
+  },
+  "base_experience": 161,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "It blinds prey with an intense burst of light, then swallows the immobilized prey in a single gulp.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Chinchou",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/171-lanturn.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/171.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 54,
+  "name": "Psyduck",
+  "api_name": "psyduck",
+  "category": "Duck Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Damp",
+    "Cloud Nine"
+  ],
+  "hidden_abilities": [
+    "Swift Swim"
+  ],
+  "height_dm": 8,
+  "weight_hg": 196,
+  "base_stats": {
+    "hp": 50,
+    "attack": 52,
+    "defense": 48,
+    "special_attack": 65,
+    "special_defense": 50,
+    "speed": 55
+  },
+  "base_experience": 64,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If its chronic headache peaks, it may exhibit odd powers. It seems unable to recall such an episode.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/054-psyduck.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/54.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

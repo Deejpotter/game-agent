@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 214,
+  "name": "Heracross",
+  "api_name": "heracross",
+  "category": "Single Horn Pokémon",
+  "types": [
+    "Bug",
+    "Fighting"
+  ],
+  "abilities": [
+    "Swarm",
+    "Guts"
+  ],
+  "hidden_abilities": [
+    "Moxie"
+  ],
+  "height_dm": 15,
+  "weight_hg": 540,
+  "base_stats": {
+    "hp": 80,
+    "attack": 125,
+    "defense": 75,
+    "special_attack": 40,
+    "special_defense": 95,
+    "speed": 85
+  },
+  "base_experience": 175,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Usually docile, but if disturbed while sipping honey, it chases off the intruder with its horn.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/214-heracross.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/214.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

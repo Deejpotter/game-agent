@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 114,
+  "name": "Tangela",
+  "api_name": "tangela",
+  "category": "Vine Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Chlorophyll",
+    "Leaf Guard"
+  ],
+  "hidden_abilities": [
+    "Regenerator"
+  ],
+  "height_dm": 10,
+  "weight_hg": 350,
+  "base_stats": {
+    "hp": 65,
+    "attack": 55,
+    "defense": 115,
+    "special_attack": 100,
+    "special_defense": 40,
+    "speed": 60
+  },
+  "base_experience": 87,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It tangles any moving thing with its vines. Their subtle shaking is ticklish if you get ensnared.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/114-tangela.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/114.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

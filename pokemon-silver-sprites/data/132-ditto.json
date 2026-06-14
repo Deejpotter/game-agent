@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 132,
+  "name": "Ditto",
+  "api_name": "ditto",
+  "category": "Transform Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Limber"
+  ],
+  "hidden_abilities": [
+    "Imposter"
+  ],
+  "height_dm": 3,
+  "weight_hg": 40,
+  "base_stats": {
+    "hp": 48,
+    "attack": 48,
+    "defense": 48,
+    "special_attack": 48,
+    "special_defense": 48,
+    "speed": 48
+  },
+  "base_experience": 101,
+  "capture_rate": 35,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its transformation ability is per­ fect. However, if made to laugh, it can't maintain its disguise.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/132-ditto.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/132.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

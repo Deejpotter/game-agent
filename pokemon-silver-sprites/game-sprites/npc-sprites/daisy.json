@@ -1,0 +1,12 @@
+{
+  "name": "Daisy Oak",
+  "category": "NPC Sprite",
+  "filename": "daisy.png",
+  "source_path": "gfx/sprites/daisy.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/daisy.png",
+  "description": "Daisy Oak, Professor Oak's granddaughter and Blue's sister. Gives the player the Expn Card in Pallet Town, unlocking Kanto Radio stations on the Pokegear.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

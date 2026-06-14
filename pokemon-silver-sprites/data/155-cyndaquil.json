@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 155,
+  "name": "Cyndaquil",
+  "api_name": "cyndaquil",
+  "category": "Fire Mouse Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_abilities": [
+    "Flash Fire"
+  ],
+  "height_dm": 5,
+  "weight_hg": 79,
+  "base_stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "special_attack": 60,
+    "special_defense": 50,
+    "speed": 65
+  },
+  "base_experience": 62,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It usually stays hunched over. If it is angry or surprised, it shoots flames out of its back.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/155-cyndaquil.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/155.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

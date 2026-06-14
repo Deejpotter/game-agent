@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 189,
+  "name": "Jumpluff",
+  "api_name": "jumpluff",
+  "category": "Cottonweed Pokémon",
+  "types": [
+    "Grass",
+    "Flying"
+  ],
+  "abilities": [
+    "Chlorophyll",
+    "Leaf Guard"
+  ],
+  "hidden_abilities": [
+    "Infiltrator"
+  ],
+  "height_dm": 8,
+  "weight_hg": 30,
+  "base_stats": {
+    "hp": 75,
+    "attack": 55,
+    "defense": 70,
+    "special_attack": 55,
+    "special_defense": 95,
+    "speed": 110
+  },
+  "base_experience": 207,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Drifts on seasonal winds and spreads its cotton-like spores all over the world to make more offspring.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Skiploom",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/189-jumpluff.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/189.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

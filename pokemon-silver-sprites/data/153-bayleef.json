@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 153,
+  "name": "Bayleef",
+  "api_name": "bayleef",
+  "category": "Leaf Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_abilities": [
+    "Leaf Guard"
+  ],
+  "height_dm": 12,
+  "weight_hg": 158,
+  "base_stats": {
+    "hp": 60,
+    "attack": 62,
+    "defense": 80,
+    "special_attack": 63,
+    "special_defense": 80,
+    "speed": 60
+  },
+  "base_experience": 142,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "A spicy aroma ema­ nates from around its neck. The aroma acts as a stimulant to re­ store health.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Chikorita",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/153-bayleef.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/153.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

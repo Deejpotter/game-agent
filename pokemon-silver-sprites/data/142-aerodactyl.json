@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 142,
+  "name": "Aerodactyl",
+  "api_name": "aerodactyl",
+  "category": "Fossil Pokémon",
+  "types": [
+    "Rock",
+    "Flying"
+  ],
+  "abilities": [
+    "Rock Head",
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 18,
+  "weight_hg": 590,
+  "base_stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "special_attack": 60,
+    "special_defense": 75,
+    "speed": 130
+  },
+  "base_experience": 180,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "This vicious POKé­ MON is said to have flown in an­ cient skies while shrieking high- pitched cries.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/142-aerodactyl.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/142.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

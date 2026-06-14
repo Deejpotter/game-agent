@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 55,
+  "name": "Golduck",
+  "api_name": "golduck",
+  "category": "Duck Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Damp",
+    "Cloud Nine"
+  ],
+  "hidden_abilities": [
+    "Swift Swim"
+  ],
+  "height_dm": 17,
+  "weight_hg": 766,
+  "base_stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 78,
+    "special_attack": 95,
+    "special_defense": 80,
+    "speed": 85
+  },
+  "base_experience": 175,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It appears by waterways at dusk. It may use tele­ kinetic powers if its forehead glows mysteriously.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Psyduck",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/055-golduck.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/55.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

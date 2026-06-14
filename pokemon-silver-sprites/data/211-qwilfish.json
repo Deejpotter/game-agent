@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 211,
+  "name": "Qwilfish",
+  "api_name": "qwilfish",
+  "category": "Balloon Pokémon",
+  "types": [
+    "Water",
+    "Poison"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Swift Swim"
+  ],
+  "hidden_abilities": [
+    "Intimidate"
+  ],
+  "height_dm": 5,
+  "weight_hg": 39,
+  "base_stats": {
+    "hp": 65,
+    "attack": 95,
+    "defense": 85,
+    "special_attack": 55,
+    "special_defense": 55,
+    "speed": 85
+  },
+  "base_experience": 88,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The small spikes covering its body developed from scales. They in­ ject a toxin that causes fainting.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/211-qwilfish.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/211.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

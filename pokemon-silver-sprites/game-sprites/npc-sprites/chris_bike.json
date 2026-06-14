@@ -1,0 +1,12 @@
+{
+  "name": "Kris on bicycle",
+  "category": "NPC Sprite",
+  "filename": "chris_bike.png",
+  "source_path": "gfx/sprites/chris_bike.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/chris_bike.png",
+  "description": "Kris's overworld sprite while riding the Bicycle, obtained from the Bike Shop in Goldenrod City. Doubles movement speed on routes.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 167,
+  "name": "Spinarak",
+  "api_name": "spinarak",
+  "category": "String Spit Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Swarm",
+    "Insomnia"
+  ],
+  "hidden_abilities": [
+    "Sniper"
+  ],
+  "height_dm": 5,
+  "weight_hg": 85,
+  "base_stats": {
+    "hp": 40,
+    "attack": 60,
+    "defense": 40,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 30
+  },
+  "base_experience": 50,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "It spins a web using fine--but durable--thread. It then waits pa­ tiently for prey to be trapped.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/167-spinarak.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/167.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

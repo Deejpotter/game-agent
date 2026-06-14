@@ -1,0 +1,12 @@
+{
+  "name": "Train Station tileset",
+  "category": "Tileset",
+  "filename": "train_station.png",
+  "source_path": "gfx/tilesets/train_station.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/train_station.png",
+  "description": "Tileset for Goldenrod City's train station. The Magnet Train connects Goldenrod (Johto) to Saffron City (Kanto) — requires the Pass key item to board.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

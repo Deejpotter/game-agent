@@ -1,0 +1,12 @@
+{
+  "name": "Bugsy",
+  "category": "NPC Sprite",
+  "filename": "bugsy.png",
+  "source_path": "gfx/sprites/bugsy.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/bugsy.png",
+  "description": "Bugsy, the Azalea Town Gym Leader specializing in Bug-type Pokemon. Second Gym Leader in Johto; his ace is Scyther. Gives the Hive Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

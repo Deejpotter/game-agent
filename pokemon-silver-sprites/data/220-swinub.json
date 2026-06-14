@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 220,
+  "name": "Swinub",
+  "api_name": "swinub",
+  "category": "Pig Pokémon",
+  "types": [
+    "Ice",
+    "Ground"
+  ],
+  "abilities": [
+    "Oblivious",
+    "Snow Cloak"
+  ],
+  "hidden_abilities": [
+    "Thick Fat"
+  ],
+  "height_dm": 4,
+  "weight_hg": 65,
+  "base_stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 40,
+    "special_attack": 30,
+    "special_defense": 30,
+    "speed": 50
+  },
+  "base_experience": 50,
+  "capture_rate": 225,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "If it smells some­ thing enticing, it dashes headlong off to find the source of the aroma.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/220-swinub.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/220.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

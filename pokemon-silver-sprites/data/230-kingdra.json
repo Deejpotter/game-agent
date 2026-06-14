@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 230,
+  "name": "Kingdra",
+  "api_name": "kingdra",
+  "category": "Dragon Pokémon",
+  "types": [
+    "Water",
+    "Dragon"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Sniper"
+  ],
+  "hidden_abilities": [
+    "Damp"
+  ],
+  "height_dm": 18,
+  "weight_hg": 1520,
+  "base_stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 95,
+    "special_attack": 95,
+    "special_defense": 95,
+    "speed": 85
+  },
+  "base_experience": 243,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It sleeps deep on the ocean floor to build its energy. It is said to cause tornadoes as it wakes.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Seadra",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/230-kingdra.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/230.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

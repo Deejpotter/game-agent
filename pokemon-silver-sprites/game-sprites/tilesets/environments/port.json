@@ -1,0 +1,12 @@
+{
+  "name": "Port tileset",
+  "category": "Tileset",
+  "filename": "port.png",
+  "source_path": "gfx/tilesets/port.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/port.png",
+  "description": "Tileset for port and harbor areas including Olivine City's dock and the S.S. Aqua boarding area. Contains gangplanks, bollards, and water docks.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

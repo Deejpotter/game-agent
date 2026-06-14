@@ -1,0 +1,41 @@
+{
+  "pokedex_number": 14,
+  "name": "Kakuna",
+  "api_name": "kakuna",
+  "category": "Cocoon Pokémon",
+  "types": [
+    "Bug",
+    "Poison"
+  ],
+  "abilities": [
+    "Shed Skin"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 6,
+  "weight_hg": 100,
+  "base_stats": {
+    "hp": 45,
+    "attack": 25,
+    "defense": 50,
+    "special_attack": 25,
+    "special_defense": 25,
+    "speed": 35
+  },
+  "base_experience": 72,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "From this form, it will grow into an adult. As its body becomes soft­ er, the external shell hardens.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Weedle",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/014-kakuna.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/14.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

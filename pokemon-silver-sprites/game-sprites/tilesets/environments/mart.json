@@ -1,0 +1,12 @@
+{
+  "name": "Poke Mart tileset",
+  "category": "Tileset",
+  "filename": "mart.png",
+  "source_path": "gfx/tilesets/mart.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/mart.png",
+  "description": "Tileset for all Poke Mart interiors. Counter desks, shelves, and the cash register area where items like Potions and Poke Balls are purchased.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Player's bedroom tileset",
+  "category": "Tileset",
+  "filename": "players_room.png",
+  "source_path": "gfx/tilesets/players_room.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/players_room.png",
+  "description": "Tileset for the player's bedroom where the game begins. Contains a bed, console, computer (for PC storage), and a map of the Johto region on the wall.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

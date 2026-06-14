@@ -1,0 +1,12 @@
+{
+  "name": "Falkner",
+  "category": "NPC Sprite",
+  "filename": "falkner.png",
+  "source_path": "gfx/sprites/falkner.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/falkner.png",
+  "description": "Falkner, the Violet City Gym Leader specializing in Flying-type Pokemon. The first Johto Gym Leader. Uses Pidgey and Pidgeot. Gives the Zephyr Badge.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

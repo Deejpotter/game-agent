@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 108,
+  "name": "Lickitung",
+  "api_name": "lickitung",
+  "category": "Licking Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Own Tempo",
+    "Oblivious"
+  ],
+  "hidden_abilities": [
+    "Cloud Nine"
+  ],
+  "height_dm": 12,
+  "weight_hg": 655,
+  "base_stats": {
+    "hp": 90,
+    "attack": 55,
+    "defense": 75,
+    "special_attack": 60,
+    "special_defense": 75,
+    "speed": 30
+  },
+  "base_experience": 77,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its long tongue, slathered with a gooey saliva, sticks to any­ thing, so it is very useful.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/108-lickitung.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/108.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

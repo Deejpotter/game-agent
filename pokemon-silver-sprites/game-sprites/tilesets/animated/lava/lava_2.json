@@ -1,0 +1,12 @@
+{
+  "name": "Lava animation frame 2",
+  "category": "Tileset Anim",
+  "filename": "lava_2.png",
+  "source_path": "gfx/tilesets/lava/2.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/lava/2.png",
+  "description": "Second frame of the lava animation loop.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

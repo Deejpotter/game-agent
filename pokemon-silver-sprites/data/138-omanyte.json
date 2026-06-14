@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 138,
+  "name": "Omanyte",
+  "api_name": "omanyte",
+  "category": "Spiral Pokémon",
+  "types": [
+    "Rock",
+    "Water"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Shell Armor"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 4,
+  "weight_hg": 75,
+  "base_stats": {
+    "hp": 35,
+    "attack": 40,
+    "defense": 100,
+    "special_attack": 90,
+    "special_defense": 55,
+    "speed": 35
+  },
+  "base_experience": 71,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "This POKéMON from ancient times is said to have navi­ gated the sea by adeptly twisting its 10 tentacles.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/138-omanyte.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/138.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

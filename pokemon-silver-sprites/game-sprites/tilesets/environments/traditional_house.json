@@ -1,0 +1,12 @@
+{
+  "name": "Traditional house tileset",
+  "category": "Tileset",
+  "filename": "traditional_house.png",
+  "source_path": "gfx/tilesets/traditional_house.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/traditional_house.png",
+  "description": "Tileset for Japanese-style traditional house interiors, used in Ecruteak City and similar culturally-themed locations.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

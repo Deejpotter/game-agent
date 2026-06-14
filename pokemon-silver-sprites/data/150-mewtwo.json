@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 150,
+  "name": "Mewtwo",
+  "api_name": "mewtwo",
+  "category": "Genetic Pokémon",
+  "types": [
+    "Psychic"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 20,
+  "weight_hg": 1220,
+  "base_stats": {
+    "hp": 106,
+    "attack": 110,
+    "defense": 90,
+    "special_attack": 154,
+    "special_defense": 90,
+    "speed": 130
+  },
+  "base_experience": 306,
+  "capture_rate": 3,
+  "base_happiness": 0,
+  "growth_rate": "slow",
+  "flavor_text": "It usually remains motionless to con­ serve energy, so that it may un­ leash its full power in battle.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "rare",
+  "sprite_file": "../sprites/150-mewtwo.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/150.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

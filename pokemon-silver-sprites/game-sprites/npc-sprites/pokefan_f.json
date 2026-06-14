@@ -1,0 +1,12 @@
+{
+  "name": "PokeFan (female)",
+  "category": "NPC Sprite",
+  "filename": "pokefan_f.png",
+  "source_path": "gfx/sprites/pokefan_f.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/pokefan_f.png",
+  "description": "Female PokeFan trainer class sprite — obsessive Pokemon fans who carry photos of their Pokemon and call the player on the Pokegear repeatedly.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Ruins of Alph tileset",
+  "category": "Tileset",
+  "filename": "ruins_of_alph.png",
+  "source_path": "gfx/tilesets/ruins_of_alph.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/ruins_of_alph.png",
+  "description": "Tileset for the Ruins of Alph — ancient ruins with Unown puzzles. Completing each puzzle unlocks areas swarming with the 26 different Unown letter Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

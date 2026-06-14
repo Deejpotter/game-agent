@@ -1,0 +1,12 @@
+{
+  "name": "Facility tileset",
+  "category": "Tileset",
+  "filename": "facility.png",
+  "source_path": "gfx/tilesets/facility.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/facility.png",
+  "description": "Tileset used in miscellaneous facilities such as the Safari Zone gate and special buildings not covered by other tilesets.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

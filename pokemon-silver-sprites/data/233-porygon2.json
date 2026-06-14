@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 233,
+  "name": "Porygon2",
+  "api_name": "porygon2",
+  "category": "Virtual Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Trace",
+    "Download"
+  ],
+  "hidden_abilities": [
+    "Analytic"
+  ],
+  "height_dm": 6,
+  "weight_hg": 325,
+  "base_stats": {
+    "hp": 85,
+    "attack": 80,
+    "defense": 90,
+    "special_attack": 105,
+    "special_defense": 95,
+    "speed": 60
+  },
+  "base_experience": 180,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Further research enhanced its abil­ ities. Sometimes, it may exhibit motions that were not programmed.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Porygon",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/233-porygon2.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/233.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

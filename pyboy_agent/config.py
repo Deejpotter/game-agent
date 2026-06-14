@@ -47,6 +47,18 @@ BACKENDS: dict[str, dict[str, Any]] = {
         "model": os.getenv("COPILOT_MODEL", "gpt-4o"),
         "reasoning_model": os.getenv("COPILOT_REASON_MODEL", ""),
     },
+    # nova: fine-tuned Qwen2-VL served locally via finetune/vision_server.py
+    # Vision on port 1235 (HF weights, full vision encoder).
+    # Reasoning on port 1234 (LM Studio GGUF — text only).
+    "nova": {
+        "base_url": "http://localhost:1235/v1",
+        "api_key": "nova",
+        "model": os.getenv("NOVA_MODEL", "nova-agent-pokemon"),
+        # Separate URL/key for the reasoning client (LM Studio GGUF).
+        "reason_base_url": os.getenv("NOVA_REASON_BASE_URL", "http://localhost:1234/v1"),
+        "reason_api_key": os.getenv("NOVA_REASON_API_KEY", "lm-studio"),
+        "reasoning_model": os.getenv("NOVA_REASON_MODEL", "nova-agent-pokemon"),
+    },
 }
 
 # ---------------------------------------------------------------------------

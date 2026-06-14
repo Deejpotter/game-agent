@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 44,
+  "name": "Gloom",
+  "api_name": "gloom",
+  "category": "Weed Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Stench"
+  ],
+  "height_dm": 8,
+  "weight_hg": 86,
+  "base_stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 70,
+    "special_attack": 85,
+    "special_defense": 75,
+    "speed": 40
+  },
+  "base_experience": 138,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It secretes a sticky, drool-like honey. Although sweet, it smells too repulsive to get very close.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Oddish",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/044-gloom.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/44.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

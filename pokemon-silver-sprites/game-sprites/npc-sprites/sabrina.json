@@ -1,0 +1,12 @@
+{
+  "name": "Sabrina",
+  "category": "NPC Sprite",
+  "filename": "sabrina.png",
+  "source_path": "gfx/sprites/sabrina.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/sabrina.png",
+  "description": "Sabrina, the Saffron City Gym Leader specializing in Psychic-type Pokemon. Uses Espeon as her ace in the Gold/Silver rematch.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

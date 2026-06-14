@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 223,
+  "name": "Remoraid",
+  "api_name": "remoraid",
+  "category": "Jet Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Hustle",
+    "Sniper"
+  ],
+  "hidden_abilities": [
+    "Moody"
+  ],
+  "height_dm": 6,
+  "weight_hg": 120,
+  "base_stats": {
+    "hp": 35,
+    "attack": 65,
+    "defense": 35,
+    "special_attack": 65,
+    "special_defense": 35,
+    "speed": 65
+  },
+  "base_experience": 60,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Using its dorsal fin as a suction pad, it clings to a MANTINE's under­ side to scavenge for leftovers.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/223-remoraid.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/223.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

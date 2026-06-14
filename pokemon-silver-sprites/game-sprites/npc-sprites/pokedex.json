@@ -1,0 +1,12 @@
+{
+  "name": "Pokedex",
+  "category": "NPC Sprite",
+  "filename": "pokedex.png",
+  "source_path": "gfx/sprites/pokedex.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/pokedex.png",
+  "description": "The Pokedex device sprite. Records data on every Pokemon seen and caught. Professor Elm gives it at the start. Completing it unlocks special rewards from Oak.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

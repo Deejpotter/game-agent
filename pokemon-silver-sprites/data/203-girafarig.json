@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 203,
+  "name": "Girafarig",
+  "api_name": "girafarig",
+  "category": "Long Neck Pokémon",
+  "types": [
+    "Normal",
+    "Psychic"
+  ],
+  "abilities": [
+    "Inner Focus",
+    "Early Bird"
+  ],
+  "hidden_abilities": [
+    "Sap Sipper"
+  ],
+  "height_dm": 15,
+  "weight_hg": 415,
+  "base_stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 65,
+    "special_attack": 90,
+    "special_defense": 65,
+    "speed": 85
+  },
+  "base_experience": 159,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its tail, which also contains a small brain, may bite on its own if it notices an alluring smell.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/203-girafarig.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/203.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

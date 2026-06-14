@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 143,
+  "name": "Snorlax",
+  "api_name": "snorlax",
+  "category": "Sleeping Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Immunity",
+    "Thick Fat"
+  ],
+  "hidden_abilities": [
+    "Gluttony"
+  ],
+  "height_dm": 21,
+  "weight_hg": 4600,
+  "base_stats": {
+    "hp": 160,
+    "attack": 110,
+    "defense": 65,
+    "special_attack": 65,
+    "special_defense": 110,
+    "speed": 30
+  },
+  "base_experience": 189,
+  "capture_rate": 25,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Its stomach's di­ gestive juices can dissolve any kind of poison. It can even eat things off the ground.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Munchlax",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/143-snorlax.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/143.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,2640 @@
+{
+  "project": "Pokemon Silver Sprites Research",
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II",
+  "total_pokemon": 251,
+  "downloaded_count": 251,
+  "failed_ids": [],
+  "sprite_source": "PokeAPI/sprites (GitHub) — generation-ii/silver",
+  "metadata_source": "PokéAPI REST v2 (pokeapi.co)",
+  "pokemon": [
+    {
+      "pokedex_number": 1,
+      "name": "Bulbasaur",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/001-bulbasaur.png",
+      "data_file": "data/001-bulbasaur.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 2,
+      "name": "Ivysaur",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/002-ivysaur.png",
+      "data_file": "data/002-ivysaur.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 3,
+      "name": "Venusaur",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/003-venusaur.png",
+      "data_file": "data/003-venusaur.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 4,
+      "name": "Charmander",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/004-charmander.png",
+      "data_file": "data/004-charmander.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 5,
+      "name": "Charmeleon",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/005-charmeleon.png",
+      "data_file": "data/005-charmeleon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 6,
+      "name": "Charizard",
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "sprite_file": "sprites/006-charizard.png",
+      "data_file": "data/006-charizard.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 7,
+      "name": "Squirtle",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/007-squirtle.png",
+      "data_file": "data/007-squirtle.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 8,
+      "name": "Wartortle",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/008-wartortle.png",
+      "data_file": "data/008-wartortle.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 9,
+      "name": "Blastoise",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/009-blastoise.png",
+      "data_file": "data/009-blastoise.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 10,
+      "name": "Caterpie",
+      "types": [
+        "Bug"
+      ],
+      "sprite_file": "sprites/010-caterpie.png",
+      "data_file": "data/010-caterpie.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 11,
+      "name": "Metapod",
+      "types": [
+        "Bug"
+      ],
+      "sprite_file": "sprites/011-metapod.png",
+      "data_file": "data/011-metapod.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 12,
+      "name": "Butterfree",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "sprite_file": "sprites/012-butterfree.png",
+      "data_file": "data/012-butterfree.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 13,
+      "name": "Weedle",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/013-weedle.png",
+      "data_file": "data/013-weedle.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 14,
+      "name": "Kakuna",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/014-kakuna.png",
+      "data_file": "data/014-kakuna.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 15,
+      "name": "Beedrill",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/015-beedrill.png",
+      "data_file": "data/015-beedrill.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 16,
+      "name": "Pidgey",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/016-pidgey.png",
+      "data_file": "data/016-pidgey.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 17,
+      "name": "Pidgeotto",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/017-pidgeotto.png",
+      "data_file": "data/017-pidgeotto.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 18,
+      "name": "Pidgeot",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/018-pidgeot.png",
+      "data_file": "data/018-pidgeot.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 19,
+      "name": "Rattata",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/019-rattata.png",
+      "data_file": "data/019-rattata.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 20,
+      "name": "Raticate",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/020-raticate.png",
+      "data_file": "data/020-raticate.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 21,
+      "name": "Spearow",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/021-spearow.png",
+      "data_file": "data/021-spearow.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 22,
+      "name": "Fearow",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/022-fearow.png",
+      "data_file": "data/022-fearow.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 23,
+      "name": "Ekans",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/023-ekans.png",
+      "data_file": "data/023-ekans.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 24,
+      "name": "Arbok",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/024-arbok.png",
+      "data_file": "data/024-arbok.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 25,
+      "name": "Pikachu",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/025-pikachu.png",
+      "data_file": "data/025-pikachu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 26,
+      "name": "Raichu",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/026-raichu.png",
+      "data_file": "data/026-raichu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 27,
+      "name": "Sandshrew",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/027-sandshrew.png",
+      "data_file": "data/027-sandshrew.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 28,
+      "name": "Sandslash",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/028-sandslash.png",
+      "data_file": "data/028-sandslash.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 29,
+      "name": "Nidoran♀",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/029-nidoran-f.png",
+      "data_file": "data/029-nidoran-f.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 30,
+      "name": "Nidorina",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/030-nidorina.png",
+      "data_file": "data/030-nidorina.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 31,
+      "name": "Nidoqueen",
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "sprite_file": "sprites/031-nidoqueen.png",
+      "data_file": "data/031-nidoqueen.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 32,
+      "name": "Nidoran♂",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/032-nidoran-m.png",
+      "data_file": "data/032-nidoran-m.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 33,
+      "name": "Nidorino",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/033-nidorino.png",
+      "data_file": "data/033-nidorino.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 34,
+      "name": "Nidoking",
+      "types": [
+        "Poison",
+        "Ground"
+      ],
+      "sprite_file": "sprites/034-nidoking.png",
+      "data_file": "data/034-nidoking.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 35,
+      "name": "Clefairy",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/035-clefairy.png",
+      "data_file": "data/035-clefairy.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 36,
+      "name": "Clefable",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/036-clefable.png",
+      "data_file": "data/036-clefable.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 37,
+      "name": "Vulpix",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/037-vulpix.png",
+      "data_file": "data/037-vulpix.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 38,
+      "name": "Ninetales",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/038-ninetales.png",
+      "data_file": "data/038-ninetales.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 39,
+      "name": "Jigglypuff",
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/039-jigglypuff.png",
+      "data_file": "data/039-jigglypuff.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 40,
+      "name": "Wigglytuff",
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/040-wigglytuff.png",
+      "data_file": "data/040-wigglytuff.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 41,
+      "name": "Zubat",
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "sprite_file": "sprites/041-zubat.png",
+      "data_file": "data/041-zubat.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 42,
+      "name": "Golbat",
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "sprite_file": "sprites/042-golbat.png",
+      "data_file": "data/042-golbat.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 43,
+      "name": "Oddish",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/043-oddish.png",
+      "data_file": "data/043-oddish.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 44,
+      "name": "Gloom",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/044-gloom.png",
+      "data_file": "data/044-gloom.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 45,
+      "name": "Vileplume",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/045-vileplume.png",
+      "data_file": "data/045-vileplume.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 46,
+      "name": "Paras",
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "sprite_file": "sprites/046-paras.png",
+      "data_file": "data/046-paras.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 47,
+      "name": "Parasect",
+      "types": [
+        "Bug",
+        "Grass"
+      ],
+      "sprite_file": "sprites/047-parasect.png",
+      "data_file": "data/047-parasect.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 48,
+      "name": "Venonat",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/048-venonat.png",
+      "data_file": "data/048-venonat.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 49,
+      "name": "Venomoth",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/049-venomoth.png",
+      "data_file": "data/049-venomoth.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 50,
+      "name": "Diglett",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/050-diglett.png",
+      "data_file": "data/050-diglett.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 51,
+      "name": "Dugtrio",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/051-dugtrio.png",
+      "data_file": "data/051-dugtrio.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 52,
+      "name": "Meowth",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/052-meowth.png",
+      "data_file": "data/052-meowth.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 53,
+      "name": "Persian",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/053-persian.png",
+      "data_file": "data/053-persian.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 54,
+      "name": "Psyduck",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/054-psyduck.png",
+      "data_file": "data/054-psyduck.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 55,
+      "name": "Golduck",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/055-golduck.png",
+      "data_file": "data/055-golduck.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 56,
+      "name": "Mankey",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/056-mankey.png",
+      "data_file": "data/056-mankey.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 57,
+      "name": "Primeape",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/057-primeape.png",
+      "data_file": "data/057-primeape.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 58,
+      "name": "Growlithe",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/058-growlithe.png",
+      "data_file": "data/058-growlithe.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 59,
+      "name": "Arcanine",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/059-arcanine.png",
+      "data_file": "data/059-arcanine.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 60,
+      "name": "Poliwag",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/060-poliwag.png",
+      "data_file": "data/060-poliwag.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 61,
+      "name": "Poliwhirl",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/061-poliwhirl.png",
+      "data_file": "data/061-poliwhirl.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 62,
+      "name": "Poliwrath",
+      "types": [
+        "Water",
+        "Fighting"
+      ],
+      "sprite_file": "sprites/062-poliwrath.png",
+      "data_file": "data/062-poliwrath.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 63,
+      "name": "Abra",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/063-abra.png",
+      "data_file": "data/063-abra.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 64,
+      "name": "Kadabra",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/064-kadabra.png",
+      "data_file": "data/064-kadabra.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 65,
+      "name": "Alakazam",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/065-alakazam.png",
+      "data_file": "data/065-alakazam.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 66,
+      "name": "Machop",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/066-machop.png",
+      "data_file": "data/066-machop.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 67,
+      "name": "Machoke",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/067-machoke.png",
+      "data_file": "data/067-machoke.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 68,
+      "name": "Machamp",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/068-machamp.png",
+      "data_file": "data/068-machamp.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 69,
+      "name": "Bellsprout",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/069-bellsprout.png",
+      "data_file": "data/069-bellsprout.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 70,
+      "name": "Weepinbell",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/070-weepinbell.png",
+      "data_file": "data/070-weepinbell.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 71,
+      "name": "Victreebel",
+      "types": [
+        "Grass",
+        "Poison"
+      ],
+      "sprite_file": "sprites/071-victreebel.png",
+      "data_file": "data/071-victreebel.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 72,
+      "name": "Tentacool",
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "sprite_file": "sprites/072-tentacool.png",
+      "data_file": "data/072-tentacool.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 73,
+      "name": "Tentacruel",
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "sprite_file": "sprites/073-tentacruel.png",
+      "data_file": "data/073-tentacruel.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 74,
+      "name": "Geodude",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/074-geodude.png",
+      "data_file": "data/074-geodude.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 75,
+      "name": "Graveler",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/075-graveler.png",
+      "data_file": "data/075-graveler.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 76,
+      "name": "Golem",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/076-golem.png",
+      "data_file": "data/076-golem.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 77,
+      "name": "Ponyta",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/077-ponyta.png",
+      "data_file": "data/077-ponyta.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 78,
+      "name": "Rapidash",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/078-rapidash.png",
+      "data_file": "data/078-rapidash.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 79,
+      "name": "Slowpoke",
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/079-slowpoke.png",
+      "data_file": "data/079-slowpoke.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 80,
+      "name": "Slowbro",
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/080-slowbro.png",
+      "data_file": "data/080-slowbro.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 81,
+      "name": "Magnemite",
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "sprite_file": "sprites/081-magnemite.png",
+      "data_file": "data/081-magnemite.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 82,
+      "name": "Magneton",
+      "types": [
+        "Electric",
+        "Steel"
+      ],
+      "sprite_file": "sprites/082-magneton.png",
+      "data_file": "data/082-magneton.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 83,
+      "name": "Farfetch'd",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/083-farfetchd.png",
+      "data_file": "data/083-farfetchd.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 84,
+      "name": "Doduo",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/084-doduo.png",
+      "data_file": "data/084-doduo.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 85,
+      "name": "Dodrio",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/085-dodrio.png",
+      "data_file": "data/085-dodrio.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 86,
+      "name": "Seel",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/086-seel.png",
+      "data_file": "data/086-seel.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 87,
+      "name": "Dewgong",
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "sprite_file": "sprites/087-dewgong.png",
+      "data_file": "data/087-dewgong.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 88,
+      "name": "Grimer",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/088-grimer.png",
+      "data_file": "data/088-grimer.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 89,
+      "name": "Muk",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/089-muk.png",
+      "data_file": "data/089-muk.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 90,
+      "name": "Shellder",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/090-shellder.png",
+      "data_file": "data/090-shellder.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 91,
+      "name": "Cloyster",
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "sprite_file": "sprites/091-cloyster.png",
+      "data_file": "data/091-cloyster.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 92,
+      "name": "Gastly",
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "sprite_file": "sprites/092-gastly.png",
+      "data_file": "data/092-gastly.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 93,
+      "name": "Haunter",
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "sprite_file": "sprites/093-haunter.png",
+      "data_file": "data/093-haunter.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 94,
+      "name": "Gengar",
+      "types": [
+        "Ghost",
+        "Poison"
+      ],
+      "sprite_file": "sprites/094-gengar.png",
+      "data_file": "data/094-gengar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 95,
+      "name": "Onix",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/095-onix.png",
+      "data_file": "data/095-onix.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 96,
+      "name": "Drowzee",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/096-drowzee.png",
+      "data_file": "data/096-drowzee.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 97,
+      "name": "Hypno",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/097-hypno.png",
+      "data_file": "data/097-hypno.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 98,
+      "name": "Krabby",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/098-krabby.png",
+      "data_file": "data/098-krabby.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 99,
+      "name": "Kingler",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/099-kingler.png",
+      "data_file": "data/099-kingler.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 100,
+      "name": "Voltorb",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/100-voltorb.png",
+      "data_file": "data/100-voltorb.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 101,
+      "name": "Electrode",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/101-electrode.png",
+      "data_file": "data/101-electrode.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 102,
+      "name": "Exeggcute",
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/102-exeggcute.png",
+      "data_file": "data/102-exeggcute.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 103,
+      "name": "Exeggutor",
+      "types": [
+        "Grass",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/103-exeggutor.png",
+      "data_file": "data/103-exeggutor.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 104,
+      "name": "Cubone",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/104-cubone.png",
+      "data_file": "data/104-cubone.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 105,
+      "name": "Marowak",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/105-marowak.png",
+      "data_file": "data/105-marowak.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 106,
+      "name": "Hitmonlee",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/106-hitmonlee.png",
+      "data_file": "data/106-hitmonlee.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 107,
+      "name": "Hitmonchan",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/107-hitmonchan.png",
+      "data_file": "data/107-hitmonchan.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 108,
+      "name": "Lickitung",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/108-lickitung.png",
+      "data_file": "data/108-lickitung.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 109,
+      "name": "Koffing",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/109-koffing.png",
+      "data_file": "data/109-koffing.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 110,
+      "name": "Weezing",
+      "types": [
+        "Poison"
+      ],
+      "sprite_file": "sprites/110-weezing.png",
+      "data_file": "data/110-weezing.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 111,
+      "name": "Rhyhorn",
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "sprite_file": "sprites/111-rhyhorn.png",
+      "data_file": "data/111-rhyhorn.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 112,
+      "name": "Rhydon",
+      "types": [
+        "Ground",
+        "Rock"
+      ],
+      "sprite_file": "sprites/112-rhydon.png",
+      "data_file": "data/112-rhydon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 113,
+      "name": "Chansey",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/113-chansey.png",
+      "data_file": "data/113-chansey.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 114,
+      "name": "Tangela",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/114-tangela.png",
+      "data_file": "data/114-tangela.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 115,
+      "name": "Kangaskhan",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/115-kangaskhan.png",
+      "data_file": "data/115-kangaskhan.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 116,
+      "name": "Horsea",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/116-horsea.png",
+      "data_file": "data/116-horsea.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 117,
+      "name": "Seadra",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/117-seadra.png",
+      "data_file": "data/117-seadra.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 118,
+      "name": "Goldeen",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/118-goldeen.png",
+      "data_file": "data/118-goldeen.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 119,
+      "name": "Seaking",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/119-seaking.png",
+      "data_file": "data/119-seaking.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 120,
+      "name": "Staryu",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/120-staryu.png",
+      "data_file": "data/120-staryu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 121,
+      "name": "Starmie",
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/121-starmie.png",
+      "data_file": "data/121-starmie.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 122,
+      "name": "Mr. Mime",
+      "types": [
+        "Psychic",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/122-mr-mime.png",
+      "data_file": "data/122-mr-mime.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 123,
+      "name": "Scyther",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "sprite_file": "sprites/123-scyther.png",
+      "data_file": "data/123-scyther.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 124,
+      "name": "Jynx",
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/124-jynx.png",
+      "data_file": "data/124-jynx.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 125,
+      "name": "Electabuzz",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/125-electabuzz.png",
+      "data_file": "data/125-electabuzz.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 126,
+      "name": "Magmar",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/126-magmar.png",
+      "data_file": "data/126-magmar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 127,
+      "name": "Pinsir",
+      "types": [
+        "Bug"
+      ],
+      "sprite_file": "sprites/127-pinsir.png",
+      "data_file": "data/127-pinsir.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 128,
+      "name": "Tauros",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/128-tauros.png",
+      "data_file": "data/128-tauros.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 129,
+      "name": "Magikarp",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/129-magikarp.png",
+      "data_file": "data/129-magikarp.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 130,
+      "name": "Gyarados",
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "sprite_file": "sprites/130-gyarados.png",
+      "data_file": "data/130-gyarados.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 131,
+      "name": "Lapras",
+      "types": [
+        "Water",
+        "Ice"
+      ],
+      "sprite_file": "sprites/131-lapras.png",
+      "data_file": "data/131-lapras.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 132,
+      "name": "Ditto",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/132-ditto.png",
+      "data_file": "data/132-ditto.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 133,
+      "name": "Eevee",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/133-eevee.png",
+      "data_file": "data/133-eevee.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 134,
+      "name": "Vaporeon",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/134-vaporeon.png",
+      "data_file": "data/134-vaporeon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 135,
+      "name": "Jolteon",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/135-jolteon.png",
+      "data_file": "data/135-jolteon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 136,
+      "name": "Flareon",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/136-flareon.png",
+      "data_file": "data/136-flareon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 137,
+      "name": "Porygon",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/137-porygon.png",
+      "data_file": "data/137-porygon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 138,
+      "name": "Omanyte",
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "sprite_file": "sprites/138-omanyte.png",
+      "data_file": "data/138-omanyte.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 139,
+      "name": "Omastar",
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "sprite_file": "sprites/139-omastar.png",
+      "data_file": "data/139-omastar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 140,
+      "name": "Kabuto",
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "sprite_file": "sprites/140-kabuto.png",
+      "data_file": "data/140-kabuto.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 141,
+      "name": "Kabutops",
+      "types": [
+        "Rock",
+        "Water"
+      ],
+      "sprite_file": "sprites/141-kabutops.png",
+      "data_file": "data/141-kabutops.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 142,
+      "name": "Aerodactyl",
+      "types": [
+        "Rock",
+        "Flying"
+      ],
+      "sprite_file": "sprites/142-aerodactyl.png",
+      "data_file": "data/142-aerodactyl.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 143,
+      "name": "Snorlax",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/143-snorlax.png",
+      "data_file": "data/143-snorlax.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 144,
+      "name": "Articuno",
+      "types": [
+        "Ice",
+        "Flying"
+      ],
+      "sprite_file": "sprites/144-articuno.png",
+      "data_file": "data/144-articuno.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 145,
+      "name": "Zapdos",
+      "types": [
+        "Electric",
+        "Flying"
+      ],
+      "sprite_file": "sprites/145-zapdos.png",
+      "data_file": "data/145-zapdos.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 146,
+      "name": "Moltres",
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "sprite_file": "sprites/146-moltres.png",
+      "data_file": "data/146-moltres.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 147,
+      "name": "Dratini",
+      "types": [
+        "Dragon"
+      ],
+      "sprite_file": "sprites/147-dratini.png",
+      "data_file": "data/147-dratini.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 148,
+      "name": "Dragonair",
+      "types": [
+        "Dragon"
+      ],
+      "sprite_file": "sprites/148-dragonair.png",
+      "data_file": "data/148-dragonair.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 149,
+      "name": "Dragonite",
+      "types": [
+        "Dragon",
+        "Flying"
+      ],
+      "sprite_file": "sprites/149-dragonite.png",
+      "data_file": "data/149-dragonite.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 150,
+      "name": "Mewtwo",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/150-mewtwo.png",
+      "data_file": "data/150-mewtwo.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 151,
+      "name": "Mew",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/151-mew.png",
+      "data_file": "data/151-mew.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 152,
+      "name": "Chikorita",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/152-chikorita.png",
+      "data_file": "data/152-chikorita.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 153,
+      "name": "Bayleef",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/153-bayleef.png",
+      "data_file": "data/153-bayleef.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 154,
+      "name": "Meganium",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/154-meganium.png",
+      "data_file": "data/154-meganium.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 155,
+      "name": "Cyndaquil",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/155-cyndaquil.png",
+      "data_file": "data/155-cyndaquil.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 156,
+      "name": "Quilava",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/156-quilava.png",
+      "data_file": "data/156-quilava.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 157,
+      "name": "Typhlosion",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/157-typhlosion.png",
+      "data_file": "data/157-typhlosion.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 158,
+      "name": "Totodile",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/158-totodile.png",
+      "data_file": "data/158-totodile.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 159,
+      "name": "Croconaw",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/159-croconaw.png",
+      "data_file": "data/159-croconaw.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 160,
+      "name": "Feraligatr",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/160-feraligatr.png",
+      "data_file": "data/160-feraligatr.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 161,
+      "name": "Sentret",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/161-sentret.png",
+      "data_file": "data/161-sentret.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 162,
+      "name": "Furret",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/162-furret.png",
+      "data_file": "data/162-furret.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 163,
+      "name": "Hoothoot",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/163-hoothoot.png",
+      "data_file": "data/163-hoothoot.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 164,
+      "name": "Noctowl",
+      "types": [
+        "Normal",
+        "Flying"
+      ],
+      "sprite_file": "sprites/164-noctowl.png",
+      "data_file": "data/164-noctowl.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 165,
+      "name": "Ledyba",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "sprite_file": "sprites/165-ledyba.png",
+      "data_file": "data/165-ledyba.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 166,
+      "name": "Ledian",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "sprite_file": "sprites/166-ledian.png",
+      "data_file": "data/166-ledian.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 167,
+      "name": "Spinarak",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/167-spinarak.png",
+      "data_file": "data/167-spinarak.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 168,
+      "name": "Ariados",
+      "types": [
+        "Bug",
+        "Poison"
+      ],
+      "sprite_file": "sprites/168-ariados.png",
+      "data_file": "data/168-ariados.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 169,
+      "name": "Crobat",
+      "types": [
+        "Poison",
+        "Flying"
+      ],
+      "sprite_file": "sprites/169-crobat.png",
+      "data_file": "data/169-crobat.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 170,
+      "name": "Chinchou",
+      "types": [
+        "Water",
+        "Electric"
+      ],
+      "sprite_file": "sprites/170-chinchou.png",
+      "data_file": "data/170-chinchou.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 171,
+      "name": "Lanturn",
+      "types": [
+        "Water",
+        "Electric"
+      ],
+      "sprite_file": "sprites/171-lanturn.png",
+      "data_file": "data/171-lanturn.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 172,
+      "name": "Pichu",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/172-pichu.png",
+      "data_file": "data/172-pichu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 173,
+      "name": "Cleffa",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/173-cleffa.png",
+      "data_file": "data/173-cleffa.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 174,
+      "name": "Igglybuff",
+      "types": [
+        "Normal",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/174-igglybuff.png",
+      "data_file": "data/174-igglybuff.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 175,
+      "name": "Togepi",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/175-togepi.png",
+      "data_file": "data/175-togepi.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 176,
+      "name": "Togetic",
+      "types": [
+        "Fairy",
+        "Flying"
+      ],
+      "sprite_file": "sprites/176-togetic.png",
+      "data_file": "data/176-togetic.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 177,
+      "name": "Natu",
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "sprite_file": "sprites/177-natu.png",
+      "data_file": "data/177-natu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 178,
+      "name": "Xatu",
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "sprite_file": "sprites/178-xatu.png",
+      "data_file": "data/178-xatu.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 179,
+      "name": "Mareep",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/179-mareep.png",
+      "data_file": "data/179-mareep.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 180,
+      "name": "Flaaffy",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/180-flaaffy.png",
+      "data_file": "data/180-flaaffy.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 181,
+      "name": "Ampharos",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/181-ampharos.png",
+      "data_file": "data/181-ampharos.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 182,
+      "name": "Bellossom",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/182-bellossom.png",
+      "data_file": "data/182-bellossom.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 183,
+      "name": "Marill",
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/183-marill.png",
+      "data_file": "data/183-marill.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 184,
+      "name": "Azumarill",
+      "types": [
+        "Water",
+        "Fairy"
+      ],
+      "sprite_file": "sprites/184-azumarill.png",
+      "data_file": "data/184-azumarill.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 185,
+      "name": "Sudowoodo",
+      "types": [
+        "Rock"
+      ],
+      "sprite_file": "sprites/185-sudowoodo.png",
+      "data_file": "data/185-sudowoodo.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 186,
+      "name": "Politoed",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/186-politoed.png",
+      "data_file": "data/186-politoed.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 187,
+      "name": "Hoppip",
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "sprite_file": "sprites/187-hoppip.png",
+      "data_file": "data/187-hoppip.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 188,
+      "name": "Skiploom",
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "sprite_file": "sprites/188-skiploom.png",
+      "data_file": "data/188-skiploom.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 189,
+      "name": "Jumpluff",
+      "types": [
+        "Grass",
+        "Flying"
+      ],
+      "sprite_file": "sprites/189-jumpluff.png",
+      "data_file": "data/189-jumpluff.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 190,
+      "name": "Aipom",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/190-aipom.png",
+      "data_file": "data/190-aipom.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 191,
+      "name": "Sunkern",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/191-sunkern.png",
+      "data_file": "data/191-sunkern.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 192,
+      "name": "Sunflora",
+      "types": [
+        "Grass"
+      ],
+      "sprite_file": "sprites/192-sunflora.png",
+      "data_file": "data/192-sunflora.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 193,
+      "name": "Yanma",
+      "types": [
+        "Bug",
+        "Flying"
+      ],
+      "sprite_file": "sprites/193-yanma.png",
+      "data_file": "data/193-yanma.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 194,
+      "name": "Wooper",
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "sprite_file": "sprites/194-wooper.png",
+      "data_file": "data/194-wooper.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 195,
+      "name": "Quagsire",
+      "types": [
+        "Water",
+        "Ground"
+      ],
+      "sprite_file": "sprites/195-quagsire.png",
+      "data_file": "data/195-quagsire.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 196,
+      "name": "Espeon",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/196-espeon.png",
+      "data_file": "data/196-espeon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 197,
+      "name": "Umbreon",
+      "types": [
+        "Dark"
+      ],
+      "sprite_file": "sprites/197-umbreon.png",
+      "data_file": "data/197-umbreon.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 198,
+      "name": "Murkrow",
+      "types": [
+        "Dark",
+        "Flying"
+      ],
+      "sprite_file": "sprites/198-murkrow.png",
+      "data_file": "data/198-murkrow.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 199,
+      "name": "Slowking",
+      "types": [
+        "Water",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/199-slowking.png",
+      "data_file": "data/199-slowking.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 200,
+      "name": "Misdreavus",
+      "types": [
+        "Ghost"
+      ],
+      "sprite_file": "sprites/200-misdreavus.png",
+      "data_file": "data/200-misdreavus.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 201,
+      "name": "Unown",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/201-unown.png",
+      "data_file": "data/201-unown.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 202,
+      "name": "Wobbuffet",
+      "types": [
+        "Psychic"
+      ],
+      "sprite_file": "sprites/202-wobbuffet.png",
+      "data_file": "data/202-wobbuffet.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 203,
+      "name": "Girafarig",
+      "types": [
+        "Normal",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/203-girafarig.png",
+      "data_file": "data/203-girafarig.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 204,
+      "name": "Pineco",
+      "types": [
+        "Bug"
+      ],
+      "sprite_file": "sprites/204-pineco.png",
+      "data_file": "data/204-pineco.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 205,
+      "name": "Forretress",
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "sprite_file": "sprites/205-forretress.png",
+      "data_file": "data/205-forretress.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 206,
+      "name": "Dunsparce",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/206-dunsparce.png",
+      "data_file": "data/206-dunsparce.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 207,
+      "name": "Gligar",
+      "types": [
+        "Ground",
+        "Flying"
+      ],
+      "sprite_file": "sprites/207-gligar.png",
+      "data_file": "data/207-gligar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 208,
+      "name": "Steelix",
+      "types": [
+        "Steel",
+        "Ground"
+      ],
+      "sprite_file": "sprites/208-steelix.png",
+      "data_file": "data/208-steelix.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 209,
+      "name": "Snubbull",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/209-snubbull.png",
+      "data_file": "data/209-snubbull.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 210,
+      "name": "Granbull",
+      "types": [
+        "Fairy"
+      ],
+      "sprite_file": "sprites/210-granbull.png",
+      "data_file": "data/210-granbull.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 211,
+      "name": "Qwilfish",
+      "types": [
+        "Water",
+        "Poison"
+      ],
+      "sprite_file": "sprites/211-qwilfish.png",
+      "data_file": "data/211-qwilfish.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 212,
+      "name": "Scizor",
+      "types": [
+        "Bug",
+        "Steel"
+      ],
+      "sprite_file": "sprites/212-scizor.png",
+      "data_file": "data/212-scizor.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 213,
+      "name": "Shuckle",
+      "types": [
+        "Bug",
+        "Rock"
+      ],
+      "sprite_file": "sprites/213-shuckle.png",
+      "data_file": "data/213-shuckle.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 214,
+      "name": "Heracross",
+      "types": [
+        "Bug",
+        "Fighting"
+      ],
+      "sprite_file": "sprites/214-heracross.png",
+      "data_file": "data/214-heracross.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 215,
+      "name": "Sneasel",
+      "types": [
+        "Dark",
+        "Ice"
+      ],
+      "sprite_file": "sprites/215-sneasel.png",
+      "data_file": "data/215-sneasel.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 216,
+      "name": "Teddiursa",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/216-teddiursa.png",
+      "data_file": "data/216-teddiursa.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 217,
+      "name": "Ursaring",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/217-ursaring.png",
+      "data_file": "data/217-ursaring.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 218,
+      "name": "Slugma",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/218-slugma.png",
+      "data_file": "data/218-slugma.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 219,
+      "name": "Magcargo",
+      "types": [
+        "Fire",
+        "Rock"
+      ],
+      "sprite_file": "sprites/219-magcargo.png",
+      "data_file": "data/219-magcargo.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 220,
+      "name": "Swinub",
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "sprite_file": "sprites/220-swinub.png",
+      "data_file": "data/220-swinub.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 221,
+      "name": "Piloswine",
+      "types": [
+        "Ice",
+        "Ground"
+      ],
+      "sprite_file": "sprites/221-piloswine.png",
+      "data_file": "data/221-piloswine.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 222,
+      "name": "Corsola",
+      "types": [
+        "Water",
+        "Rock"
+      ],
+      "sprite_file": "sprites/222-corsola.png",
+      "data_file": "data/222-corsola.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 223,
+      "name": "Remoraid",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/223-remoraid.png",
+      "data_file": "data/223-remoraid.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 224,
+      "name": "Octillery",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/224-octillery.png",
+      "data_file": "data/224-octillery.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 225,
+      "name": "Delibird",
+      "types": [
+        "Ice",
+        "Flying"
+      ],
+      "sprite_file": "sprites/225-delibird.png",
+      "data_file": "data/225-delibird.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 226,
+      "name": "Mantine",
+      "types": [
+        "Water",
+        "Flying"
+      ],
+      "sprite_file": "sprites/226-mantine.png",
+      "data_file": "data/226-mantine.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 227,
+      "name": "Skarmory",
+      "types": [
+        "Steel",
+        "Flying"
+      ],
+      "sprite_file": "sprites/227-skarmory.png",
+      "data_file": "data/227-skarmory.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 228,
+      "name": "Houndour",
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "sprite_file": "sprites/228-houndour.png",
+      "data_file": "data/228-houndour.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 229,
+      "name": "Houndoom",
+      "types": [
+        "Dark",
+        "Fire"
+      ],
+      "sprite_file": "sprites/229-houndoom.png",
+      "data_file": "data/229-houndoom.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 230,
+      "name": "Kingdra",
+      "types": [
+        "Water",
+        "Dragon"
+      ],
+      "sprite_file": "sprites/230-kingdra.png",
+      "data_file": "data/230-kingdra.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 231,
+      "name": "Phanpy",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/231-phanpy.png",
+      "data_file": "data/231-phanpy.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 232,
+      "name": "Donphan",
+      "types": [
+        "Ground"
+      ],
+      "sprite_file": "sprites/232-donphan.png",
+      "data_file": "data/232-donphan.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 233,
+      "name": "Porygon2",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/233-porygon2.png",
+      "data_file": "data/233-porygon2.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 234,
+      "name": "Stantler",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/234-stantler.png",
+      "data_file": "data/234-stantler.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 235,
+      "name": "Smeargle",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/235-smeargle.png",
+      "data_file": "data/235-smeargle.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 236,
+      "name": "Tyrogue",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/236-tyrogue.png",
+      "data_file": "data/236-tyrogue.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 237,
+      "name": "Hitmontop",
+      "types": [
+        "Fighting"
+      ],
+      "sprite_file": "sprites/237-hitmontop.png",
+      "data_file": "data/237-hitmontop.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 238,
+      "name": "Smoochum",
+      "types": [
+        "Ice",
+        "Psychic"
+      ],
+      "sprite_file": "sprites/238-smoochum.png",
+      "data_file": "data/238-smoochum.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 239,
+      "name": "Elekid",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/239-elekid.png",
+      "data_file": "data/239-elekid.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 240,
+      "name": "Magby",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/240-magby.png",
+      "data_file": "data/240-magby.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 241,
+      "name": "Miltank",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/241-miltank.png",
+      "data_file": "data/241-miltank.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 242,
+      "name": "Blissey",
+      "types": [
+        "Normal"
+      ],
+      "sprite_file": "sprites/242-blissey.png",
+      "data_file": "data/242-blissey.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 243,
+      "name": "Raikou",
+      "types": [
+        "Electric"
+      ],
+      "sprite_file": "sprites/243-raikou.png",
+      "data_file": "data/243-raikou.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 244,
+      "name": "Entei",
+      "types": [
+        "Fire"
+      ],
+      "sprite_file": "sprites/244-entei.png",
+      "data_file": "data/244-entei.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 245,
+      "name": "Suicune",
+      "types": [
+        "Water"
+      ],
+      "sprite_file": "sprites/245-suicune.png",
+      "data_file": "data/245-suicune.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 246,
+      "name": "Larvitar",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/246-larvitar.png",
+      "data_file": "data/246-larvitar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 247,
+      "name": "Pupitar",
+      "types": [
+        "Rock",
+        "Ground"
+      ],
+      "sprite_file": "sprites/247-pupitar.png",
+      "data_file": "data/247-pupitar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 248,
+      "name": "Tyranitar",
+      "types": [
+        "Rock",
+        "Dark"
+      ],
+      "sprite_file": "sprites/248-tyranitar.png",
+      "data_file": "data/248-tyranitar.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 249,
+      "name": "Lugia",
+      "types": [
+        "Psychic",
+        "Flying"
+      ],
+      "sprite_file": "sprites/249-lugia.png",
+      "data_file": "data/249-lugia.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 250,
+      "name": "Ho-Oh",
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "sprite_file": "sprites/250-ho-oh.png",
+      "data_file": "data/250-ho-oh.json",
+      "sprite_available": true
+    },
+    {
+      "pokedex_number": 251,
+      "name": "Celebi",
+      "types": [
+        "Psychic",
+        "Grass"
+      ],
+      "sprite_file": "sprites/251-celebi.png",
+      "data_file": "data/251-celebi.json",
+      "sprite_available": true
+    }
+  ]
+}

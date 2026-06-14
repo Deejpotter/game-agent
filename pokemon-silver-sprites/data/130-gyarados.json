@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 130,
+  "name": "Gyarados",
+  "api_name": "gyarados",
+  "category": "Atrocious Pokémon",
+  "types": [
+    "Water",
+    "Flying"
+  ],
+  "abilities": [
+    "Intimidate"
+  ],
+  "hidden_abilities": [
+    "Moxie"
+  ],
+  "height_dm": 65,
+  "weight_hg": 2350,
+  "base_stats": {
+    "hp": 95,
+    "attack": 125,
+    "defense": 79,
+    "special_attack": 60,
+    "special_defense": 100,
+    "speed": 81
+  },
+  "base_experience": 189,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Once it appears, it goes on a ram­ page. It remains enraged until it demolishes every­ thing around it.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Magikarp",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/130-gyarados.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/130.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

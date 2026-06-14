@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 133,
+  "name": "Eevee",
+  "api_name": "eevee",
+  "category": "Evolution Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Adaptability"
+  ],
+  "hidden_abilities": [
+    "Anticipation"
+  ],
+  "height_dm": 3,
+  "weight_hg": 65,
+  "base_stats": {
+    "hp": 55,
+    "attack": 55,
+    "defense": 50,
+    "special_attack": 45,
+    "special_defense": 65,
+    "speed": 55
+  },
+  "base_experience": 65,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its irregularly configured DNA is affected by its surroundings. It evolves if its en­ vironment changes.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/133-eevee.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/133.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

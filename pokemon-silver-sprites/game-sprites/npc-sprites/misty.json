@@ -1,0 +1,12 @@
+{
+  "name": "Misty",
+  "category": "NPC Sprite",
+  "filename": "misty.png",
+  "source_path": "gfx/sprites/misty.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/misty.png",
+  "description": "Misty, the Cerulean City Gym Leader specializing in Water-type Pokemon. Found at Cerulean Cape with her boyfriend until the player activates the Radio Tower event.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

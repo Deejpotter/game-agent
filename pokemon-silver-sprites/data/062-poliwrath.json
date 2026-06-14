@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 62,
+  "name": "Poliwrath",
+  "api_name": "poliwrath",
+  "category": "Tadpole Pokémon",
+  "types": [
+    "Water",
+    "Fighting"
+  ],
+  "abilities": [
+    "Water Absorb",
+    "Damp"
+  ],
+  "hidden_abilities": [
+    "Swift Swim"
+  ],
+  "height_dm": 13,
+  "weight_hg": 540,
+  "base_stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 95,
+    "special_attack": 70,
+    "special_defense": 90,
+    "speed": 70
+  },
+  "base_experience": 230,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Although an ener­ getic, skilled swimmer that uses all of its mus­ cles, it lives on dry land.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Poliwhirl",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/062-poliwrath.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/62.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

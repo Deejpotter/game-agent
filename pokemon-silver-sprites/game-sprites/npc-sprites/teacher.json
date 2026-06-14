@@ -1,0 +1,12 @@
+{
+  "name": "Teacher NPC",
+  "category": "NPC Sprite",
+  "filename": "teacher.png",
+  "source_path": "gfx/sprites/teacher.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/teacher.png",
+  "description": "Teacher NPC sprite found in schools and Pokemon Academy-style buildings, giving tips about battle mechanics.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

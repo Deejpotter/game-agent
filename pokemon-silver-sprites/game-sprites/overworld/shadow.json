@@ -1,0 +1,12 @@
+{
+  "name": "Character shadow sprite",
+  "category": "Overworld",
+  "filename": "shadow.png",
+  "source_path": "gfx/overworld/shadow.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/shadow.png",
+  "description": "The small oval shadow that appears under the player character and NPCs while walking on the overworld.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

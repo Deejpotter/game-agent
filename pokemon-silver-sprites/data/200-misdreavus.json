@@ -1,0 +1,40 @@
+{
+  "pokedex_number": 200,
+  "name": "Misdreavus",
+  "api_name": "misdreavus",
+  "category": "Screech Pokémon",
+  "types": [
+    "Ghost"
+  ],
+  "abilities": [
+    "Levitate"
+  ],
+  "hidden_abilities": [],
+  "height_dm": 7,
+  "weight_hg": 10,
+  "base_stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 60,
+    "special_attack": 85,
+    "special_defense": 85,
+    "speed": 85
+  },
+  "base_experience": 87,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "fast",
+  "flavor_text": "It loves to bite and yank people's hair from behind without warning, just to see their shocked reactions.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/200-misdreavus.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/200.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

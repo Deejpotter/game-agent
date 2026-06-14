@@ -1,0 +1,12 @@
+{
+  "name": "Dragon tamer trainer",
+  "category": "NPC Sprite",
+  "filename": "dragon.png",
+  "source_path": "gfx/sprites/dragon.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/dragon.png",
+  "description": "Overworld sprite for Dragon-type trainer class specialists found in Blackthorn City's Dragon Den and Victory Road.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

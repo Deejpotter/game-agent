@@ -1,0 +1,12 @@
+{
+  "name": "Team Rocket Grunt (male)",
+  "category": "NPC Sprite",
+  "filename": "rocket.png",
+  "source_path": "gfx/sprites/rocket.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/rocket.png",
+  "description": "Male Team Rocket Grunt overworld sprite. Members of the villainous Team Rocket organization who operate in Mahogany Town and the Goldenrod Radio Tower.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

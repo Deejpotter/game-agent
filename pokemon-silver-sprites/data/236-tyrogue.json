@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 236,
+  "name": "Tyrogue",
+  "api_name": "tyrogue",
+  "category": "Scuffle Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Guts",
+    "Steadfast"
+  ],
+  "hidden_abilities": [
+    "Vital Spirit"
+  ],
+  "height_dm": 7,
+  "weight_hg": 210,
+  "base_stats": {
+    "hp": 35,
+    "attack": 35,
+    "defense": 35,
+    "special_attack": 35,
+    "special_defense": 35,
+    "speed": 35
+  },
+  "base_experience": 42,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Even though it is small, it can't be ignored because it will slug any handy target with­ out warning.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/236-tyrogue.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/236.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Sailor trainer",
+  "category": "NPC Sprite",
+  "filename": "sailor.png",
+  "source_path": "gfx/sprites/sailor.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/sailor.png",
+  "description": "Sailor trainer class sprite — found on ships (S.S. Aqua) and port areas, using Water-type Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

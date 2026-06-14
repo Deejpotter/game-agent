@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 58,
+  "name": "Growlithe",
+  "api_name": "growlithe",
+  "category": "Puppy Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Flash Fire"
+  ],
+  "hidden_abilities": [
+    "Justified"
+  ],
+  "height_dm": 7,
+  "weight_hg": 190,
+  "base_stats": {
+    "hp": 55,
+    "attack": 70,
+    "defense": 45,
+    "special_attack": 70,
+    "special_defense": 50,
+    "speed": 60
+  },
+  "base_experience": 70,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "Extremely loyal, it will fearlessly bark at any oppo­ nent to protect its own trainer from harm.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/058-growlithe.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/58.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

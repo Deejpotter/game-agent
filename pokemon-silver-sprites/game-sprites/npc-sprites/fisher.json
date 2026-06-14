@@ -1,0 +1,12 @@
+{
+  "name": "Fisher trainer",
+  "category": "NPC Sprite",
+  "filename": "fisher.png",
+  "source_path": "gfx/sprites/fisher.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/fisher.png",
+  "description": "Fisher trainer class sprite — fishermen found near water routes who use Water-type Pokemon caught with fishing rods.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

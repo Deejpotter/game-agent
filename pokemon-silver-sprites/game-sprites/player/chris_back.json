@@ -1,0 +1,12 @@
+{
+  "name": "Kris back sprite (battle)",
+  "category": "Player",
+  "filename": "chris_back.png",
+  "source_path": "gfx/player/chris_back.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/player/chris_back.png",
+  "description": "The back view of the female player character Kris during Pokemon battles. The first female protagonist in the main Pokemon series (Pokemon Crystal exclusive).",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

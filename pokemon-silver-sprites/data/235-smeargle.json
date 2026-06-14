@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 235,
+  "name": "Smeargle",
+  "api_name": "smeargle",
+  "category": "Painter Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Own Tempo",
+    "Technician"
+  ],
+  "hidden_abilities": [
+    "Moody"
+  ],
+  "height_dm": 12,
+  "weight_hg": 580,
+  "base_stats": {
+    "hp": 55,
+    "attack": 20,
+    "defense": 35,
+    "special_attack": 20,
+    "special_defense": 45,
+    "speed": 75
+  },
+  "base_experience": 88,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "Once it becomes an adult, it has a tendency to let its comrades plant footprints on its back.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/235-smeargle.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/235.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

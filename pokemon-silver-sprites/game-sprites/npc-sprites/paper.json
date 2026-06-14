@@ -1,0 +1,12 @@
+{
+  "name": "Sign / Notice board",
+  "category": "NPC Sprite",
+  "filename": "paper.png",
+  "source_path": "gfx/sprites/paper.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/paper.png",
+  "description": "Overworld sprite for paper signs and notice boards. Signs on routes describe what Pokemon can be found, warn of danger, or mark city borders.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

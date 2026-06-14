@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 118,
+  "name": "Goldeen",
+  "api_name": "goldeen",
+  "category": "Goldfish Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Water Veil"
+  ],
+  "hidden_abilities": [
+    "Lightning Rod"
+  ],
+  "height_dm": 6,
+  "weight_hg": 150,
+  "base_stats": {
+    "hp": 45,
+    "attack": 67,
+    "defense": 60,
+    "special_attack": 35,
+    "special_defense": 50,
+    "speed": 63
+  },
+  "base_experience": 64,
+  "capture_rate": 225,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "A strong swimmer, it is capable of swimming nonstop up fast streams at a steady speed of five knots.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/118-goldeen.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/118.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

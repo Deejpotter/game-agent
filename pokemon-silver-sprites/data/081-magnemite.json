@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 81,
+  "name": "Magnemite",
+  "api_name": "magnemite",
+  "category": "Magnet Pokémon",
+  "types": [
+    "Electric",
+    "Steel"
+  ],
+  "abilities": [
+    "Magnet Pull",
+    "Sturdy"
+  ],
+  "hidden_abilities": [
+    "Analytic"
+  ],
+  "height_dm": 3,
+  "weight_hg": 60,
+  "base_stats": {
+    "hp": 25,
+    "attack": 35,
+    "defense": 70,
+    "special_attack": 95,
+    "special_defense": 55,
+    "speed": 45
+  },
+  "base_experience": 65,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The units at the sides of its body generate anti­ gravity energy to keep it aloft in the air.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/081-magnemite.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/81.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

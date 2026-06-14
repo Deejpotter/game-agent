@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 110,
+  "name": "Weezing",
+  "api_name": "weezing",
+  "category": "Poison Gas Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Levitate",
+    "Neutralizing Gas"
+  ],
+  "hidden_abilities": [
+    "Stench"
+  ],
+  "height_dm": 12,
+  "weight_hg": 95,
+  "base_stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 120,
+    "special_attack": 85,
+    "special_defense": 70,
+    "speed": 60
+  },
+  "base_experience": 172,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Top-grade perfume is made using its internal poison gases by diluting them to the high­ est level.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Koffing",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/110-weezing.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/110.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 206,
+  "name": "Dunsparce",
+  "api_name": "dunsparce",
+  "category": "Land Snake Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Serene Grace",
+    "Run Away"
+  ],
+  "hidden_abilities": [
+    "Rattled"
+  ],
+  "height_dm": 15,
+  "weight_hg": 140,
+  "base_stats": {
+    "hp": 100,
+    "attack": 70,
+    "defense": 70,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 45
+  },
+  "base_experience": 145,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If spotted, it es­ capes by burrowing with its tail. It can float just slightly using its wings.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "cave",
+  "sprite_file": "../sprites/206-dunsparce.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/206.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

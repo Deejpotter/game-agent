@@ -1,0 +1,12 @@
+{
+  "name": "Swimmer (female)",
+  "category": "NPC Sprite",
+  "filename": "swimmer_girl.png",
+  "source_path": "gfx/sprites/swimmer_girl.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/swimmer_girl.png",
+  "description": "Female Swimmer trainer class sprite — found in water routes and swimming pools, using Water-type Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

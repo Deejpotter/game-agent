@@ -1,0 +1,12 @@
+{
+  "name": "Sage trainer",
+  "category": "NPC Sprite",
+  "filename": "sage.png",
+  "source_path": "gfx/sprites/sage.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/sage.png",
+  "description": "Sage trainer class sprite — monks found in Sprout Tower and other spiritual locations who use Bellsprout.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

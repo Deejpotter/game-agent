@@ -1,0 +1,12 @@
+{
+  "name": "Flower animation frame 1 (DMG grayscale)",
+  "category": "Tileset Anim",
+  "filename": "flower_dmg_1.png",
+  "source_path": "gfx/tilesets/flower/dmg_1.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/flower/dmg_1.png",
+  "description": "First frame of the flower animation for original Game Boy (grayscale) mode.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

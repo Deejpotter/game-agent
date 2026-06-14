@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 179,
+  "name": "Mareep",
+  "api_name": "mareep",
+  "category": "Wool Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Plus"
+  ],
+  "height_dm": 6,
+  "weight_hg": 78,
+  "base_stats": {
+    "hp": 55,
+    "attack": 40,
+    "defense": 40,
+    "special_attack": 65,
+    "special_defense": 45,
+    "speed": 35
+  },
+  "base_experience": 56,
+  "capture_rate": 235,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Its fleece grows continually. In the summer, the fleece is fully shed, but it grows back in a week.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/179-mareep.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/179.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

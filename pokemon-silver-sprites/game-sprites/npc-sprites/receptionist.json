@@ -1,0 +1,12 @@
+{
+  "name": "Receptionist",
+  "category": "NPC Sprite",
+  "filename": "receptionist.png",
+  "source_path": "gfx/sprites/receptionist.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/receptionist.png",
+  "description": "Generic receptionist NPC sprite found at Pokemon Centers, the Radio Tower, and other official buildings.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

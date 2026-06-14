@@ -1,0 +1,12 @@
+{
+  "name": "Water animation tiles",
+  "category": "Tileset Anim",
+  "filename": "water_water.png",
+  "source_path": "gfx/tilesets/water/water.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/water/water.png",
+  "description": "Animated water surface tiles — the rippling blue water used on routes, lakes, and the ocean. Required for HM03 Surf travel.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

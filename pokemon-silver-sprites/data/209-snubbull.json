@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 209,
+  "name": "Snubbull",
+  "api_name": "snubbull",
+  "category": "Fairy Pokémon",
+  "types": [
+    "Fairy"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Run Away"
+  ],
+  "hidden_abilities": [
+    "Rattled"
+  ],
+  "height_dm": 6,
+  "weight_hg": 78,
+  "base_stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 50,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 30
+  },
+  "base_experience": 60,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "It has an active, playful nature. Many women like to frolic with it because of its af­ fectionate ways.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/209-snubbull.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/209.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 141,
+  "name": "Kabutops",
+  "api_name": "kabutops",
+  "category": "Shellfish Pokémon",
+  "types": [
+    "Rock",
+    "Water"
+  ],
+  "abilities": [
+    "Swift Swim",
+    "Battle Armor"
+  ],
+  "hidden_abilities": [
+    "Weak Armor"
+  ],
+  "height_dm": 13,
+  "weight_hg": 405,
+  "base_stats": {
+    "hp": 60,
+    "attack": 115,
+    "defense": 105,
+    "special_attack": 65,
+    "special_defense": 70,
+    "speed": 80
+  },
+  "base_experience": 173,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "With sharp claws, this ferocious, ancient POKéMON rips apart prey and sucks their body fluids.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Kabuto",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/141-kabutops.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/141.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

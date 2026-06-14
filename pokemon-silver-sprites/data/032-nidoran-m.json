@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 32,
+  "name": "Nidoran♂",
+  "api_name": "nidoran-m",
+  "category": "Poison Pin Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Rivalry"
+  ],
+  "hidden_abilities": [
+    "Hustle"
+  ],
+  "height_dm": 5,
+  "weight_hg": 90,
+  "base_stats": {
+    "hp": 46,
+    "attack": 57,
+    "defense": 40,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 50
+  },
+  "base_experience": 55,
+  "capture_rate": 235,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It raises its big ears to check its surroundings. It will strike first if it senses any danger.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/032-nidoran-m.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/32.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

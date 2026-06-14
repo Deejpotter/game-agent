@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 154,
+  "name": "Meganium",
+  "api_name": "meganium",
+  "category": "Herb Pokémon",
+  "types": [
+    "Grass"
+  ],
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_abilities": [
+    "Leaf Guard"
+  ],
+  "height_dm": 18,
+  "weight_hg": 1005,
+  "base_stats": {
+    "hp": 80,
+    "attack": 82,
+    "defense": 100,
+    "special_attack": 83,
+    "special_defense": 100,
+    "speed": 80
+  },
+  "base_experience": 236,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "MEGANIUM's breath has the power to revive dead grass and plants. It can make them healthy again.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Bayleef",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/154-meganium.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/154.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

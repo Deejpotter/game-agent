@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 161,
+  "name": "Sentret",
+  "api_name": "sentret",
+  "category": "Scout Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Keen Eye"
+  ],
+  "hidden_abilities": [
+    "Frisk"
+  ],
+  "height_dm": 8,
+  "weight_hg": 60,
+  "base_stats": {
+    "hp": 35,
+    "attack": 46,
+    "defense": 34,
+    "special_attack": 35,
+    "special_defense": 45,
+    "speed": 20
+  },
+  "base_experience": 43,
+  "capture_rate": 255,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It stands on its tail so it can see a long way. If it spots an enemy, it cries loudly to warn its kind.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/161-sentret.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/161.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

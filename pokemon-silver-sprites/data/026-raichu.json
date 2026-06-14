@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 26,
+  "name": "Raichu",
+  "api_name": "raichu",
+  "category": "Mouse Pokémon",
+  "types": [
+    "Electric"
+  ],
+  "abilities": [
+    "Static"
+  ],
+  "hidden_abilities": [
+    "Lightning Rod"
+  ],
+  "height_dm": 8,
+  "weight_hg": 300,
+  "base_stats": {
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "special_attack": 90,
+    "special_defense": 80,
+    "speed": 110
+  },
+  "base_experience": 218,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "If the electric pouches in its cheeks become fully charged, both ears will stand straight up.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Pikachu",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/026-raichu.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/26.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

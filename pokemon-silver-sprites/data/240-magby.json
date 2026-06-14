@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 240,
+  "name": "Magby",
+  "api_name": "magby",
+  "category": "Live Coal Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Flame Body"
+  ],
+  "hidden_abilities": [
+    "Vital Spirit"
+  ],
+  "height_dm": 7,
+  "weight_hg": 214,
+  "base_stats": {
+    "hp": 45,
+    "attack": 75,
+    "defense": 37,
+    "special_attack": 70,
+    "special_defense": 55,
+    "speed": 83
+  },
+  "base_experience": 73,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "It is found in volcanic craters. Its body temp. is over 1100 degrees, so don't under­ estimate it.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/240-magby.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/240.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

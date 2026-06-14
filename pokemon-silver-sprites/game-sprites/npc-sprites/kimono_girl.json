@@ -1,0 +1,12 @@
+{
+  "name": "Kimono Girl",
+  "category": "NPC Sprite",
+  "filename": "kimono_girl.png",
+  "source_path": "gfx/sprites/kimono_girl.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/kimono_girl.png",
+  "description": "One of the five Kimono Girls in Ecruteak City who perform dances and challenge the player. Each uses a different Eeveelution: Vaporeon, Jolteon, Flareon, Espeon, Umbreon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

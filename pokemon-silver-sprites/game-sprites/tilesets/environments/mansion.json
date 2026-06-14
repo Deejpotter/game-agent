@@ -1,0 +1,12 @@
+{
+  "name": "Mansion interior tileset",
+  "category": "Tileset",
+  "filename": "mansion.png",
+  "source_path": "gfx/tilesets/mansion.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/mansion.png",
+  "description": "Tileset for large mansion-style interiors, including the Mahogany Town rocket base and other elaborate buildings.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

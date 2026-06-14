@@ -1,0 +1,12 @@
+{
+  "name": "Biker trainer",
+  "category": "NPC Sprite",
+  "filename": "biker.png",
+  "source_path": "gfx/sprites/biker.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/biker.png",
+  "description": "Overworld sprite for the Biker trainer class — found on cycling roads, using Poison-type and Dark-type Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

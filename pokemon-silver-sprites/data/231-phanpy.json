@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 231,
+  "name": "Phanpy",
+  "api_name": "phanpy",
+  "category": "Long Nose Pokémon",
+  "types": [
+    "Ground"
+  ],
+  "abilities": [
+    "Pickup"
+  ],
+  "hidden_abilities": [
+    "Sand Veil"
+  ],
+  "height_dm": 5,
+  "weight_hg": 335,
+  "base_stats": {
+    "hp": 90,
+    "attack": 60,
+    "defense": 60,
+    "special_attack": 40,
+    "special_defense": 40,
+    "speed": 40
+  },
+  "base_experience": 66,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "As a sign of af­ fection, it bumps with its snout. However, it is so strong, it may send you flying.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/231-phanpy.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/231.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

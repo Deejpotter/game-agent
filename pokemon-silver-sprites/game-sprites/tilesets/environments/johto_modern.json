@@ -1,0 +1,12 @@
+{
+  "name": "Johto modern outdoor tileset",
+  "category": "Tileset",
+  "filename": "johto_modern.png",
+  "source_path": "gfx/tilesets/johto_modern.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/johto_modern.png",
+  "description": "An alternate version of the Johto outdoor tileset used in certain towns and later-game areas with a slightly different visual style.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

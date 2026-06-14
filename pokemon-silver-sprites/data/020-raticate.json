@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 20,
+  "name": "Raticate",
+  "api_name": "raticate",
+  "category": "Mouse Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Run Away",
+    "Guts"
+  ],
+  "hidden_abilities": [
+    "Hustle"
+  ],
+  "height_dm": 7,
+  "weight_hg": 185,
+  "base_stats": {
+    "hp": 55,
+    "attack": 81,
+    "defense": 60,
+    "special_attack": 50,
+    "special_defense": 70,
+    "speed": 97
+  },
+  "base_experience": 145,
+  "capture_rate": 127,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its whiskers help it to maintain balance. Its fangs never stop grow­ ing, so it gnaws to pare them down.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Rattata",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/020-raticate.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/20.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

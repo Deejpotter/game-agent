@@ -1,0 +1,12 @@
+{
+  "name": "Monster / Creature sprite",
+  "category": "NPC Sprite",
+  "filename": "monster.png",
+  "source_path": "gfx/sprites/monster.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/monster.png",
+  "description": "Generic monster or creature NPC sprite used in certain story events.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

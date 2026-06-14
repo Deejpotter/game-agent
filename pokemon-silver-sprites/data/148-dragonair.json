@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 148,
+  "name": "Dragonair",
+  "api_name": "dragonair",
+  "category": "Dragon Pokémon",
+  "types": [
+    "Dragon"
+  ],
+  "abilities": [
+    "Shed Skin"
+  ],
+  "hidden_abilities": [
+    "Marvel Scale"
+  ],
+  "height_dm": 40,
+  "weight_hg": 165,
+  "base_stats": {
+    "hp": 61,
+    "attack": 84,
+    "defense": 65,
+    "special_attack": 70,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_experience": 147,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "Its crystalline orbs appear to give this POKéMON the power to freely control the weather.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Dratini",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/148-dragonair.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/148.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 80,
+  "name": "Slowbro",
+  "api_name": "slowbro",
+  "category": "Hermit Crab Pokémon",
+  "types": [
+    "Water",
+    "Psychic"
+  ],
+  "abilities": [
+    "Oblivious",
+    "Own Tempo"
+  ],
+  "hidden_abilities": [
+    "Regenerator"
+  ],
+  "height_dm": 16,
+  "weight_hg": 785,
+  "base_stats": {
+    "hp": 95,
+    "attack": 75,
+    "defense": 110,
+    "special_attack": 100,
+    "special_defense": 80,
+    "speed": 30
+  },
+  "base_experience": 172,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Naturally dull to begin with, it lost its ability to feel pain due to SHELLDER's seeping poison.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Slowpoke",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/080-slowbro.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/80.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

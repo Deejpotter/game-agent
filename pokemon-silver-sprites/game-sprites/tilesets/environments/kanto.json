@@ -1,0 +1,12 @@
+{
+  "name": "Kanto outdoor tileset",
+  "category": "Tileset",
+  "filename": "kanto.png",
+  "source_path": "gfx/tilesets/kanto.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/kanto.png",
+  "description": "The outdoor tileset for the post-game Kanto region — routes and towns visited after defeating the Elite Four. Similar to the Johto tileset but with Kanto-specific elements.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

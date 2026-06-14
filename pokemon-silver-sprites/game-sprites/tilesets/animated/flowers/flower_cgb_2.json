@@ -1,0 +1,12 @@
+{
+  "name": "Flower animation frame 2 (GBC color)",
+  "category": "Tileset Anim",
+  "filename": "flower_cgb_2.png",
+  "source_path": "gfx/tilesets/flower/cgb_2.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/flower/cgb_2.png",
+  "description": "Second frame of the animated flower tiles in GBC color mode.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

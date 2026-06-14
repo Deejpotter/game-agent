@@ -1,0 +1,12 @@
+{
+  "name": "Cal",
+  "category": "NPC Sprite",
+  "filename": "cal.png",
+  "source_path": "gfx/sprites/cal.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/cal.png",
+  "description": "Cal, a trainer encountered in the Pokemon League's training areas. Uses a mixed team and serves as a gatekeeper before the Elite Four.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

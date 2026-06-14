@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 186,
+  "name": "Politoed",
+  "api_name": "politoed",
+  "category": "Frog Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Water Absorb",
+    "Damp"
+  ],
+  "hidden_abilities": [
+    "Drizzle"
+  ],
+  "height_dm": 11,
+  "weight_hg": 339,
+  "base_stats": {
+    "hp": 90,
+    "attack": 75,
+    "defense": 75,
+    "special_attack": 90,
+    "special_defense": 100,
+    "speed": 70
+  },
+  "base_experience": 225,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "Whenever three or more of these get together, they sing in a loud voice that sounds like bellowing.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Poliwhirl",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/186-politoed.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/186.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

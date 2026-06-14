@@ -1,0 +1,12 @@
+{
+  "name": "Game Corner tileset",
+  "category": "Tileset",
+  "filename": "game_corner.png",
+  "source_path": "gfx/tilesets/game_corner.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/game_corner.png",
+  "description": "Tileset for the Goldenrod Game Corner casino. Slot machine floors, neon counters, and the prize exchange desk. Team Rocket hides a base beneath it in Kanto.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

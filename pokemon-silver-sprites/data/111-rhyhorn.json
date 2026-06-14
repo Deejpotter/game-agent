@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 111,
+  "name": "Rhyhorn",
+  "api_name": "rhyhorn",
+  "category": "Spikes Pokémon",
+  "types": [
+    "Ground",
+    "Rock"
+  ],
+  "abilities": [
+    "Lightning Rod",
+    "Rock Head"
+  ],
+  "hidden_abilities": [
+    "Reckless"
+  ],
+  "height_dm": 10,
+  "weight_hg": 1150,
+  "base_stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 95,
+    "special_attack": 30,
+    "special_defense": 30,
+    "speed": 25
+  },
+  "base_experience": 69,
+  "capture_rate": 120,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "It doesn't care if there is anything in its way. It just charges and destroys all ob­ stacles.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "rough-terrain",
+  "sprite_file": "../sprites/111-rhyhorn.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/111.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

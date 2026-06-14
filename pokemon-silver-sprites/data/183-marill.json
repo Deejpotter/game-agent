@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 183,
+  "name": "Marill",
+  "api_name": "marill",
+  "category": "Aqua Mouse Pokémon",
+  "types": [
+    "Water",
+    "Fairy"
+  ],
+  "abilities": [
+    "Thick Fat",
+    "Huge Power"
+  ],
+  "hidden_abilities": [
+    "Sap Sipper"
+  ],
+  "height_dm": 4,
+  "weight_hg": 85,
+  "base_stats": {
+    "hp": 70,
+    "attack": 20,
+    "defense": 50,
+    "special_attack": 20,
+    "special_defense": 50,
+    "speed": 40
+  },
+  "base_experience": 88,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "The end of its tail serves as a buoy that keeps it from drowning, even in a vicious current.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Azurill",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "waters-edge",
+  "sprite_file": "../sprites/183-marill.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/183.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 248,
+  "name": "Tyranitar",
+  "api_name": "tyranitar",
+  "category": "Armor Pokémon",
+  "types": [
+    "Rock",
+    "Dark"
+  ],
+  "abilities": [
+    "Sand Stream"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 20,
+  "weight_hg": 2020,
+  "base_stats": {
+    "hp": 100,
+    "attack": 134,
+    "defense": 110,
+    "special_attack": 95,
+    "special_defense": 100,
+    "speed": 61
+  },
+  "base_experience": 270,
+  "capture_rate": 45,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "Extremely strong, it can change the landscape. It has an insolent nature that makes it not care about others.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Pupitar",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/248-tyranitar.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/248.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Beauty trainer",
+  "category": "NPC Sprite",
+  "filename": "beauty.png",
+  "source_path": "gfx/sprites/beauty.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/beauty.png",
+  "description": "Overworld sprite for the Beauty trainer class — fashionable women found in cities who use Clefairy, Flaaffy, and similar Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

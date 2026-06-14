@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 117,
+  "name": "Seadra",
+  "api_name": "seadra",
+  "category": "Dragon Pokémon",
+  "types": [
+    "Water"
+  ],
+  "abilities": [
+    "Poison Point",
+    "Sniper"
+  ],
+  "hidden_abilities": [
+    "Damp"
+  ],
+  "height_dm": 12,
+  "weight_hg": 250,
+  "base_stats": {
+    "hp": 55,
+    "attack": 65,
+    "defense": 95,
+    "special_attack": 95,
+    "special_defense": 45,
+    "speed": 85
+  },
+  "base_experience": 154,
+  "capture_rate": 75,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its fin-tips leak poison. Its fins and bones are highly valued as ingredients in herbal medicine.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Horsea",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/117-seadra.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/117.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

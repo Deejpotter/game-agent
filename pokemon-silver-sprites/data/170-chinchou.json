@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 170,
+  "name": "Chinchou",
+  "api_name": "chinchou",
+  "category": "Angler Pokémon",
+  "types": [
+    "Water",
+    "Electric"
+  ],
+  "abilities": [
+    "Volt Absorb",
+    "Illuminate"
+  ],
+  "hidden_abilities": [
+    "Water Absorb"
+  ],
+  "height_dm": 5,
+  "weight_hg": 120,
+  "base_stats": {
+    "hp": 75,
+    "attack": 38,
+    "defense": 38,
+    "special_attack": 56,
+    "special_defense": 56,
+    "speed": 67
+  },
+  "base_experience": 66,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "On the dark ocean floor, its only means of communi­ cation is its constantly flash­ ing lights.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "sea",
+  "sprite_file": "../sprites/170-chinchou.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/170.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Karen",
+  "category": "NPC Sprite",
+  "filename": "karen.png",
+  "source_path": "gfx/sprites/karen.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/karen.png",
+  "description": "Karen, the fourth Elite Four member specializing in Dark-type Pokemon. Famous quote: 'Strong Pokemon. Weak Pokemon. That is only the selfish perception.'",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 109,
+  "name": "Koffing",
+  "api_name": "koffing",
+  "category": "Poison Gas Pokémon",
+  "types": [
+    "Poison"
+  ],
+  "abilities": [
+    "Levitate",
+    "Neutralizing Gas"
+  ],
+  "hidden_abilities": [
+    "Stench"
+  ],
+  "height_dm": 6,
+  "weight_hg": 10,
+  "base_stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 95,
+    "special_attack": 60,
+    "special_defense": 45,
+    "speed": 35
+  },
+  "base_experience": 68,
+  "capture_rate": 190,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "The poisonous gases it contains are a little bit lighter than air, keeping it slight­ ly airborne.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/109-koffing.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/109.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 4,
+  "name": "Charmander",
+  "api_name": "charmander",
+  "category": "Lizard Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Blaze"
+  ],
+  "hidden_abilities": [
+    "Solar Power"
+  ],
+  "height_dm": 6,
+  "weight_hg": 85,
+  "base_stats": {
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "special_attack": 60,
+    "special_defense": 50,
+    "speed": 65
+  },
+  "base_experience": 62,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The flame on its tail indicates CHARMANDER's life force. If it is healthy, the flame burns brightly.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/004-charmander.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/4.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

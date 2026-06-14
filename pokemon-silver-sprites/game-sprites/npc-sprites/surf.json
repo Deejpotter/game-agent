@@ -1,0 +1,12 @@
+{
+  "name": "Surfing (HM03 Surf) sprite",
+  "category": "NPC Sprite",
+  "filename": "surf.png",
+  "source_path": "gfx/sprites/surf.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/surf.png",
+  "description": "The overworld sprite of the player surfing on a Pokemon using HM03 Surf. Required to cross water routes, reach islands, and find hidden areas.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

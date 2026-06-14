@@ -1,0 +1,12 @@
+{
+  "name": "Officer Jenny",
+  "category": "NPC Sprite",
+  "filename": "officer.png",
+  "source_path": "gfx/sprites/officer.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/officer.png",
+  "description": "Officer Jenny, the police officer NPC found in towns. Reports the rival's theft of a Pokemon from Elm's lab at the game's start.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

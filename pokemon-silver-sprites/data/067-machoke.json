@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 67,
+  "name": "Machoke",
+  "api_name": "machoke",
+  "category": "Superpower Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Guts",
+    "No Guard"
+  ],
+  "hidden_abilities": [
+    "Steadfast"
+  ],
+  "height_dm": 15,
+  "weight_hg": 705,
+  "base_stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "special_attack": 50,
+    "special_defense": 60,
+    "speed": 45
+  },
+  "base_experience": 142,
+  "capture_rate": 90,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "The muscles cover­ ing its body teem with power. Even when still, it exudes an amazing sense of strength.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Machop",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/067-machoke.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/67.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

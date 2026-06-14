@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 217,
+  "name": "Ursaring",
+  "api_name": "ursaring",
+  "category": "Hibernator Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Guts",
+    "Quick Feet"
+  ],
+  "hidden_abilities": [
+    "Unnerve"
+  ],
+  "height_dm": 18,
+  "weight_hg": 1258,
+  "base_stats": {
+    "hp": 90,
+    "attack": 130,
+    "defense": 75,
+    "special_attack": 75,
+    "special_defense": 75,
+    "speed": 55
+  },
+  "base_experience": 175,
+  "capture_rate": 60,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "With its ability to distinguish any aroma, it unfail­ ingly finds all food buried deep underground.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Teddiursa",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/217-ursaring.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/217.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

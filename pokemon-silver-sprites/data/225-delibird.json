@@ -1,0 +1,44 @@
+{
+  "pokedex_number": 225,
+  "name": "Delibird",
+  "api_name": "delibird",
+  "category": "Delivery Pokémon",
+  "types": [
+    "Ice",
+    "Flying"
+  ],
+  "abilities": [
+    "Vital Spirit",
+    "Hustle"
+  ],
+  "hidden_abilities": [
+    "Insomnia"
+  ],
+  "height_dm": 9,
+  "weight_hg": 160,
+  "base_stats": {
+    "hp": 45,
+    "attack": 55,
+    "defense": 45,
+    "special_attack": 65,
+    "special_defense": 45,
+    "speed": 75
+  },
+  "base_experience": 116,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "fast",
+  "flavor_text": "It nests at the edge of sharp cliffs. It spends all day carrying food to its await­ ing chicks.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "mountain",
+  "sprite_file": "../sprites/225-delibird.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/225.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

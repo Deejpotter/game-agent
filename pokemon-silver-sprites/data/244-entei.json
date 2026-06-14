@@ -1,0 +1,42 @@
+{
+  "pokedex_number": 244,
+  "name": "Entei",
+  "api_name": "entei",
+  "category": "Volcano Pokémon",
+  "types": [
+    "Fire"
+  ],
+  "abilities": [
+    "Pressure"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 21,
+  "weight_hg": 1980,
+  "base_stats": {
+    "hp": 115,
+    "attack": 115,
+    "defense": 85,
+    "special_attack": 90,
+    "special_defense": 75,
+    "speed": 100
+  },
+  "base_experience": 261,
+  "capture_rate": 3,
+  "base_happiness": 35,
+  "growth_rate": "slow",
+  "flavor_text": "A POKéMON that races across the land. It is said that one is born every time a new volcano appears.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": true,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/244-entei.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/244.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

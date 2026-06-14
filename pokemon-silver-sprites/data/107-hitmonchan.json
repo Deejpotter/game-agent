@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 107,
+  "name": "Hitmonchan",
+  "api_name": "hitmonchan",
+  "category": "Punching Pokémon",
+  "types": [
+    "Fighting"
+  ],
+  "abilities": [
+    "Keen Eye",
+    "Iron Fist"
+  ],
+  "hidden_abilities": [
+    "Inner Focus"
+  ],
+  "height_dm": 14,
+  "weight_hg": 502,
+  "base_stats": {
+    "hp": 50,
+    "attack": 105,
+    "defense": 79,
+    "special_attack": 35,
+    "special_defense": 110,
+    "speed": 76
+  },
+  "base_experience": 159,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium",
+  "flavor_text": "Its punches slice the air. They are launched at such high speed, even a slight graze could cause a burn.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Tyrogue",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "urban",
+  "sprite_file": "../sprites/107-hitmonchan.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/107.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

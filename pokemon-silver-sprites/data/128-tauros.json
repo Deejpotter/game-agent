@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 128,
+  "name": "Tauros",
+  "api_name": "tauros",
+  "category": "Wild Bull Pokémon",
+  "types": [
+    "Normal"
+  ],
+  "abilities": [
+    "Intimidate",
+    "Anger Point"
+  ],
+  "hidden_abilities": [
+    "Sheer Force"
+  ],
+  "height_dm": 14,
+  "weight_hg": 884,
+  "base_stats": {
+    "hp": 75,
+    "attack": 100,
+    "defense": 95,
+    "special_attack": 40,
+    "special_defense": 70,
+    "speed": 110
+  },
+  "base_experience": 172,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "slow",
+  "flavor_text": "After heightening its will to fight by whipping itself with its three tails, it charges at full speed.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/128-tauros.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/128.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 71,
+  "name": "Victreebel",
+  "api_name": "victreebel",
+  "category": "Flycatcher Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Chlorophyll"
+  ],
+  "hidden_abilities": [
+    "Gluttony"
+  ],
+  "height_dm": 17,
+  "weight_hg": 155,
+  "base_stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 65,
+    "special_attack": 100,
+    "special_defense": 70,
+    "speed": 70
+  },
+  "base_experience": 221,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "This horrifying plant POKéMON at­ tracts prey with aromatic honey, then melts them in its mouth.",
+  "flavor_text_version": "silver",
+  "evolves_from": "Weepinbell",
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "forest",
+  "sprite_file": "../sprites/071-victreebel.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/71.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}

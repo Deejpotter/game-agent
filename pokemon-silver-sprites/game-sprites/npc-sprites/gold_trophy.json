@@ -1,0 +1,12 @@
+{
+  "name": "Gold trophy",
+  "category": "NPC Sprite",
+  "filename": "gold_trophy.png",
+  "source_path": "gfx/sprites/gold_trophy.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/gold_trophy.png",
+  "description": "The Gold Trophy awarded for winning the Goldenrod City Bug Catching Contest with the highest-scoring Bug-type Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

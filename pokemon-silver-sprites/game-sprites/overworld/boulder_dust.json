@@ -1,0 +1,12 @@
+{
+  "name": "Boulder dust animation",
+  "category": "Overworld",
+  "filename": "boulder_dust.png",
+  "source_path": "gfx/overworld/boulder_dust.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/overworld/boulder_dust.png",
+  "description": "Dust cloud animation that appears when the player pushes a boulder using HM04 Strength. Boulders must be pushed into holes to solve cave puzzles.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Blaine",
+  "category": "NPC Sprite",
+  "filename": "blaine.png",
+  "source_path": "gfx/sprites/blaine.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/blaine.png",
+  "description": "Blaine, the Cinnabar Island Gym Leader who now operates from the Seafoam Islands after Cinnabar's volcano erupted. Specializes in Fire-type Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

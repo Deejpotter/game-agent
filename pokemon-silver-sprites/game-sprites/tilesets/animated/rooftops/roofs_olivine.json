@@ -1,0 +1,12 @@
+{
+  "name": "Olivine City roof tiles",
+  "category": "Tileset Anim",
+  "filename": "roofs_olivine.png",
+  "source_path": "gfx/tilesets/roofs/olivine.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/tilesets/roofs/olivine.png",
+  "description": "Roof color tiles for buildings in Olivine City, the port town with the Glitter Lighthouse.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

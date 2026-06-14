@@ -1,0 +1,12 @@
+{
+  "name": "Lass trainer",
+  "category": "NPC Sprite",
+  "filename": "lass.png",
+  "source_path": "gfx/sprites/lass.png",
+  "source_repo": "pret/pokegold",
+  "source_url": "https://raw.githubusercontent.com/pret/pokegold/master/gfx/sprites/lass.png",
+  "description": "Lass trainer class sprite — young girl trainers found on early routes using Clefairy, Snubbull, and similar Pokemon.",
+  "game": "Pokemon Gold / Silver",
+  "platform": "Game Boy Color",
+  "release_year": 2000
+}

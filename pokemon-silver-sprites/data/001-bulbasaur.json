@@ -1,0 +1,43 @@
+{
+  "pokedex_number": 1,
+  "name": "Bulbasaur",
+  "api_name": "bulbasaur",
+  "category": "Seed Pokémon",
+  "types": [
+    "Grass",
+    "Poison"
+  ],
+  "abilities": [
+    "Overgrow"
+  ],
+  "hidden_abilities": [
+    "Chlorophyll"
+  ],
+  "height_dm": 7,
+  "weight_hg": 69,
+  "base_stats": {
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "special_attack": 65,
+    "special_defense": 65,
+    "speed": 45
+  },
+  "base_experience": 64,
+  "capture_rate": 45,
+  "base_happiness": 70,
+  "growth_rate": "medium-slow",
+  "flavor_text": "It carries a seed on its back right from birth. As it grows older, the seed also grows larger.",
+  "flavor_text_version": "silver",
+  "evolves_from": null,
+  "is_legendary": false,
+  "is_mythical": false,
+  "habitat": "grassland",
+  "sprite_file": "../sprites/001-bulbasaur.png",
+  "sprite_url": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-ii/silver/1.png",
+  "sprite_available": true,
+  "game": "Pokémon Silver Version",
+  "platform": "Game Boy Color",
+  "release_year": 2000,
+  "generation": "Generation II"
+}
